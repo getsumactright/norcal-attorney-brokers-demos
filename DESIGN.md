@@ -2,9 +2,9 @@
 <!-- impeccable:design-schema 1 -->
 
 ## Overview
-This repository houses three distinct, self-contained visual worlds and interactive UI/UX prototypes for **NorCal Attorney Brokers** (`norcalattorneybrokers.com`), synthesized with Google Stitch MCP and built with authentic client photography and verified copy.
+This repository houses four distinct, self-contained visual worlds and interactive UI/UX prototypes for **NorCal Attorney Brokers** (`norcalattorneybrokers.com`), built with authentic client photography and verified copy.
 
- Full per-concept Google Stitch design system specifications are archived in:
+Full per-concept Google Stitch design system specifications are archived in:
 - [`.stitch/01-architectural-authority-DESIGN.md`](file:///Users/blackmountain/Claude%20Projects/NorCal%20Attorney%20Brokers/.stitch/01-architectural-authority-DESIGN.md) — **Obsidian & Brass Editorial** (Project `10155096222003642632`)
 - [`.stitch/02-norcal-civic-modern-DESIGN.md`](file:///Users/blackmountain/Claude%20Projects/NorCal%20Attorney%20Brokers/.stitch/02-norcal-civic-modern-DESIGN.md) — **Civic Modern Architecture & Counsel** (Project `12911883184295281537`)
 - [`.stitch/03-precision-dossier-DESIGN.md`](file:///Users/blackmountain/Claude%20Projects/NorCal%20Attorney%20Brokers/.stitch/03-precision-dossier-DESIGN.md) — **NorCal Legal Brokerage Dossier** (Project `10021131436364808810`)
@@ -50,3 +50,17 @@ This repository houses three distinct, self-contained visual worlds and interact
   - `--rule`: `#CFD6E0` (Exposed `1px` Structural Grid Line)
 - **Typography:** `Bricolage Grotesque` (Sculptural Uppercase Display) + `Public Sans` (Utilitarian Body) + `JetBrains Mono` (CalDRE, State Bar, NMLS & Telemetry Notation).
 - **Elevation & Geometry:** `0px` squared Swiss drafting cells locking flush with collapsing `1px solid #CFD6E0` borders.
+
+## Concept 04: Signature Atelier (`concepts/04-european-atelier.html`)
+- **Color Tokens:**
+  - `--bronze-bar`: `#6E5F43` (Antique Bronze Top Contact Bar & Footer)
+  - `--bronze-action`: `#766648` (Primary Bronze Action Button)
+  - `--bronze-display`: `#66573B` (Tracked-out Classical Display Serif)
+  - `--cream-nav`: `#EAE5D9` (Warm Sand Linen Navigation Header)
+  - `--silver-hero`: `#D6D8DA` (Cool Silver-Dove Studio Hero Canvas)
+  - `--white`: `#FFFFFF` (Pure White Practice Pillars & Editorial Canvas)
+  - `--ink-charcoal`: `#1F1E1B` (Primary Charcoal Ink)
+  - `--bronze-line`: `#A89A7E` (`1px` Architectural Hairline Rule)
+- **Typography:** `Cormorant Garamond` (Tracked-Out Uppercase Classical Serif) + `Mrs Saint Delafield` (Handwritten Principal Signature Script) + `Lora` (Editorial Italic Lead) + `Jost` (Clean European Geometric-Humanist Body).
+- **Elevation & Geometry:** `0px` crisp rectangular buttons (`CONTACT US` / `MORE INFO`), monochrome stone-filtered architectural diptych (Sacramento State Capitol + Scales of Justice), and 4-column bronze line-art icons on pure white with an expandable scope drawer.
+
