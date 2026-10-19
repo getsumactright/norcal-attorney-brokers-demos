@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NorCal Attorney Brokers — Three Website Concept Directions</title>
-  <meta name="description" content="UI/UX Concept Studio for NorCal Attorney Brokers (norcalattorneybrokers.com). Compare three distinct visual, typographic, and interactive website directions." />
+  <title>NorCal Attorney Brokers — Website Redesign Concepts</title>
+  <meta name="description" content="Executive website redesign presentation for NorCal Attorney Brokers (norcalattorneybrokers.com). Compare three distinct visual, typographic, and user-experience directions." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=EB+Garamond:ital,wght@0,500;1,400&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Libre+Caslon+Text:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=EB+Garamond:ital,wght@0,500;1,400&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg: #f3f1ec;
+      --bg: #f3f0e8;
       --surface: #ffffff;
-      --surface-warm: #e9e4da;
-      --ink: #15181c;
-      --ink-secondary: #454c56;
-      --border: #d2ccc0;
+      --surface-warm: #e9e3d7;
+      --ink: #16181b;
+      --ink-secondary: #484e57;
+      --border: #d4cdc0;
       --accent-green: #183629;
       --accent-brass: #b89146;
       --accent-navy: #0e2a47;
@@ -35,7 +35,7 @@
       color: var(--ink);
       font-family: var(--font-sans);
       font-size: 16px;
-      line-height: 1.6;
+      line-height: 1.62;
       -webkit-font-smoothing: antialiased;
     }
 
@@ -66,9 +66,18 @@
       border-bottom: 1px solid var(--border);
       margin-bottom: 3rem;
     }
+    .studio-eyebrow {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent-green);
+      margin: 0 0 0.75rem;
+      display: block;
+    }
     .studio-header h1 {
       font-family: var(--font-serif);
-      font-size: clamp(2.25rem, 4vw, 3.5rem);
+      font-size: clamp(2.25rem, 3.8vw, 3.35rem);
       line-height: 1.1;
       letter-spacing: -0.02em;
       margin: 0 0 1rem;
@@ -77,12 +86,12 @@
       margin: 0;
       color: var(--ink-secondary);
       font-size: 1.0625rem;
-      max-width: 68ch;
+      max-width: 66ch;
     }
     .client-summary-box {
       background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 10px;
+      border-radius: 8px;
       padding: 1.35rem 1.5rem;
       display: flex;
       align-items: center;
@@ -96,7 +105,8 @@
     }
     .client-summary-box strong {
       display: block;
-      font-size: 1rem;
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
       margin-bottom: 0.2rem;
     }
     .client-summary-box span {
@@ -117,7 +127,7 @@
     .concept-folio {
       background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 12px;
+      border-radius: 10px;
       overflow: hidden;
       display: flex;
       flex-direction: column;
@@ -149,16 +159,16 @@
       align-items: flex-end;
       justify-content: flex-end;
       padding: 0.85rem;
-      background: linear-gradient(to top, rgba(0, 0, 0, 0.38) 0%, rgba(0, 0, 0, 0) 45%);
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.42) 0%, rgba(0, 0, 0, 0) 45%);
     }
     .viewport-pill {
-      padding: 0.35rem 0.75rem;
-      border-radius: 6px;
-      font-size: 0.75rem;
+      padding: 0.4rem 0.85rem;
+      border-radius: 4px;
+      font-size: 0.78rem;
       font-weight: 600;
-      background: rgba(15, 23, 42, 0.88);
+      background: rgba(15, 23, 42, 0.9);
       color: #ffffff;
-      border: 1px solid rgba(255, 255, 255, 0.22);
+      border: 1px solid rgba(255, 255, 255, 0.24);
     }
 
     .concept-body {
@@ -168,14 +178,23 @@
       flex-direction: column;
       justify-content: space-between;
     }
+    .concept-number {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-secondary);
+      display: block;
+      margin-bottom: 0.35rem;
+    }
     .concept-body h2 {
       font-family: var(--font-serif);
-      font-size: 1.55rem;
-      margin: 0 0 0.65rem;
-      line-height: 1.2;
+      font-size: 1.5rem;
+      margin: 0 0 0.75rem;
+      line-height: 1.22;
     }
     .concept-body p {
-      margin: 0 0 1rem;
+      margin: 0 0 0.95rem;
       color: var(--ink-secondary);
       font-size: 0.95rem;
     }
@@ -189,7 +208,7 @@
       padding: 0.65rem 0.85rem;
       background: var(--bg);
       border: 1px solid var(--border);
-      border-radius: 8px;
+      border-radius: 6px;
       font-size: 0.8rem;
       color: var(--ink-secondary);
     }
@@ -218,7 +237,7 @@
       justify-content: center;
       min-height: 46px;
       padding: 0.65rem 1.15rem;
-      border-radius: 8px;
+      border-radius: 6px;
       font-weight: 600;
       font-size: 0.9rem;
       color: #ffffff;
@@ -240,9 +259,7 @@
     .btn-launch.theme-03 {
       background: #0e2a47;
       color: #ffffff;
-      border-radius: 2px;
-      font-family: var(--font-mono);
-      font-size: 0.8rem;
+      border-radius: 3px;
     }
     .btn-inspect {
       display: inline-flex;
@@ -250,7 +267,7 @@
       justify-content: center;
       min-height: 46px;
       padding: 0.65rem 0.95rem;
-      border-radius: 8px;
+      border-radius: 6px;
       font-weight: 600;
       font-size: 0.85rem;
       background: var(--bg);
@@ -266,7 +283,7 @@
     .inspector-stage {
       background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 12px;
+      border-radius: 10px;
       overflow: hidden;
       margin-bottom: 3.5rem;
     }
@@ -282,7 +299,7 @@
     }
     .inspector-toolbar h2 {
       font-family: var(--font-serif);
-      font-size: 1.3rem;
+      font-size: 1.25rem;
       margin: 0;
     }
     .inspector-controls {
@@ -309,7 +326,7 @@
       border-color: var(--accent-navy);
     }
     .inspector-canvas-wrap {
-      background: #1e2229;
+      background: #1a1e24;
       padding: 1.5rem;
       display: flex;
       justify-content: center;
@@ -317,23 +334,23 @@
     .inspector-iframe {
       width: 100%;
       max-width: 1380px;
-      height: 760px;
+      height: 780px;
       border: 1px solid rgba(255, 255, 255, 0.2);
       border-radius: 6px;
       background: #ffffff;
     }
 
-    /* Architectural & Provenance Comparison Table */
+    /* Architectural Comparison Table */
     .comparison-box {
       background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 12px;
+      border-radius: 10px;
       padding: 2.25rem;
       margin-bottom: 3rem;
     }
     .comparison-box h2 {
       font-family: var(--font-serif);
-      font-size: 1.75rem;
+      font-size: 1.65rem;
       margin: 0 0 1.25rem;
     }
     .comparison-table {
@@ -367,11 +384,6 @@
       font-size: 0.875rem;
       color: var(--ink-secondary);
     }
-    .studio-footer a {
-      text-decoration: underline;
-      font-weight: 600;
-      color: var(--ink);
-    }
 
     @media (max-width: 1080px) {
       .studio-header,
@@ -388,9 +400,10 @@
   <main class="studio-shell">
     <header class="studio-header">
       <div>
-        <h1>NorCal Attorney Brokers — Three Distinct Website Directions.</h1>
+        <span class="studio-eyebrow">Prepared for NorCal Attorney Brokers · Elk Grove &amp; Greater Sacramento</span>
+        <h1>Three Distinct Website Directions.</h1>
         <p>
-          Prepared for <strong>NorCal Attorney Brokers</strong> (<code>norcalattorneybrokers.com</code>), led by Founder <strong>Vanessa Amador, Esq.</strong> (<code>DRE# 1384231 · BAR # 313407 · NMLS# 2138650</code>) and Senior Litigator <strong>Robert J. Anaya, Esq.</strong> (<code>BAR # 153195</code>). Each concept uses 100% authentic client photography, verified credentials, practice areas, client reviews, and the All City Homes brokerage partnership—interpreted through three completely different color systems, font pairings, and interactive UX architectures generated with Google Stitch.
+          Each concept below presents the complete <strong>NorCal Attorney Brokers</strong> practice—led by Founder <strong>Vanessa Amador, Esq.</strong> (Attorney, Broker &amp; Loan Originator) and Senior Litigator <strong>Robert J. Anaya, Esq.</strong>, alongside the <strong>All City Homes</strong> real estate partnership—through a distinct visual identity, typographic voice, and client conversion flow.
         </p>
       </div>
 
@@ -398,7 +411,7 @@
         <img src="assets/originals/logo-transparent.png" alt="NorCal Attorney Brokers emblem" />
         <div>
           <strong>NorCal Attorney Brokers</strong>
-          <span>7803 Laguna Blvd #200, Elk Grove, CA 95758</span>
+          <span>7803 Laguna Blvd, Suite 200, Elk Grove, CA 95758</span>
           <span>(916) 396-9934 · info@ncabfirm.com</span>
         </div>
       </div>
@@ -409,25 +422,26 @@
       <article class="concept-folio">
         <div>
           <div class="viewport-window">
-            <iframe src="concepts/01-architectural-authority.html" title="Demo 01 Architectural Authority live preview" loading="lazy" tabindex="-1"></iframe>
-            <a class="viewport-overlay-link" href="concepts/01-architectural-authority.html" aria-label="Open Demo 01 Architectural Authority">
-              <span class="viewport-pill">Open Full Demo 01 →</span>
+            <iframe src="concepts/01-architectural-authority.html" title="Direction 01 Architectural Authority live preview" loading="lazy" tabindex="-1"></iframe>
+            <a class="viewport-overlay-link" href="concepts/01-architectural-authority.html" aria-label="Open Direction 01 Architectural Authority">
+              <span class="viewport-pill">Open Full Screen →</span>
             </a>
           </div>
 
           <div class="concept-body">
             <div>
-              <h2>01 · Architectural Authority (Dark Editorial Luxury)</h2>
+              <span class="concept-number">Direction 01 · Dark Editorial Luxury</span>
+              <h2>Architectural Authority</h2>
               <p>
-                <strong>The Sovereign Counsel.</strong> Deep obsidian slate, elevated charcoal folios, and burnished brass 1px ruled ledger hairlines. Positions NorCal Attorney Brokers as an unassailable courtroom litigation and private wealth real estate powerhouse.
+                <strong>The Sovereign Counsel.</strong> Deep courtroom obsidian, elevated slate folios, and burnished brass hairlines. Positions NorCal Attorney Brokers as an unassailable trial litigation and private-client real estate practice.
               </p>
               <p>
-                <strong>Signature UX:</strong> Interactive <em>Legal vs. Brokerage Mandate Switcher</em> in the hero, a 6-pillar interactive legal clause ledger that pre-fills the consultation form, and a brass-framed California Attorneys Oath chamber.
+                <strong>Layout &amp; Experience:</strong> Editorial portrait hero with floating credential ledger, sticky left-rail chapter navigation, interactive 6-pillar legal clause explorer, and an expandable client FAQ accordion.
               </p>
             </div>
 
             <div>
-              <div class="swatch-strip" aria-label="Demo 01 Color Palette and Fonts">
+              <div class="swatch-strip" aria-label="Direction 01 Color Palette and Fonts">
                 <span class="swatch-dot" style="background: #0b0f17;" title="Obsidian Slate #0B0F17"></span>
                 <span class="swatch-dot" style="background: #131a26;" title="Elevated Charcoal #131A26"></span>
                 <span class="swatch-dot" style="background: #d4b06a;" title="Burnished Brass #D4B06A"></span>
@@ -436,8 +450,8 @@
               </div>
 
               <div class="concept-actions">
-                <a class="btn-launch theme-01" href="concepts/01-architectural-authority.html">Explore Demo 01 →</a>
-                <button type="button" class="btn-inspect" data-load-demo="concepts/01-architectural-authority.html">Live Stage</button>
+                <a class="btn-launch theme-01" href="concepts/01-architectural-authority.html">Open Direction 01 →</a>
+                <button type="button" class="btn-inspect" data-load-demo="concepts/01-architectural-authority.html">Preview Below</button>
               </div>
             </div>
           </div>
@@ -448,25 +462,26 @@
       <article class="concept-folio">
         <div>
           <div class="viewport-window" style="background: #f6f2ea;">
-            <iframe src="concepts/02-norcal-civic-modern.html" title="Demo 02 NorCal Civic Modern live preview" loading="lazy" tabindex="-1"></iframe>
-            <a class="viewport-overlay-link" href="concepts/02-norcal-civic-modern.html" aria-label="Open Demo 02 NorCal Civic Modern">
-              <span class="viewport-pill">Open Full Demo 02 →</span>
+            <iframe src="concepts/02-norcal-civic-modern.html" title="Direction 02 NorCal Civic Modern live preview" loading="lazy" tabindex="-1"></iframe>
+            <a class="viewport-overlay-link" href="concepts/02-norcal-civic-modern.html" aria-label="Open Direction 02 NorCal Civic Modern">
+              <span class="viewport-pill">Open Full Screen →</span>
             </a>
           </div>
 
           <div class="concept-body">
             <div>
-              <h2>02 · NorCal Civic Modern (Warm Architectural)</h2>
+              <span class="concept-number">Direction 02 · Warm California Editorial</span>
+              <h2>NorCal Civic Modern</h2>
               <p>
-                <strong>The Capitol &amp; Homestead Standard.</strong> Sun-washed travertine parchment, sandstone cream, Capitol redwood green, and California terracotta. Warm, welcoming, and deeply rooted in Greater Sacramento real estate and homeowner protection.
+                <strong>The Capitol &amp; Homestead Standard.</strong> Sun-washed travertine parchment, sandstone linen, Capitol redwood green, and California terracotta. Warm, welcoming, and deeply rooted in Greater Sacramento homeowner advocacy.
               </p>
               <p>
-                <strong>Signature UX:</strong> Panoramic Sacramento Capitol &amp; Founder spread, an interactive 4-option <em>"How Can Our Counsel Assist You?"</em> pathway selector, a Two-Wing Law &amp; Brokerage comparison, and category-filterable client stories.
+                <strong>Layout &amp; Experience:</strong> Architectural Capitol hero with overlapping founder portrait, interactive 4-option client situation guide, Two-Wing Law &amp; Brokerage comparison, and a featured client story stage.
               </p>
             </div>
 
             <div>
-              <div class="swatch-strip" aria-label="Demo 02 Color Palette and Fonts">
+              <div class="swatch-strip" aria-label="Direction 02 Color Palette and Fonts">
                 <span class="swatch-dot" style="background: #f6f2ea;" title="Travertine Parchment #F6F2EA"></span>
                 <span class="swatch-dot" style="background: #ebe4d6;" title="Sandstone Cream #EBE4D6"></span>
                 <span class="swatch-dot" style="background: #183629;" title="Capitol Redwood Green #183629"></span>
@@ -475,8 +490,8 @@
               </div>
 
               <div class="concept-actions">
-                <a class="btn-launch theme-02" href="concepts/02-norcal-civic-modern.html">Explore Demo 02 →</a>
-                <button type="button" class="btn-inspect" data-load-demo="concepts/02-norcal-civic-modern.html">Live Stage</button>
+                <a class="btn-launch theme-02" href="concepts/02-norcal-civic-modern.html">Open Direction 02 →</a>
+                <button type="button" class="btn-inspect" data-load-demo="concepts/02-norcal-civic-modern.html">Preview Below</button>
               </div>
             </div>
           </div>
@@ -487,25 +502,26 @@
       <article class="concept-folio">
         <div>
           <div class="viewport-window" style="background: #f4f6f9;">
-            <iframe src="concepts/03-precision-dossier.html" title="Demo 03 Precision Deal Dossier live preview" loading="lazy" tabindex="-1"></iframe>
-            <a class="viewport-overlay-link" href="concepts/03-precision-dossier.html" aria-label="Open Demo 03 Precision Deal Dossier">
-              <span class="viewport-pill">Open Full Demo 03 →</span>
+            <iframe src="concepts/03-precision-dossier.html" title="Direction 03 Precision Deal & Litigation Desk live preview" loading="lazy" tabindex="-1"></iframe>
+            <a class="viewport-overlay-link" href="concepts/03-precision-dossier.html" aria-label="Open Direction 03 Precision Deal & Litigation Desk">
+              <span class="viewport-pill">Open Full Screen →</span>
             </a>
           </div>
 
           <div class="concept-body">
             <div>
-              <h2>03 · Precision Deal &amp; Litigation Desk (Swiss Grid)</h2>
+              <span class="concept-number">Direction 03 · Crisp Swiss Architectural Grid</span>
+              <h2>Precision Deal &amp; Litigation Desk</h2>
               <p>
-                <strong>The Dual-License Dossier.</strong> Crisp architectural drafting paper, pure white cells, judicial cobalt navy, signal vermilion action triggers, and exposed 1px structural hairlines inspired by Swiss legal briefs and escrow dossiers.
+                <strong>The Dual-License Brief.</strong> Crisp architectural paper, pure white structural cells, judicial cobalt navy, and signal vermilion accents. Designed for maximum clarity, speed, and institutional confidence.
               </p>
               <p>
-                <strong>Signature UX:</strong> First-viewport <em>Interactive Matter Triage Desk</em>, filterable 12-cell Practice Matrix where visitors click <code>[+ Attach to Intake]</code> to pre-populate their case file, and a 4-column licensed principals roster.
+                <strong>Layout &amp; Experience:</strong> First-viewport interactive consultation desk, split-pane Practice Specification Explorer, featured attorney profiles alongside the All City Homes brokerage team, and verified case outcomes.
               </p>
             </div>
 
             <div>
-              <div class="swatch-strip" aria-label="Demo 03 Color Palette and Fonts">
+              <div class="swatch-strip" aria-label="Direction 03 Color Palette and Fonts">
                 <span class="swatch-dot" style="background: #f4f6f9;" title="Architectural Paper #F4F6F9"></span>
                 <span class="swatch-dot" style="background: #ffffff;" title="Pure White #FFFFFF"></span>
                 <span class="swatch-dot" style="background: #0e2a47;" title="Judicial Cobalt Navy #0E2A47"></span>
@@ -514,8 +530,8 @@
               </div>
 
               <div class="concept-actions">
-                <a class="btn-launch theme-03" href="concepts/03-precision-dossier.html">[Explore Demo 03 →]</a>
-                <button type="button" class="btn-inspect" data-load-demo="concepts/03-precision-dossier.html">Live Stage</button>
+                <a class="btn-launch theme-03" href="concepts/03-precision-dossier.html">Open Direction 03 →</a>
+                <button type="button" class="btn-inspect" data-load-demo="concepts/03-precision-dossier.html">Preview Below</button>
               </div>
             </div>
           </div>
@@ -526,15 +542,15 @@
     <!-- INTERACTIVE LIVE STAGE INSPECTOR -->
     <section class="inspector-stage" id="live-inspector" aria-label="Interactive Multi-Device Demo Inspector">
       <div class="inspector-toolbar">
-        <h2>Interactive Live Demo Stage — Test Desktop, Tablet &amp; Mobile Viewports</h2>
+        <h2>Interactive Live Preview — Switch Directions &amp; Screen Sizes</h2>
         <div class="inspector-controls" role="group" aria-label="Select Demo and Viewport Width">
-          <button type="button" class="ctrl-btn demo-select-btn" aria-pressed="true" data-target-src="concepts/01-architectural-authority.html">Demo 01 · Dark Editorial</button>
-          <button type="button" class="ctrl-btn demo-select-btn" aria-pressed="false" data-target-src="concepts/02-norcal-civic-modern.html">Demo 02 · NorCal Civic</button>
-          <button type="button" class="ctrl-btn demo-select-btn" aria-pressed="false" data-target-src="concepts/03-precision-dossier.html">Demo 03 · Swiss Dossier</button>
+          <button type="button" class="ctrl-btn demo-select-btn" aria-pressed="true" data-target-src="concepts/01-architectural-authority.html">01 · Architectural Authority</button>
+          <button type="button" class="ctrl-btn demo-select-btn" aria-pressed="false" data-target-src="concepts/02-norcal-civic-modern.html">02 · NorCal Civic Modern</button>
+          <button type="button" class="ctrl-btn demo-select-btn" aria-pressed="false" data-target-src="concepts/03-precision-dossier.html">03 · Precision Deal Desk</button>
           <span style="margin: 0 0.25rem; color: var(--border);">|</span>
-          <button type="button" class="ctrl-btn width-select-btn" aria-pressed="true" data-width="1380px">Desktop (1380px)</button>
-          <button type="button" class="ctrl-btn width-select-btn" aria-pressed="false" data-width="768px">Tablet (768px)</button>
-          <button type="button" class="ctrl-btn width-select-btn" aria-pressed="false" data-width="390px">Mobile (390px)</button>
+          <button type="button" class="ctrl-btn width-select-btn" aria-pressed="true" data-width="1380px">Desktop</button>
+          <button type="button" class="ctrl-btn width-select-btn" aria-pressed="false" data-width="768px">Tablet</button>
+          <button type="button" class="ctrl-btn width-select-btn" aria-pressed="false" data-width="390px">Mobile</button>
         </div>
       </div>
       <div class="inspector-canvas-wrap">
@@ -543,55 +559,55 @@
     </section>
 
     <!-- COMPARISON TABLE -->
-    <section class="comparison-box" aria-label="Side-by-Side Architectural Comparison">
-      <h2>Side-by-Side Direction Comparison</h2>
+    <section class="comparison-box" aria-label="Side-by-Side Direction Comparison">
+      <h2>How the Three Directions Compare</h2>
       <table class="comparison-table">
         <thead>
           <tr>
-            <th>Dimension</th>
+            <th>Design Dimension</th>
             <th>01 · Architectural Authority</th>
             <th>02 · NorCal Civic Modern</th>
-            <th>03 · Precision Deal Dossier</th>
+            <th>03 · Precision Deal &amp; Litigation Desk</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th>Atmosphere &amp; Positioning</th>
-            <td>High-stakes dark luxury folio; commands immediate courtroom respect and private-client gravitas.</td>
-            <td>Sunlit Northern California civic warmth; approachable, community-rooted, and editorial.</td>
-            <td>Ultra-crisp Swiss architectural grid; clinical clarity, rapid legal triage, and institutional precision.</td>
+            <th>Brand Tone &amp; First Impression</th>
+            <td>Commanding, private-client courtroom and real estate authority with rich dark surfaces and brass accents.</td>
+            <td>Warm, sunlit Northern California editorial presence that feels welcoming to families, homeowners, and investors.</td>
+            <td>Modern, structured Swiss grid focused on immediate clarity, rapid matter selection, and transparent credentials.</td>
           </tr>
           <tr>
-            <th>Color System</th>
-            <td>Obsidian Slate (<code>#0B0F17</code>), Elevated Charcoal (<code>#131A26</code>), Burnished Brass (<code>#D4B06A</code>), Ivory Cream (<code>#F6F4EE</code>).</td>
-            <td>Travertine Parchment (<code>#F6F2EA</code>), Sandstone Cream (<code>#EBE4D6</code>), Capitol Redwood Green (<code>#183629</code>), California Terracotta (<code>#9C411F</code>).</td>
-            <td>Architectural Paper (<code>#F4F6F9</code>), Pure White (<code>#FFFFFF</code>), Judicial Cobalt Navy (<code>#0E2A47</code>), Signal Vermilion (<code>#C82D14</code>).</td>
+            <th>Color Palette</th>
+            <td>Courtroom Obsidian, Chamber Slate, Burnished Brass, and Warm Ivory.</td>
+            <td>Travertine Parchment, Sandstone Linen, Capitol Redwood Green, and California Terracotta.</td>
+            <td>Architectural Paper, Pure White, Judicial Cobalt Navy, and Signal Vermilion.</td>
           </tr>
           <tr>
-            <th>Typography Pairing</th>
-            <td><code>EB Garamond</code> (classical literary display) + <code>Hanken Grotesk</code> (precision geometric body).</td>
-            <td><code>Libre Caslon Text</code> (civic monograph serif) + <code>Figtree</code> (warm humanist sans).</td>
-            <td><code>Bricolage Grotesque</code> (sculptural display) + <code>Public Sans</code> + <code>JetBrains Mono</code> (statutory telemetry).</td>
+            <th>Typography</th>
+            <td><em>EB Garamond</em> (classical literary serif) paired with <em>Hanken Grotesk</em>.</td>
+            <td><em>Libre Caslon Text</em> (editorial serif) paired with <em>Figtree</em> (humanist sans).</td>
+            <td><em>Bricolage Grotesque</em> (architectural display) paired with <em>Public Sans</em> and <em>JetBrains Mono</em>.</td>
           </tr>
           <tr>
-            <th>Signature Interactive UX</th>
-            <td>Hero Mandate Switcher + 6-Pillar Interactive Practice Clause Ledger that pre-fills the consultation intake form.</td>
-            <td>4-Pathway Client Situation Selector + Two-Wing Law/Brokerage Spread + Filterable Client Stories.</td>
-            <td>First-Viewport Matter Triage Desk + Filterable 12-Cell Practice Matrix with one-click <code>[+ Attach to Intake]</code>.</td>
+            <th>Hero Experience</th>
+            <td>Magazine-cover skyline portrait of Vanessa Amador, Esq. with an overlapping brass credential ledger and mandate switcher.</td>
+            <td>Panoramic California State Capitol spread with an overlapping founder card and 4-option client situation selector.</td>
+            <td>Split executive thesis and first-viewport consultation triage desk with live Elk Grove office hours indicator.</td>
           </tr>
           <tr>
-            <th>Google Stitch Project</th>
-            <td>Project <code>10155096222003642632</code> · <a href=".stitch/01-architectural-authority-DESIGN.md">View Stitch DESIGN.md</a></td>
-            <td>Project <code>12911883184295281537</code> · <a href=".stitch/02-norcal-civic-modern-DESIGN.md">View Stitch DESIGN.md</a></td>
-            <td>Project <code>10021131436364808810</code> · <a href=".stitch/03-precision-dossier-DESIGN.md">View Stitch DESIGN.md</a> · <a href=".stitch/designs/03-precision-dossier-thumb.png">Stitch Render</a></td>
+            <th>Page Architecture</th>
+            <td>Sticky left-rail chapter index (<em>I–V</em>) guiding visitors through Practice Areas, Counsel, Brokerage, Verdicts, and FAQs.</td>
+            <td>Editorial magazine layout featuring a Two-Wing Law vs. Brokerage comparison, founder milestone timeline, and spotlight client stories.</td>
+            <td>Exposed architectural grid with an interactive 6-scope Practice Explorer, Principal Counsel profiles, and All City Homes showcase.</td>
           </tr>
         </tbody>
       </table>
     </section>
 
     <footer class="studio-footer">
-      <span>Saved locally for <strong>NorCal Attorney Brokers</strong> · All original client photographs and extracted source copy preserved in <a href="research/REVIEW.md">research/REVIEW.md</a> and <a href="PRODUCT.md">PRODUCT.md</a>.</span>
-      <span><a href="concepts/DIRECTIONS.md">Read Full Design Rationale →</a></span>
+      <span>Prepared for <strong>NorCal Attorney Brokers</strong> · 7803 Laguna Boulevard, Suite 200, Elk Grove, CA 95758</span>
+      <span>DRE# 1384231 · BAR # 313407 · NMLS# 2138650 · BAR # 153195</span>
     </footer>
   </main>
 

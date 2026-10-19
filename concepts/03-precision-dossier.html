@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NorCal Attorney Brokers — Precision Deal &amp; Litigation Dossier (Demo 03)</title>
+  <title>NorCal Attorney Brokers — Real Estate Law Firm &amp; Brokerage</title>
   <meta name="description" content="Dual-licensed California Real Estate Law Firm and All City Homes Brokerage in Elk Grove and Greater Sacramento. Real Estate Litigation, Quiet Title, Landlord-Tenant, Estate Planning, and Property Sales." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,7 +36,7 @@
       color: var(--ink);
       font-family: var(--font-sans);
       font-size: 16px;
-      line-height: 1.58;
+      line-height: 1.6;
       -webkit-font-smoothing: antialiased;
     }
 
@@ -66,7 +66,7 @@
       outline-offset: 2px;
     }
 
-    /* Concept Studio Bar */
+    /* Concept Switcher Bar */
     .studio-bar {
       background: var(--navy-deep);
       color: var(--white);
@@ -82,7 +82,7 @@
       justify-content: space-between;
       flex-wrap: wrap;
       gap: 0.75rem;
-      min-height: 46px;
+      min-height: 44px;
     }
     .studio-links {
       display: flex;
@@ -93,10 +93,9 @@
     .studio-link {
       display: inline-flex;
       align-items: center;
-      min-height: 36px;
-      padding: 0.25rem 0.75rem;
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
+      min-height: 34px;
+      padding: 0.2rem 0.75rem;
+      font-size: 0.78rem;
       color: #dbe4f0;
       border: 1px solid transparent;
     }
@@ -110,8 +109,8 @@
       font-weight: 600;
     }
 
-    /* Statutory Telemetry Bar */
-    .telemetry-bar {
+    /* Licensure Ledger Top Bar */
+    .ledger-topbar {
       background: var(--navy);
       color: #e2e8f0;
       border-bottom: 1px solid var(--rule-dark);
@@ -119,7 +118,7 @@
       font-family: var(--font-mono);
       font-size: 0.75rem;
     }
-    .telemetry-inner {
+    .ledger-topbar-inner {
       max-width: 1400px;
       margin: 0 auto;
       display: flex;
@@ -129,17 +128,18 @@
       gap: 1rem;
       min-height: 40px;
     }
-    .telemetry-group {
+    .ledger-group {
       display: flex;
       align-items: center;
       gap: 1.25rem;
       flex-wrap: wrap;
     }
-    .status-pip {
+    .status-dot {
       display: inline-block;
       width: 8px;
       height: 8px;
-      background: var(--vermilion);
+      border-radius: 50%;
+      background: #22c55e;
       margin-right: 6px;
     }
 
@@ -177,9 +177,8 @@
     .header-brand-title {
       font-family: var(--font-display);
       font-weight: 800;
-      font-size: 1.05rem;
+      font-size: 1.08rem;
       letter-spacing: -0.02em;
-      text-transform: uppercase;
       color: var(--navy);
       line-height: 1.1;
     }
@@ -200,10 +199,8 @@
       align-items: center;
       padding: 0 1.15rem;
       border-right: 1px solid var(--rule);
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      font-weight: 500;
-      text-transform: uppercase;
+      font-size: 0.85rem;
+      font-weight: 600;
       color: var(--slate);
       transition: background-color 0.15s ease, color 0.15s ease;
     }
@@ -229,6 +226,22 @@
     .header-phone-cell:hover {
       background: var(--paper);
     }
+
+    .swiss-mobile-toggle {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 0 1rem;
+      background: var(--paper);
+      border: 0;
+      border-left: 1px solid var(--rule);
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--navy);
+      cursor: pointer;
+    }
+
     .btn-vermilion {
       display: inline-flex;
       align-items: center;
@@ -238,11 +251,10 @@
       background: var(--vermilion);
       color: var(--white);
       border: 0;
-      font-family: var(--font-mono);
-      font-size: 0.78rem;
+      font-family: var(--font-sans);
+      font-size: 0.875rem;
       font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.02em;
       cursor: pointer;
       transition: background-color 0.15s ease;
     }
@@ -258,11 +270,9 @@
       background: var(--navy);
       color: var(--white);
       border: 1px solid var(--navy);
-      font-family: var(--font-mono);
-      font-size: 0.78rem;
+      font-family: var(--font-sans);
+      font-size: 0.875rem;
       font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
       cursor: pointer;
       transition: background-color 0.15s ease;
     }
@@ -274,15 +284,14 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 44px;
-      padding: 0 1rem;
+      min-height: 46px;
+      padding: 0 1.15rem;
       background: var(--white);
       color: var(--navy);
       border: 1px solid var(--rule);
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
+      font-family: var(--font-sans);
+      font-size: 0.875rem;
       font-weight: 600;
-      text-transform: uppercase;
       cursor: pointer;
     }
     .btn-grid:hover {
@@ -314,6 +323,7 @@
     .hero-dossier-grid {
       display: grid;
       grid-template-columns: 7fr 5fr;
+      border-bottom: 1px solid var(--rule);
     }
     .hero-thesis-cell {
       padding: 3.5rem 3rem;
@@ -322,18 +332,27 @@
       flex-direction: column;
       justify-content: space-between;
     }
-    .hero-thesis-cell h1 {
-      font-size: clamp(2.35rem, 4.1vw, 3.75rem);
-      line-height: 1.04;
-      letter-spacing: -0.03em;
+    .section-index-tag {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--vermilion);
+      letter-spacing: 0.06em;
       text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+    .hero-thesis-cell h1 {
+      font-size: clamp(2.35rem, 4vw, 3.65rem);
+      line-height: 1.06;
+      letter-spacing: -0.025em;
       margin-bottom: 1.35rem;
     }
     .hero-thesis-cell p {
       font-size: 1.0625rem;
       color: var(--slate);
       max-width: 62ch;
-      margin: 0 0 1.5rem;
+      margin: 0 0 1.75rem;
     }
     .hero-action-strip {
       display: flex;
@@ -344,13 +363,13 @@
 
     .capitol-strip-card {
       display: grid;
-      grid-template-columns: 200px 1fr;
+      grid-template-columns: 210px 1fr;
       border: 1px solid var(--rule);
       background: var(--paper);
     }
     .capitol-strip-card img {
       width: 100%;
-      height: 145px;
+      height: 150px;
       object-fit: cover;
       border-right: 1px solid var(--rule);
     }
@@ -372,19 +391,18 @@
 
     /* Right Hero Cell: Matter Triage Desk */
     .triage-desk-cell {
-      padding: 2.5rem;
+      padding: 2.75rem 2.5rem;
       background: var(--paper);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
     .triage-desk-cell h2 {
-      font-size: 1.4rem;
-      text-transform: uppercase;
+      font-size: 1.45rem;
       letter-spacing: -0.01em;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.35rem;
     }
-    .triage-desk-cell > p {
+    .triage-desk-cell > div > p {
       margin: 0 0 1.15rem;
       font-size: 0.875rem;
       color: var(--slate);
@@ -392,22 +410,20 @@
     .triage-selector-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 0;
       border: 1px solid var(--rule);
-      margin-bottom: 1.25rem;
+      margin-bottom: 1.15rem;
       background: var(--white);
     }
     .triage-mode-btn {
       min-height: 46px;
-      padding: 0.65rem 0.75rem;
+      padding: 0.65rem 0.85rem;
       background: var(--white);
       border: 0;
       border-right: 1px solid var(--rule);
       border-bottom: 1px solid var(--rule);
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
+      font-family: var(--font-sans);
+      font-size: 0.8125rem;
       font-weight: 600;
-      text-transform: uppercase;
       color: var(--slate);
       text-align: left;
       cursor: pointer;
@@ -429,19 +445,17 @@
 
     .triage-protocol-box {
       background: var(--white);
-      border: 1px solid var(--rule);
-      padding: 1rem 1.15rem;
+      border: 1px solid var(--navy);
+      padding: 0.9rem 1.1rem;
       margin-bottom: 1.25rem;
       font-size: 0.85rem;
       color: var(--slate);
     }
     .triage-protocol-box strong {
       display: block;
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
+      font-size: 0.8125rem;
       color: var(--navy);
-      text-transform: uppercase;
-      margin-bottom: 0.25rem;
+      margin-bottom: 0.2rem;
     }
 
     .dossier-field-row {
@@ -456,10 +470,8 @@
       margin-bottom: 0.75rem;
     }
     .dossier-field label {
-      font-family: var(--font-mono);
-      font-size: 0.7rem;
+      font-size: 0.75rem;
       font-weight: 600;
-      text-transform: uppercase;
       color: var(--slate);
     }
     .dossier-input {
@@ -478,18 +490,18 @@
     .dossier-status {
       display: none;
       margin-top: 0.75rem;
-      padding: 0.75rem;
+      padding: 0.85rem;
       background: var(--white);
       border: 1px solid var(--navy);
-      font-family: var(--font-mono);
-      font-size: 0.78rem;
+      font-size: 0.85rem;
+      font-weight: 500;
       color: var(--navy);
     }
     .dossier-status.is-visible {
       display: block;
     }
     .statutory-footnote {
-      font-size: 0.72rem;
+      font-size: 0.75rem;
       color: var(--slate);
       margin-top: 0.75rem;
       line-height: 1.45;
@@ -507,108 +519,227 @@
       background: var(--white);
     }
     .section-header-cell h2 {
-      font-size: clamp(1.75rem, 2.8vw, 2.5rem);
-      text-transform: uppercase;
+      font-size: clamp(1.75rem, 2.7vw, 2.4rem);
       letter-spacing: -0.02em;
-      line-height: 1.1;
-      margin-bottom: 0.4rem;
+      line-height: 1.12;
+      margin-bottom: 0.35rem;
     }
     .section-header-cell p {
       margin: 0;
       color: var(--slate);
-      max-width: 65ch;
+      max-width: 64ch;
       font-size: 0.96875rem;
     }
 
-    /* 17-POINT REAL ESTATE PRACTICE MATRIX */
-    .matrix-filter-row {
-      display: flex;
-      flex-wrap: wrap;
+    /* SPLIT SPECIFICATION EXPLORER (Replaces 12-Box Wall of Text) */
+    .spec-explorer-grid {
+      display: grid;
+      grid-template-columns: 5fr 7fr;
       border-bottom: 1px solid var(--rule);
-      background: var(--paper);
     }
-    .matrix-filter-btn {
-      min-height: 46px;
-      padding: 0 1.35rem;
+    .spec-selector-col {
+      border-right: 1px solid var(--rule);
+      background: var(--paper);
+      display: flex;
+      flex-direction: column;
+    }
+    .spec-row-btn {
+      width: 100%;
+      padding: 1.35rem 1.75rem;
       background: transparent;
       border: 0;
-      border-right: 1px solid var(--rule);
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      color: var(--slate);
+      border-bottom: 1px solid var(--rule);
+      text-align: left;
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      align-items: baseline;
       cursor: pointer;
+      transition: background-color 0.15s ease;
     }
-    .matrix-filter-btn:hover {
+    .spec-row-btn:last-child {
+      border-bottom: 0;
+    }
+    .spec-row-btn:hover {
       background: var(--white);
-      color: var(--navy);
     }
-    .matrix-filter-btn[aria-pressed="true"] {
-      background: var(--navy);
-      color: var(--white);
+    .spec-row-btn[aria-selected="true"] {
+      background: var(--white);
+    }
+    .spec-num {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--vermilion);
+    }
+    .spec-row-title {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--navy);
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+    .spec-row-sub {
+      font-size: 0.8125rem;
+      color: var(--slate);
+      display: block;
     }
 
-    .practice-matrix-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-    }
-    .matrix-cell {
-      padding: 2rem;
-      border-right: 1px solid var(--rule);
-      border-bottom: 1px solid var(--rule);
+    .spec-sheet-col {
+      padding: 3rem;
       background: var(--white);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
-    .matrix-cell:nth-child(3n) {
-      border-right: 0;
-    }
-    .matrix-cell.is-hidden {
+    .spec-sheet-pane {
       display: none;
     }
-    .matrix-cell h3 {
-      font-size: 1.25rem;
-      margin-bottom: 0.6rem;
+    .spec-sheet-pane.is-active {
+      display: block;
     }
-    .matrix-cell p {
-      margin: 0 0 1.35rem;
-      font-size: 0.9rem;
+    .spec-sheet-pane h3 {
+      font-size: 1.85rem;
+      margin-bottom: 0.85rem;
+    }
+    .spec-sheet-pane > p {
+      font-size: 1.02rem;
       color: var(--slate);
-      line-height: 1.58;
+      line-height: 1.68;
+      max-width: 64ch;
+      margin: 0 0 1.75rem;
     }
-    .matrix-cell-footer {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 0.75rem;
-      padding-top: 0.9rem;
-      border-top: 1px solid var(--rule);
-    }
-    .code-tag {
-      font-family: var(--font-mono);
-      font-size: 0.7rem;
-      font-weight: 600;
-      color: var(--navy);
-      background: var(--paper);
-      padding: 0.25rem 0.55rem;
+    .spec-deliverables-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       border: 1px solid var(--rule);
-      text-transform: uppercase;
+      margin-bottom: 2rem;
     }
-    .attach-link {
-      background: transparent;
-      border: 0;
-      padding: 0.35rem 0;
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
+    .deliverable-cell {
+      padding: 1.25rem;
+      border-right: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+    }
+    .deliverable-cell:nth-child(2n) {
+      border-right: 0;
+    }
+    .deliverable-cell:nth-last-child(-n+2) {
+      border-bottom: 0;
+    }
+    .deliverable-cell strong {
+      display: block;
+      font-size: 0.9rem;
+      color: var(--navy);
+      margin-bottom: 0.25rem;
+    }
+    .deliverable-cell span {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--slate);
+      line-height: 1.5;
+    }
+
+    /* PRINCIPAL COUNSEL 2-COLUMN ARCHITECTURAL SPREAD */
+    .principals-two-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-bottom: 1px solid var(--rule);
+    }
+    .principal-dossier-card {
+      border-right: 1px solid var(--rule);
+      background: var(--white);
+      display: flex;
+      flex-direction: column;
+    }
+    .principal-dossier-card:last-child {
+      border-right: 0;
+    }
+    .principal-top-split {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+    }
+    .principal-top-split img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      object-position: center top;
+      border-right: 1px solid var(--rule);
+    }
+    .principal-meta-box {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .principal-meta-box h3 {
+      font-size: 1.55rem;
+      margin-bottom: 0.25rem;
+    }
+    .principal-role-label {
+      font-size: 0.85rem;
       font-weight: 600;
       color: var(--vermilion);
-      text-transform: uppercase;
-      cursor: pointer;
+      margin: 0 0 0.85rem;
     }
-    .attach-link:hover {
-      text-decoration: underline;
+    .license-Readout {
+      background: var(--white);
+      border: 1px solid var(--rule);
+      padding: 0.6rem 0.85rem;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--navy);
+      line-height: 1.5;
+    }
+    .principal-bio-body {
+      padding: 2rem;
+      color: var(--slate);
+      font-size: 0.9375rem;
+      line-height: 1.65;
+      flex: 1;
+    }
+    .principal-bio-body p {
+      margin: 0 0 1rem;
+    }
+    .principal-bio-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .oath-and-bio-bar {
+      display: grid;
+      grid-template-columns: 6fr 6fr;
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+    }
+    .bio-deep-cell {
+      padding: 2rem 3rem;
+      border-right: 1px solid var(--rule);
+    }
+    .bio-deep-cell h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .bio-deep-cell p {
+      font-size: 0.9rem;
+      color: var(--slate);
+      margin: 0;
+    }
+    .oath-cell {
+      padding: 2rem 2.5rem;
+      background: var(--white);
+    }
+    .oath-cell h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .oath-cell blockquote {
+      margin: 0;
+      font-style: italic;
+      font-size: 0.9375rem;
+      color: var(--ink);
+      line-height: 1.6;
     }
 
     /* DARK JUDICIAL COBALT SECTION: BROKERAGE SPECIFICATIONS */
@@ -625,8 +756,7 @@
     }
     .navy-section-banner h2 {
       color: var(--white);
-      font-size: clamp(1.65rem, 2.6vw, 2.35rem);
-      text-transform: uppercase;
+      font-size: clamp(1.65rem, 2.5vw, 2.25rem);
       margin-bottom: 0.35rem;
     }
     .navy-section-banner p {
@@ -646,11 +776,11 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       background: var(--white);
+      border-bottom: 1px solid var(--rule);
     }
     .brokerage-spec-col {
       padding: 2.25rem;
       border-right: 1px solid var(--rule);
-      border-bottom: 1px solid var(--rule);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -660,7 +790,6 @@
     }
     .brokerage-spec-col h3 {
       font-size: 1.35rem;
-      text-transform: uppercase;
       margin-bottom: 0.5rem;
     }
     .brokerage-spec-col > div > p {
@@ -687,161 +816,89 @@
       margin-bottom: 0.15rem;
     }
 
-    /* 4-COLUMN LICENSED PRINCIPALS & PARTNERS ROSTER */
-    .roster-four-grid {
+    .brokerage-partners-bar {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-    }
-    .roster-cell {
-      border-right: 1px solid var(--rule);
+      grid-template-columns: repeat(3, 1fr);
+      background: var(--paper);
       border-bottom: 1px solid var(--rule);
-      background: var(--white);
-      display: flex;
-      flex-direction: column;
     }
-    .roster-cell:last-child {
+    .brokerage-partner-cell {
+      padding: 1.35rem 1.75rem;
+      border-right: 1px solid var(--rule);
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .brokerage-partner-cell:last-child {
       border-right: 0;
     }
-    .roster-photo-box {
-      position: relative;
-      height: 290px;
-      background: var(--navy-deep);
-      border-bottom: 1px solid var(--rule);
-      overflow: hidden;
-    }
-    .roster-photo-box img {
-      width: 100%;
-      height: 100%;
+    .brokerage-partner-cell img {
+      width: 58px;
+      height: 58px;
       object-fit: cover;
-      object-position: center top;
+      border: 1px solid var(--rule);
+      flex-shrink: 0;
     }
-    .roster-monogram-stage {
-      width: 100%;
-      height: 100%;
+    .partner-emblem-box {
+      width: 58px;
+      height: 58px;
+      background: var(--white);
+      border: 1px solid var(--rule);
+      padding: 5px;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      background: var(--navy);
-      color: var(--white);
-      padding: 1.5rem;
-      text-align: center;
+      flex-shrink: 0;
     }
-    .roster-monogram-stage strong {
-      font-family: var(--font-display);
-      font-size: 2.75rem;
-      letter-spacing: -0.03em;
+    .partner-emblem-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border: 0;
+    }
+    .brokerage-partner-cell h4 {
+      font-size: 1.05rem;
+      margin: 0 0 0.15rem;
+    }
+    .brokerage-partner-cell span {
       display: block;
-      margin-bottom: 0.5rem;
-    }
-    .roster-monogram-stage span {
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      color: #dbe4f0;
-    }
-    .roster-body {
-      padding: 1.5rem;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .roster-body h3 {
-      font-size: 1.25rem;
-      margin-bottom: 0.25rem;
-    }
-    .roster-title {
       font-family: var(--font-mono);
       font-size: 0.72rem;
-      color: var(--vermilion);
-      font-weight: 600;
-      text-transform: uppercase;
-      margin: 0 0 0.75rem;
-    }
-    .license-box {
-      background: var(--paper);
-      border: 1px solid var(--rule);
-      padding: 0.55rem 0.75rem;
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      color: var(--navy);
-      margin-bottom: 0.85rem;
-    }
-    .roster-body p {
-      font-size: 0.875rem;
       color: var(--slate);
-      margin: 0 0 1rem;
-      line-height: 1.55;
-    }
-
-    /* Full Counsel Bio & Oath Accordion Drawer */
-    .oath-and-bio-bar {
-      display: grid;
-      grid-template-columns: 7fr 5fr;
-      border-bottom: 1px solid var(--rule);
-      background: var(--paper);
-    }
-    .bio-deep-cell {
-      padding: 2rem 3rem;
-      border-right: 1px solid var(--rule);
-    }
-    .bio-deep-cell h3 {
-      font-size: 1.25rem;
-      margin-bottom: 0.6rem;
-    }
-    .bio-deep-cell p {
-      font-size: 0.9rem;
-      color: var(--slate);
-      margin: 0 0 0.85rem;
-    }
-    .oath-cell {
-      padding: 2rem 2.5rem;
-      background: var(--white);
-    }
-    .oath-cell h3 {
-      font-size: 1.25rem;
-      margin-bottom: 0.6rem;
-    }
-    .oath-cell blockquote {
-      margin: 0;
-      font-style: italic;
-      font-size: 0.9375rem;
-      color: var(--ink);
-      line-height: 1.6;
     }
 
     /* VERIFIED CASE OUTCOMES (CLIENT REVIEWS) */
     .verdicts-three-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+      border-bottom: 1px solid var(--rule);
     }
     .verdict-dossier-cell {
-      padding: 2rem;
+      padding: 2.25rem;
       border-right: 1px solid var(--rule);
-      border-bottom: 1px solid var(--rule);
       background: var(--white);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
-    .verdict-dossier-cell:nth-child(3n) {
+    .verdict-dossier-cell:last-child {
       border-right: 0;
     }
     .verdict-dossier-cell h3 {
-      font-size: 1.15rem;
-      margin-bottom: 0.65rem;
+      font-size: 1.2rem;
+      margin-bottom: 0.75rem;
     }
     .verdict-dossier-cell p {
-      font-size: 0.9rem;
+      font-size: 0.925rem;
       color: var(--slate);
-      line-height: 1.6;
+      line-height: 1.65;
       margin: 0 0 1.25rem;
     }
     .verdict-stamp {
       font-family: var(--font-mono);
-      font-size: 0.72rem;
+      font-size: 0.75rem;
       color: var(--navy);
-      padding-top: 0.75rem;
+      padding-top: 0.85rem;
       border-top: 1px solid var(--rule);
       font-weight: 600;
     }
@@ -858,7 +915,6 @@
     }
     .office-specs-cell h2 {
       font-size: 1.85rem;
-      text-transform: uppercase;
       margin-bottom: 0.5rem;
     }
     .office-specs-cell > p {
@@ -884,8 +940,8 @@
     }
     .office-photo-grid figcaption {
       padding: 0.6rem 0.75rem;
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
+      font-size: 0.78rem;
+      font-weight: 600;
       color: var(--navy);
     }
     .telemetry-table {
@@ -902,9 +958,8 @@
     }
     .telemetry-table th {
       background: var(--paper);
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      text-transform: uppercase;
+      font-size: 0.8rem;
+      font-weight: 700;
       color: var(--navy);
       width: 38%;
     }
@@ -920,7 +975,6 @@
     }
     .full-intake-cell h2 {
       font-size: 1.85rem;
-      text-transform: uppercase;
       margin-bottom: 0.5rem;
     }
     .full-intake-cell > p {
@@ -934,7 +988,7 @@
       background: var(--navy-deep);
       color: #dbe4f0;
       padding: 3.5rem 2rem;
-      font-size: 0.85rem;
+      font-size: 0.875rem;
       border-top: 1px solid var(--rule-dark);
     }
     .dossier-footer-inner {
@@ -947,7 +1001,6 @@
     .dossier-footer h3 {
       color: var(--white);
       font-size: 1.15rem;
-      text-transform: uppercase;
       margin-bottom: 0.65rem;
     }
     .dossier-footer p {
@@ -971,46 +1024,61 @@
 
     @media (max-width: 1120px) {
       .hero-dossier-grid,
-      .practice-matrix-grid,
+      .spec-explorer-grid,
+      .principals-two-grid,
       .brokerage-spec-grid,
-      .roster-four-grid,
+      .brokerage-partners-bar,
       .oath-and-bio-bar,
       .verdicts-three-grid,
       .office-dispatch-grid,
       .dossier-footer-inner {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
       }
-      .hero-thesis-cell {
-        grid-column: 1 / -1;
+      .hero-thesis-cell,
+      .spec-selector-col,
+      .principal-dossier-card,
+      .brokerage-spec-col,
+      .brokerage-partner-cell,
+      .verdict-dossier-cell,
+      .office-specs-cell,
+      .bio-deep-cell {
         border-right: 0;
         border-bottom: 1px solid var(--rule);
       }
-      .triage-desk-cell {
-        grid-column: 1 / -1;
-      }
     }
 
-    @media (max-width: 720px) {
-      .swiss-frame, .dossier-header, .telemetry-bar, .studio-bar {
+    @media (max-width: 780px) {
+      .swiss-frame, .dossier-header, .ledger-topbar, .studio-bar {
         padding-left: 1rem;
         padding-right: 1rem;
       }
-      .header-nav-cells,
+      .swiss-mobile-toggle {
+        display: inline-flex;
+      }
+      .header-nav-cells {
+        display: none;
+        grid-column: 1 / -1;
+        flex-direction: column;
+        border-top: 1px solid var(--rule);
+      }
+      .header-nav-cells.is-open {
+        display: flex;
+      }
+      .header-nav-link {
+        padding: 0.85rem 1.25rem;
+        border-right: 0;
+        border-bottom: 1px solid var(--rule);
+      }
       .header-phone-cell {
         display: none;
       }
       .dossier-header-inner {
         grid-template-columns: 1fr auto;
       }
-      .practice-matrix-grid,
-      .brokerage-spec-grid,
-      .roster-four-grid,
-      .oath-and-bio-bar,
-      .verdicts-three-grid,
-      .office-dispatch-grid,
-      .dossier-footer-inner,
       .triage-selector-grid,
       .dossier-field-row,
+      .spec-deliverables-grid,
+      .principal-top-split,
       .office-photo-grid,
       .capitol-strip-card {
         grid-template-columns: 1fr;
@@ -1018,6 +1086,7 @@
       .hero-thesis-cell,
       .triage-desk-cell,
       .section-header-cell,
+      .spec-sheet-col,
       .office-specs-cell,
       .full-intake-cell,
       .bio-deep-cell,
@@ -1031,32 +1100,31 @@
   <!--
   THESIS: Crisp Swiss legal and brokerage dossier grid that turns complex California property law and real estate sales into an interactive matter-triage desk.
   OWN-WORLD: Architectural Paper (#F4F6F9), Pure White (#FFFFFF) cells, Judicial Cobalt Navy (#0E2A47), Signal Vermilion (#C82D14) action triggers, exposed 1px solid #CFD6E0 hairlines, and Bricolage Grotesque + Public Sans + JetBrains Mono typography.
-  STORY: Visitors immediately inspect verified State Bar, CalDRE, and NMLS licenses, select their exact legal or real estate matter in the triage desk, verify the 17-point practice matrix, and open a consultation inquiry.
+  STORY: Visitors immediately inspect verified State Bar, CalDRE, and NMLS licenses, select their exact legal or real estate matter in the triage desk, explore the 6-scope practice specification sheet, and open a consultation inquiry.
   FIRST VIEWPORT: Exposed 7:5 Swiss dossier split pairing the Dual-Licensed Litigation & Brokerage thesis with a live Interactive Matter Triage & Case Intake Desk.
   FORM: Candidate 3 (Crisp Swiss Deal & Litigation Desk); seed key 602466ad.
   FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
   -->
 
-  <aside class="studio-bar" aria-label="Concept Studio Switcher">
+  <aside class="studio-bar" aria-label="Design Direction Switcher">
     <div class="studio-bar-inner">
-      <span><strong>NORCAL ATTORNEY BROKERS</strong> // UI/UX CONCEPT STUDIO</span>
-      <nav class="studio-links" aria-label="Demo Concepts">
-        <a class="studio-link" href="../index.html">ALL 3 CONCEPTS</a>
-        <a class="studio-link" href="01-architectural-authority.html">01 · ARCHITECTURAL AUTHORITY</a>
-        <a class="studio-link" href="02-norcal-civic-modern.html">02 · NORCAL CIVIC MODERN</a>
-        <a class="studio-link is-active" href="03-precision-dossier.html">03 · PRECISION DEAL DOSSIER</a>
+      <span><strong>NorCal Attorney Brokers</strong> · Design Presentation</span>
+      <nav class="studio-links" aria-label="Website Directions">
+        <a class="studio-link" href="../index.html">All 3 Directions</a>
+        <a class="studio-link" href="01-architectural-authority.html">01 · Architectural Authority</a>
+        <a class="studio-link" href="02-norcal-civic-modern.html">02 · NorCal Civic Modern</a>
+        <a class="studio-link is-active" href="03-precision-dossier.html">03 · Precision Deal Desk</a>
       </nav>
     </div>
   </aside>
 
-  <div class="telemetry-bar">
-    <div class="telemetry-inner">
-      <div class="telemetry-group">
-        <span><span class="status-pip" aria-hidden="true"></span>CA BAR #313407 // CA BAR #153195 // DRE #1384231 // NMLS #2138650</span>
+  <div class="ledger-topbar">
+    <div class="ledger-topbar-inner">
+      <div class="ledger-group">
+        <span><span class="status-dot" aria-hidden="true"></span>State Bar #313407 · State Bar #153195 · CalDRE #1384231 · NMLS #2138650</span>
       </div>
-      <div class="telemetry-group">
-        <span>7803 LAGUNA BLVD, SUITE 200, ELK GROVE, CA 95758</span>
-        <span>EST. 2002 · GREATER SACRAMENTO</span>
+      <div class="ledger-group">
+        <span id="elk-grove-live-hours">7803 Laguna Blvd, Suite 200, Elk Grove · Mon–Thu 9:00 AM–4:00 PM</span>
       </div>
     </div>
   </div>
@@ -1071,17 +1139,18 @@
         </span>
       </a>
 
-      <nav class="header-nav-cells" aria-label="Primary Navigation">
-        <a class="header-nav-link" href="#practice-matrix">Practice Matrix</a>
-        <a class="header-nav-link" href="#brokerage-specs">All City Homes Sales</a>
-        <a class="header-nav-link" href="#principals-roster">Licensed Roster</a>
+      <nav class="header-nav-cells" id="swiss-nav-menu" aria-label="Primary Navigation">
+        <a class="header-nav-link" href="#practice-matrix">Practice Areas</a>
+        <a class="header-nav-link" href="#principals-roster">Attorneys</a>
+        <a class="header-nav-link" href="#brokerage-specs">All City Homes</a>
         <a class="header-nav-link" href="#case-verdicts">Client Reviews</a>
-        <a class="header-nav-link" href="#elk-grove-dossier">Suite 200 Office</a>
+        <a class="header-nav-link" href="#elk-grove-dossier">Our Office</a>
       </nav>
 
       <div class="header-cta-cells">
+        <button type="button" class="swiss-mobile-toggle" aria-expanded="false" aria-controls="swiss-nav-menu">Menu</button>
         <a class="header-phone-cell" href="tel:9163969934">(916) 396-9934</a>
-        <a class="btn-vermilion" href="#elk-grove-dossier">[Open Consultation]</a>
+        <a class="btn-vermilion" href="#elk-grove-dossier">Request Consultation</a>
       </div>
     </div>
   </header>
@@ -1089,17 +1158,18 @@
   <main id="top" class="swiss-frame">
     <div class="grid-sheet">
       <!-- HERO DOSSIER SPLIT -->
-      <section class="hero-dossier-grid" aria-label="Executive Dossier and Matter Triage">
+      <section class="hero-dossier-grid" aria-label="Executive Overview and Matter Triage">
         <div class="hero-thesis-cell">
           <div>
-            <h1>Dual-Licensed Real Estate Litigation &amp; Brokerage Execution.</h1>
+            <span class="section-index-tag">Established 2002 · Greater Sacramento &amp; Northern California</span>
+            <h1>Dual-Licensed Real Estate Law Firm &amp; Brokerage Representation.</h1>
             <p>
-              <strong>Trust, competence, and care.</strong> At NorCal Attorney Brokers Law Firm, our Real Estate Attorneys and All City Homes Brokerage partners eliminate the costly gap between real estate transactions and courtroom advocacy. Whether you are protecting property through Estate Planning, navigating a Commercial, Residential, or Investment sale, or litigating a Quiet Title, Partition, Contract, or Landlord-Tenant dispute, our team engineers a customized legal strategy built around your objectives.
+              <strong>Trust, competence, and care.</strong> At NorCal Attorney Brokers Law Firm, our Real Estate Attorneys and All City Homes Brokerage partners bridge the gap between real estate transactions and courtroom advocacy. Whether you are protecting property through Estate Planning, navigating a Commercial, Residential, or Investment sale, or litigating a Quiet Title, Partition, Contract, or Landlord-Tenant dispute, our team builds a customized legal strategy around your goals.
             </p>
             <div class="hero-action-strip">
-              <a class="btn-vermilion" href="#elk-grove-dossier">[Schedule Case Evaluation]</a>
+              <a class="btn-vermilion" href="#elk-grove-dossier">Schedule a Case Evaluation</a>
               <a class="btn-navy" href="tel:9163969934">Call Direct: (916) 396-9934</a>
-              <a class="btn-grid" href="#practice-matrix">Inspect 13+ Practice Scopes ↓</a>
+              <a class="btn-grid" href="#practice-matrix">Explore Practice Areas ↓</a>
             </div>
           </div>
 
@@ -1115,20 +1185,20 @@
         </div>
 
         <!-- RIGHT CELL: INTERACTIVE MATTER TRIAGE DESK -->
-        <aside class="triage-desk-cell" aria-label="Interactive Matter Triage Desk">
+        <aside class="triage-desk-cell" aria-label="Interactive Consultation Intake Desk">
           <div>
-            <h2>Matter Triage &amp; Intake Desk</h2>
-            <p>Select your primary legal or real estate objective to configure your consultation brief (72-hour response SLA):</p>
+            <h2>Direct Consultation Desk</h2>
+            <p>Select your primary legal or real estate matter below to send an inquiry to our Elk Grove office:</p>
 
-            <div class="triage-selector-grid" role="tablist" aria-label="Matter Category Triage">
-              <button type="button" class="triage-mode-btn" role="tab" aria-selected="true" data-triage="Real Property Dispute &amp; Litigation" data-protocol="Quiet Title, Partition Actions, Breach of Contract/Fiduciary Duty, Builder EMD Recovery, and Boundary/Easement Litigation.">[01] Property Dispute</button>
-              <button type="button" class="triage-mode-btn" role="tab" aria-selected="false" data-triage="Landlord-Tenant &amp; Unlawful Detainer" data-protocol="Unlawful Detainer complaints, Ex-Parte motions to vacate improper filings, 3-day notices, and enforceable lease drafting.">[02] Landlord / Tenant</button>
-              <button type="button" class="triage-mode-btn" role="tab" aria-selected="false" data-triage="Title Transfers, Deeds &amp; Living Trusts" data-protocol="Revocable Living Trusts, Estate Planning, Grant/Trust Transfer Deeds, and curing preliminary title report exceptions.">[03] Title &amp; Estate Trusts</button>
-              <button type="button" class="triage-mode-btn" role="tab" aria-selected="false" data-triage="All City Homes Brokerage Sale" data-protocol="Attorney-backed Commercial, Residential, and Investment property sales, disclosure compliance, and NMLS #2138650 lending.">[04] Brokerage Sale</button>
+            <div class="triage-selector-grid" role="tablist" aria-label="Matter Category Selection">
+              <button type="button" class="triage-mode-btn" role="tab" aria-selected="true" data-triage="Real Property Dispute &amp; Litigation" data-protocol="Quiet Title, Partition Actions, Breach of Contract/Fiduciary Duty, Builder EMD Recovery, and Boundary/Easement Litigation.">01 · Property Dispute</button>
+              <button type="button" class="triage-mode-btn" role="tab" aria-selected="false" data-triage="Landlord-Tenant &amp; Unlawful Detainer" data-protocol="Unlawful Detainer complaints, Ex-Parte motions to vacate improper filings, 3-day notices, and enforceable lease drafting.">02 · Landlord / Tenant</button>
+              <button type="button" class="triage-mode-btn" role="tab" aria-selected="false" data-triage="Title Transfers, Deeds &amp; Living Trusts" data-protocol="Revocable Living Trusts, Estate Planning, Grant/Trust Transfer Deeds, and curing preliminary title report exceptions.">03 · Title &amp; Estate Trusts</button>
+              <button type="button" class="triage-mode-btn" role="tab" aria-selected="false" data-triage="All City Homes Brokerage Sale" data-protocol="Attorney-backed Commercial, Residential, and Investment property sales, disclosure compliance, and NMLS #2138650 lending.">04 · Brokerage Sale</button>
             </div>
 
             <div class="triage-protocol-box" id="triage-protocol-readout">
-              <strong>Active Scope: Real Property Dispute &amp; Litigation</strong>
+              <strong>Selected Scope: Real Property Dispute &amp; Litigation</strong>
               <span>Quiet Title, Partition Actions, Breach of Contract/Fiduciary Duty, Builder EMD Recovery, and Boundary/Easement Litigation.</span>
             </div>
 
@@ -1136,11 +1206,11 @@
               <input type="hidden" name="matter" id="triage-matter-input" value="Real Property Dispute &amp; Litigation" />
               <div class="dossier-field-row">
                 <div class="dossier-field">
-                  <label for="triage-name">Client Name *</label>
-                  <input id="triage-name" name="name" type="text" class="dossier-input" placeholder="Full legal name" required />
+                  <label for="triage-name">Full Name *</label>
+                  <input id="triage-name" name="name" type="text" class="dossier-input" placeholder="First and last name" required />
                 </div>
                 <div class="dossier-field">
-                  <label for="triage-phone">Direct Phone *</label>
+                  <label for="triage-phone">Phone Number *</label>
                   <input id="triage-phone" name="phone" type="tel" class="dossier-input" placeholder="(916) 555-0199" required />
                 </div>
               </div>
@@ -1149,178 +1219,318 @@
                 <input id="triage-email" name="email" type="email" class="dossier-input" placeholder="name@domain.com" required />
               </div>
               <div class="dossier-field">
-                <label for="triage-county">Property County / Jurisdiction</label>
+                <label for="triage-county">Property County</label>
                 <input id="triage-county" name="county" type="text" class="dossier-input" placeholder="e.g., Sacramento, Elk Grove, Placer, San Joaquin, Yolo" />
               </div>
-              <button type="submit" class="btn-vermilion" style="width: 100%;">[Dispatch Consultation Request]</button>
+              <button type="submit" class="btn-vermilion" style="width: 100%;">Request Consultation</button>
               <div class="dossier-status" role="status" aria-live="polite"></div>
               <p class="statutory-footnote">
-                Send us an Inquiry. A Representative will return your message within 72 Hours. Contacting us does not create an attorney-client relationship. (Concept demo preview: form submission is simulated.)
+                Send us an inquiry. A representative will return your message within 72 hours. Contacting us does not create an attorney-client relationship.
               </p>
             </form>
           </div>
         </aside>
       </section>
 
-      <!-- THE PRACTICE MATRIX -->
-      <section id="practice-matrix" aria-label="Real Estate Law and Litigation Practice Matrix">
+      <!-- SECTION 01: SPLIT PRACTICE SPECIFICATION EXPLORER -->
+      <section id="practice-matrix" aria-label="Real Estate Law and Litigation Practice Areas">
         <div class="section-header-cell">
           <div>
-            <h2>What Do Our Real Estate Attorneys Do? — The Practice Matrix</h2>
+            <span class="section-index-tag">Section 01 · Legal Capabilities</span>
+            <h2>What Do Our Real Estate Attorneys Do?</h2>
             <p>
-              Filter our core legal capabilities below or click <strong>[+ Attach to Intake]</strong> on any specification cell to pre-load that legal matter into your consultation request.
+              Select any of our six core practice areas on the left to review how we protect your ownership rights, contracts, rental properties, and courtroom position.
             </p>
           </div>
         </div>
 
-        <div class="matrix-filter-row" role="toolbar" aria-label="Filter Practice Matrix">
-          <button type="button" class="matrix-filter-btn" aria-pressed="true" data-mfilter="all">All Practice Scopes (12)</button>
-          <button type="button" class="matrix-filter-btn" aria-pressed="false" data-mfilter="litigation">Litigation &amp; Disputes</button>
-          <button type="button" class="matrix-filter-btn" aria-pressed="false" data-mfilter="title">Title, Ownership &amp; Deeds</button>
-          <button type="button" class="matrix-filter-btn" aria-pressed="false" data-mfilter="contracts">Contracts &amp; Risk</button>
-          <button type="button" class="matrix-filter-btn" aria-pressed="false" data-mfilter="estate">Rental &amp; Estate Planning</button>
-        </div>
+        <div class="spec-explorer-grid">
+          <div class="spec-selector-col" role="tablist" aria-label="Practice Area Specifications">
+            <button type="button" class="spec-row-btn" role="tab" aria-selected="true" data-spec="ownership">
+              <span class="spec-num">01</span>
+              <span>
+                <span class="spec-row-title">Real Property Law &amp; Ownership</span>
+                <span class="spec-row-sub">Ownership agreements, boundaries, easements &amp; risk</span>
+              </span>
+            </button>
+            <button type="button" class="spec-row-btn" role="tab" aria-selected="false" data-spec="litigation">
+              <span class="spec-num">02</span>
+              <span>
+                <span class="spec-row-title">Litigation &amp; Dispute Resolution</span>
+                <span class="spec-row-sub">Quiet Title, Partition actions &amp; fiduciary claims</span>
+              </span>
+            </button>
+            <button type="button" class="spec-row-btn" role="tab" aria-selected="false" data-spec="landlord">
+              <span class="spec-num">03</span>
+              <span>
+                <span class="spec-row-title">Landlord-Tenant &amp; Unlawful Detainer</span>
+                <span class="spec-row-sub">Evictions, Ex-Parte motions &amp; rental agreements</span>
+              </span>
+            </button>
+            <button type="button" class="spec-row-btn" role="tab" aria-selected="false" data-spec="contracts">
+              <span class="spec-num">04</span>
+              <span>
+                <span class="spec-row-title">Contract Law &amp; Document Review</span>
+                <span class="spec-row-sub">Purchase agreements, settlements &amp; EMD recovery</span>
+              </span>
+            </button>
+            <button type="button" class="spec-row-btn" role="tab" aria-selected="false" data-spec="title">
+              <span class="spec-num">05</span>
+              <span>
+                <span class="spec-row-title">Deed &amp; Title Transfers</span>
+                <span class="spec-row-sub">Grant deeds, trust transfers &amp; title exceptions</span>
+              </span>
+            </button>
+            <button type="button" class="spec-row-btn" role="tab" aria-selected="false" data-spec="estate">
+              <span class="spec-num">06</span>
+              <span>
+                <span class="spec-row-title">Estate Planning &amp; Living Trusts</span>
+                <span class="spec-row-sub">Revocable Living Trusts, Wills &amp; probate avoidance</span>
+              </span>
+            </button>
+          </div>
 
-        <div class="practice-matrix-grid">
-          <article class="matrix-cell" data-mcat="title">
-            <div>
-              <h3>Real Property Law &amp; Ownership</h3>
-              <p>Real estate attorneys explain the different ways property can be owned—individually or jointly—and help ensure ownership rights are clearly defined and legally protected.</p>
+          <div class="spec-sheet-col">
+            <div class="spec-sheet-pane is-active" id="spec-ownership" role="tabpanel">
+              <h3>Real Property Law &amp; Ownership Rights</h3>
+              <p>
+                Real estate attorneys explain the different ways property can be owned—individually or jointly—and help ensure ownership rights are clearly defined and legally protected. We advise homeowners, co-owners, investors, and real estate professionals on statutory compliance and long-term risk management.
+              </p>
+              <div class="spec-deliverables-grid">
+                <div class="deliverable-cell">
+                  <strong>Property Ownership Agreements</strong>
+                  <span>Structuring individual, joint tenancy, tenancy-in-common, and entity-held real property ownership.</span>
+                </div>
+                <div class="deliverable-cell">
+                  <strong>Boundary &amp; Easement Disputes</strong>
+                  <span>Rights-of-way, easement acquisition and abandonment, parcel maps, subdivision maps, and surveys.</span>
+                </div>
+                <div class="deliverable-cell">
+                  <strong>Broker Liability &amp; Risk</strong>
+                  <span>Counseling principals and brokers on California disclosure mandates and fiduciary duties.</span>
+                </div>
+                <div class="deliverable-cell">
+                  <strong>Dual-License Advantage</strong>
+                  <span>Evaluated through 20+ years of active California brokerage and 30+ years of legal practice.</span>
+                </div>
+              </div>
+              <button type="button" class="btn-vermilion attach-scope-btn" data-attach="Real Property Law &amp; Ownership Agreements">Select This Scope for Consultation →</button>
             </div>
-            <div class="matrix-cell-footer">
-              <span class="code-tag">Ownership Rights</span>
-              <button type="button" class="attach-link" data-attach="Real Property Law &amp; Ownership Agreements">[+ Attach to Intake]</button>
-            </div>
-          </article>
 
-          <article class="matrix-cell" data-mcat="estate">
-            <div>
-              <h3>Landlord-Tenant Law &amp; Evictions</h3>
-              <p>Ensures California laws are followed for both landlords and tenants, protecting rights, handling Unlawful Detainers and Ex-Parte motions, and supporting enforceable rental agreements.</p>
+            <div class="spec-sheet-pane" id="spec-litigation" role="tabpanel">
+              <h3>Litigation &amp; Courtroom Dispute Resolution</h3>
+              <p>
+                Real estate attorneys represent your interests in disputes and, when necessary, advocate for you in court to ensure you are treated fairly. We resolve complex disagreements between buyers, sellers, co-owners, and builders through trial advocacy, Ex-Parte motions, and mediation.
+              </p>
+              <div class="spec-deliverables-grid">
+                <div class="deliverable-cell">
+                  <strong>Quiet Title Actions</strong>
+                  <span>Judicial proceedings to clear clouded title and establish clear, marketable ownership.</span>
+                </div>
+                <div class="deliverable-cell">
+                  <strong>Partition Actions</strong>
+                  <span>Representing co-owners, heirs, and partners in dividing or forcing the equitable sale of real property.</span>
+                </div>
+                <div class="deliverable-cell">
+                  <strong>Breach of Fiduciary Duty</strong>
+                  <span>Prosecuting and defending claims involving undisclosed defects and agent/partner breaches.</span>
+                </div>
+                <div class="deliverable-cell">
+                  <strong>Specific Performance &amp; Eminent Domain</strong>
+                  <span>Enforcing purchase contracts in court and defending property owners in condemnation matters.</span>
+                </div>
+              </div>
+              <button type="button" class="btn-vermilion attach-scope-btn" data-attach="Litigation, Quiet Title &amp; Partition">Select This Scope for Consultation →</button>
             </div>
-            <div class="matrix-cell-footer">
-              <span class="code-tag">Unlawful Detainer</span>
-              <button type="button" class="attach-link" data-attach="Landlord-Tenant Law &amp; Unlawful Detainer">[+ Attach to Intake]</button>
-            </div>
-          </article>
 
-          <article class="matrix-cell" data-mcat="contracts">
-            <div>
-              <h3>Breach of Contract &amp; EMD Recovery</h3>
-              <p>Resolves disagreements between buyers, sellers, and builders—including Earnest Money Deposit (EMD) recovery, owner-finance contract defense, and specific performance.</p>
+            <div class="spec-sheet-pane" id="spec-landlord" role="tabpanel">
+              <h3>Landlord-Tenant Law &amp; Unlawful Detainers</h3>
+              <p>
+                Real estate attorneys help ensure laws are followed for both landlords and tenants, protecting rights and supporting fair, enforceable rental agreements. We provide rapid courtroom representation and strategic notice guidance across Sacramento County.
+              </p>
+              <div class="spec-deliverables-grid">
+                <div class="deliverable-cell">
+                  <strong>Unlawful Detainer Representation</strong>
+                  <span>Filing and defending Unlawful Detainer complaints with strict statutory compliance.</span>
+                </div>
+                <div class="deliverable-cell">
+                  <strong>Emergency Ex-Parte Motions</strong>
+                  <span>Rapid courtroom intervention to vacate improper filings and protect client records.</span>
+                </div>
+                <div class="deliverable-cell">
+                  <strong>Lease Drafting &amp; Review</strong>
+                  <span>Preparing enforceable residential and commercial rental agreements under California law.</span>
+                </div>
+                <div class="deliverable-cell">
+                  <strong>Notice &amp; Eviction Strategy</strong>
+                  <span>Advising property owners on 3-day notices and lawful resolution paths prior to filing.</span>
+                </div>
+              </div>
+              <button type="button" class="btn-vermilion attach-scope-btn" data-attach="Landlord-Tenant Law &amp; Unlawful Detainer">Select This Scope for Consultation →</button>
             </div>
-            <div class="matrix-cell-footer">
-              <span class="code-tag">Contract Litigation</span>
-              <button type="button" class="attach-link" data-attach="Breach of Contract &amp; EMD Dispute">[+ Attach to Intake]</button>
-            </div>
-          </article>
 
-          <article class="matrix-cell" data-mcat="litigation">
-            <div>
-              <h3>Breach of Fiduciary Duties</h3>
-              <p>Prosecutes and defends claims involving real estate agent, broker, co-owner, or partner fiduciary breaches and statutory failure-to-disclose violations.</p>
+            <div class="spec-sheet-pane" id="spec-contracts" role="tabpanel">
+              <h3>Contract Law, Document Review &amp; EMD Recovery</h3>
+              <p>
+                A real estate attorney reviews all documents for accuracy and ensures you fully understand the legal basis of the document. We protect buyers, sellers, and investors from signing unfavorable terms and fight to recover deposits when contracts are breached.
+              </p>
+              <div class="spec-deliverables-grid">
+                <div class="deliverable-cell">
+                  <strong>Purchase &amp; Sale Review</strong>
+                  <span>Line-by-line legal review of residential, commercial, and owner-finance agreements.</span>
+                </div>
+                <div class="deliverable-cell">
+                  <strong>Earnest Money Deposit (EMD) Recovery</strong>
+                  <span>Resolving escrow deposit disputes against home builders and defaulting counterparties.</span>
+                </div>
+                <div class="deliverable-cell">
+                  <strong>Contract Workouts &amp; Settlements</strong>
+                  <span>Negotiating binding contract settlements to resolve defaults without prolonged litigation.</span>
+                </div>
+                <div class="deliverable-cell">
+                  <strong>Disclosure Verification</strong>
+                  <span>Auditing seller transfer disclosures and addenda to prevent post-closing liability.</span>
+                </div>
+              </div>
+              <button type="button" class="btn-vermilion attach-scope-btn" data-attach="Contract Law &amp; Document Review">Select This Scope for Consultation →</button>
             </div>
-            <div class="matrix-cell-footer">
-              <span class="code-tag">Fiduciary Duty</span>
-              <button type="button" class="attach-link" data-attach="Breach of Fiduciary Duties">[+ Attach to Intake]</button>
-            </div>
-          </article>
 
-          <article class="matrix-cell" data-mcat="title">
-            <div>
-              <h3>Quiet Title Actions</h3>
-              <p>Judicial proceedings to clear clouded title, resolve preliminary title report exceptions, and establish clear, marketable ownership of real property.</p>
+            <div class="spec-sheet-pane" id="spec-title" role="tabpanel">
+              <h3>Deed Drafting &amp; Title Exception Resolution</h3>
+              <p>
+                Improperly prepared deeds can trigger unintended property tax reassessment or cloud marketable title. Our attorneys draft and record deeds with statutory precision and resolve preliminary title report issues before closing.
+              </p>
+              <div class="spec-deliverables-grid">
+                <div class="deliverable-cell">
+                  <strong>Grant &amp; Quitclaim Deeds</strong>
+                  <span>Drafting and recording inter-family, interspousal, and entity property transfers.</span>
+                </div>
+                <div class="deliverable-cell">
+                  <strong>Preliminary Title Report Review</strong>
+                  <span>Identifying and curing title exceptions, liens, and historical recording errors.</span>
+                </div>
+                <div class="deliverable-cell">
+                  <strong>Trust Transfer Deeds</strong>
+                  <span>Properly titling California real estate into Revocable Living Trusts.</span>
+                </div>
+                <div class="deliverable-cell">
+                  <strong>County Recorder Map Analysis</strong>
+                  <span>Reviewing parcel maps, subdivision maps, and records of survey for title accuracy.</span>
+                </div>
+              </div>
+              <button type="button" class="btn-vermilion attach-scope-btn" data-attach="Deed &amp; Title Transfers">Select This Scope for Consultation →</button>
             </div>
-            <div class="matrix-cell-footer">
-              <span class="code-tag">Title Adjudication</span>
-              <button type="button" class="attach-link" data-attach="Quiet Title Action">[+ Attach to Intake]</button>
-            </div>
-          </article>
 
-          <article class="matrix-cell" data-mcat="litigation">
-            <div>
-              <h3>Partition Actions</h3>
-              <p>Represents co-owners, heirs, and investment partners in judicial and negotiated partition actions to divide or force the equitable sale of jointly held real estate.</p>
+            <div class="spec-sheet-pane" id="spec-estate" role="tabpanel">
+              <h3>Estate Planning &amp; Living Trusts for Property Owners</h3>
+              <p>
+                The purchase of a home is often one's largest investment. We design Living Trusts, Wills, and succession structures that keep your real estate out of California probate court and protect generational wealth.
+              </p>
+              <div class="spec-deliverables-grid">
+                <div class="deliverable-cell">
+                  <strong>Revocable Living Trusts</strong>
+                  <span>Comprehensive estate plans tailored for homeowners and multi-property investors.</span>
+                </div>
+                <div class="deliverable-cell">
+                  <strong>Wills &amp; Incapacity Directives</strong>
+                  <span>Coordinating pour-over wills, powers of attorney, and healthcare directives.</span>
+                </div>
+                <div class="deliverable-cell">
+                  <strong>Real Property Trust Funding</strong>
+                  <span>Preparing and recording the deeds required to fund your real estate into your trust.</span>
+                </div>
+                <div class="deliverable-cell">
+                  <strong>Probate &amp; Successor Guidance</strong>
+                  <span>Advising families and successor trustees on managing and selling trust real estate.</span>
+                </div>
+              </div>
+              <button type="button" class="btn-vermilion attach-scope-btn" data-attach="Estate Planning &amp; Living Trusts">Select This Scope for Consultation →</button>
             </div>
-            <div class="matrix-cell-footer">
-              <span class="code-tag">Co-Owner Severance</span>
-              <button type="button" class="attach-link" data-attach="Partition Action">[+ Attach to Intake]</button>
-            </div>
-          </article>
-
-          <article class="matrix-cell" data-mcat="litigation">
-            <div>
-              <h3>Boundary &amp; Easement Disputes</h3>
-              <p>Structural and non-structural rights-of-way, easement acquisition and abandonment, utility pathways, parcel maps, subdivision maps, and records of survey.</p>
-            </div>
-            <div class="matrix-cell-footer">
-              <span class="code-tag">Land-Use &amp; Survey</span>
-              <button type="button" class="attach-link" data-attach="Boundary &amp; Easement Dispute">[+ Attach to Intake]</button>
-            </div>
-          </article>
-
-          <article class="matrix-cell" data-mcat="title">
-            <div>
-              <h3>Deed &amp; Title Transfers</h3>
-              <p>Precision drafting and recording of grant deeds, quitclaim deeds, inter-family transfers, and trust transfer deeds to prevent title defects.</p>
-            </div>
-            <div class="matrix-cell-footer">
-              <span class="code-tag">Conveyance</span>
-              <button type="button" class="attach-link" data-attach="Deed &amp; Title Transfers">[+ Attach to Intake]</button>
-            </div>
-          </article>
-
-          <article class="matrix-cell" data-mcat="contracts">
-            <div>
-              <h3>Document Review &amp; Settlements</h3>
-              <p>A real estate attorney reviews all documents for accuracy and ensures you fully understand the legal basis of every contract, disclosure, or settlement.</p>
-            </div>
-            <div class="matrix-cell-footer">
-              <span class="code-tag">Preventive Counsel</span>
-              <button type="button" class="attach-link" data-attach="Document Review &amp; Contract Settlement">[+ Attach to Intake]</button>
-            </div>
-          </article>
-
-          <article class="matrix-cell" data-mcat="contracts">
-            <div>
-              <h3>Broker Liability &amp; Risk Management</h3>
-              <p>Counsel for brokerages, agents, and principals navigating regulatory compliance, disclosure obligations, and California Association of REALTORS® mediation.</p>
-            </div>
-            <div class="matrix-cell-footer">
-              <span class="code-tag">Brokerage Defense</span>
-              <button type="button" class="attach-link" data-attach="Broker Liability &amp; Risk Management">[+ Attach to Intake]</button>
-            </div>
-          </article>
-
-          <article class="matrix-cell" data-mcat="estate">
-            <div>
-              <h3>Estate Planning &amp; Living Trusts</h3>
-              <p>Custom Living Trusts, Wills, and real property succession plans designed so homeowners and investors can protect their assets and avoid probate court.</p>
-            </div>
-            <div class="matrix-cell-footer">
-              <span class="code-tag">Asset Protection</span>
-              <button type="button" class="attach-link" data-attach="Estate Planning &amp; Living Trusts">[+ Attach to Intake]</button>
-            </div>
-          </article>
-
-          <article class="matrix-cell" data-mcat="litigation">
-            <div>
-              <h3>Courtroom Advocacy &amp; Eminent Domain</h3>
-              <p>Represents your interests in general real estate disputes, eminent domain, foreclosure defense, and courtroom trials when settlement is not enough.</p>
-            </div>
-            <div class="matrix-cell-footer">
-              <span class="code-tag">Trial Counsel</span>
-              <button type="button" class="attach-link" data-attach="Courtroom Advocacy &amp; Litigation">[+ Attach to Intake]</button>
-            </div>
-          </article>
+          </div>
         </div>
       </section>
 
-      <!-- ATTORNEY-DIRECTED BROKERAGE SPECIFICATIONS (ALL CITY HOMES) -->
-      <section id="brokerage-specs" aria-label="All City Homes Real Estate Partnership Specifications">
+      <!-- SECTION 02: PRINCIPAL ATTORNEYS -->
+      <section id="principals-roster" aria-label="Principal Attorneys">
+        <div class="section-header-cell">
+          <div>
+            <span class="section-index-tag">Section 02 · Principal Counsel</span>
+            <h2>Decades of Combined Real Estate &amp; Trial Experience</h2>
+            <p>
+              Every legal matter is led by seasoned California attorneys holding active State Bar, Department of Real Estate (DRE), and NMLS credentials.
+            </p>
+          </div>
+        </div>
+
+        <div class="principals-two-grid">
+          <article class="principal-dossier-card">
+            <div class="principal-top-split">
+              <img src="../assets/originals/vanessa-amador-skyline.jpg" alt="Vanessa Amador, Esq. standing in a navy blazer before a city skyline" />
+              <div class="principal-meta-box">
+                <h3>Vanessa Amador, Esq.</h3>
+                <p class="principal-role-label">Founder · Attorney, Broker &amp; Loan Originator</p>
+                <div class="license-Readout">
+                  CA State Bar # 313407<br />
+                  CalDRE Broker # 1384231<br />
+                  NMLS Originator # 2138650
+                </div>
+              </div>
+            </div>
+            <div class="principal-bio-body">
+              <p>
+                Vanessa Amador is a Licensed Attorney, Broker, and Loan Originator with over 20 years of Real Estate experience. She began her Real Estate career in 2002 with the understanding that the purchase of a home is often one's largest and most important investment. In 2007, Vanessa found herself in the foreclosure crisis where she quickly realized there was little help for homeowners. This realization compelled her to enter Law School, where she excelled and focused on those areas that protect the Homeowner.
+              </p>
+              <p>
+                Because Vanessa came to the legal profession from Real Estate Sales, there is an appreciation and understanding of both contracts and customer service—ensuring clients always know the status of their case and what to reasonably expect every step of the way. Raised in the Sacramento region (Del Campo High, Kennedy High, Elk Grove High) and educated at George Mason University and Lincoln Law School of Sacramento (J.D. 2015, CA Bar 2016), she represents clients across Northern California in court and preventive transactions.
+              </p>
+            </div>
+          </article>
+
+          <article class="principal-dossier-card">
+            <div class="principal-top-split">
+              <img src="../assets/originals/robert-anaya.jpg" alt="Robert J. Anaya, Esq. headshot" />
+              <div class="principal-meta-box">
+                <h3>Robert J. Anaya, Esq.</h3>
+                <p class="principal-role-label">Senior Litigator &amp; Real Estate Counsel</p>
+                <div class="license-Readout">
+                  CA State Bar # 153195<br />
+                  30+ Years Legal Practice<br />
+                  40+ Years Real Estate Industry
+                </div>
+              </div>
+            </div>
+            <div class="principal-bio-body">
+              <p>
+                With more than 30 years of legal experience and over 40 years in the real estate industry, Attorney Robert J. Anaya brings unmatched depth, precision, and personal commitment to every client he represents. Before entering private practice, Robert served as a Deputy District Attorney in Madera, Merced, and Del Norte Counties, successfully prosecuting a wide range of criminal matters and building formidable trial skills.
+              </p>
+              <p>
+                After four decades as a licensed real estate broker—now retired—and service as a mediator for the California Association of REALTORS®, he has litigated and resolved complex disputes involving preliminary title report exceptions, quiet title actions, breach of contract, partition, specific performance, easements, and eminent domain, alongside bankruptcy and foreclosure protection.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="oath-and-bio-bar">
+          <div class="bio-deep-cell">
+            <h3>Public Service &amp; Corporate Foundation</h3>
+            <p>
+              Before real estate, Vanessa Amador worked for major corporations and government agencies including the State of California Department of Veterans Affairs, the U.S. Federal Mine Safety and Health Review Commission, Fairfax County Department of Recreation, Teleglobe Communications Corporation, and CGI-AMS Consulting Firm.
+            </p>
+          </div>
+          <div class="oath-cell">
+            <h3>The California Attorneys Oath</h3>
+            <blockquote>
+              “I, solemnly swear that I will support the Constitution of the United States and the Constitution of the State of California, and that I will faithfully discharge the duties of any attorney and counselor at law to the best of my knowledge and ability. As an officer of the court, I will strive to conduct myself at all times with dignity, courtesy and integrity.”
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 03: ATTORNEY-DIRECTED BROKERAGE SPECIFICATIONS (ALL CITY HOMES) -->
+      <section id="brokerage-specs" aria-label="All City Homes Real Estate Partnership">
         <div class="navy-section-banner">
           <div>
-            <h2>Attorney-Backed Brokerage Specifications — All City Homes Partnership</h2>
+            <h2>All City Homes Real Estate Partnership</h2>
             <p>
               Unlock your real estate potential. Partnering with our All City Homes Real Estate Agents and experienced Real Estate Attorney ensures every aspect of your Commercial, Residential, or Investment property transaction is covered.
             </p>
@@ -1345,16 +1555,12 @@
                   Drafting and reviewing sale agreements to ensure all terms are clear and legally binding.
                 </li>
                 <li>
-                  <strong>Due Diligence</strong>
-                  Conducting comprehensive due diligence to identify and mitigate potential issues.
-                </li>
-                <li>
-                  <strong>Closing Assistance</strong>
-                  Guiding you through the closing process to ensure all legal requirements are met.
+                  <strong>Due Diligence &amp; Closing</strong>
+                  Conducting comprehensive due diligence and guiding you through every closing requirement.
                 </li>
               </ul>
             </div>
-            <button type="button" class="btn-navy attach-link-btn" data-attach="Commercial Real Estate Sale (All City Homes)">[Inquire: Commercial Sale]</button>
+            <button type="button" class="btn-navy attach-scope-btn" data-attach="Commercial Real Estate Sale (All City Homes)">Inquire: Commercial Sale →</button>
           </article>
 
           <article class="brokerage-spec-col">
@@ -1371,16 +1577,12 @@
                   Preparing and reviewing purchase agreements to protect your financial and legal interests.
                 </li>
                 <li>
-                  <strong>Disclosure Requirements</strong>
-                  Ensuring compliance with all legal disclosure requirements to avoid future disputes.
-                </li>
-                <li>
-                  <strong>Negotiation Support</strong>
-                  Assisting in negotiations to achieve the best possible terms and price.
+                  <strong>Disclosures &amp; Negotiation</strong>
+                  Ensuring compliance with all legal disclosure requirements and negotiating optimal terms.
                 </li>
               </ul>
             </div>
-            <button type="button" class="btn-navy attach-link-btn" data-attach="Residential Real Estate Sale (All City Homes)">[Inquire: Residential Sale]</button>
+            <button type="button" class="btn-navy attach-scope-btn" data-attach="Residential Real Estate Sale (All City Homes)">Inquire: Residential Sale →</button>
           </article>
 
           <article class="brokerage-spec-col">
@@ -1393,12 +1595,8 @@
                   Evaluating your investment portfolio to identify optimal selling and acquisition opportunities.
                 </li>
                 <li>
-                  <strong>Strategic Planning</strong>
-                  Advising on the best strategies for selling investment properties to maximize returns.
-                </li>
-                <li>
-                  <strong>Tax Considerations</strong>
-                  Providing guidance on tax implications and strategies for minimizing tax liabilities.
+                  <strong>Strategic &amp; Tax Planning</strong>
+                  Advising on strategies for selling investment properties to maximize returns and minimize tax liabilities.
                 </li>
                 <li>
                   <strong>Legal Documentation</strong>
@@ -1406,126 +1604,45 @@
                 </li>
               </ul>
             </div>
-            <button type="button" class="btn-navy attach-link-btn" data-attach="Investment Real Estate Sale (All City Homes)">[Inquire: Investment Portfolio]</button>
+            <button type="button" class="btn-navy attach-scope-btn" data-attach="Investment Real Estate Sale (All City Homes)">Inquire: Investment Portfolio →</button>
           </article>
         </div>
-      </section>
 
-      <!-- LICENSED PRINCIPALS & PARTNERS ROSTER -->
-      <section id="principals-roster" aria-label="Licensed Attorneys and Real Estate Principals">
-        <div class="section-header-cell">
-          <div>
-            <h2>Licensed Attorneys &amp; Real Estate Principals</h2>
-            <p>
-              Every matter is handled by experienced California professionals holding active State Bar of California, Department of Real Estate (DRE), and NMLS credentials.
-            </p>
+        <div class="brokerage-partners-bar" aria-label="All City Homes Licensed Partners">
+          <div class="brokerage-partner-cell">
+            <img src="../assets/originals/vanessa-amador.jpg" alt="Vanessa Amador, Esq." />
+            <div>
+              <h4>Vanessa Amador, Esq.</h4>
+              <span>Attorney, Broker &amp; Loan Originator · DRE# 1384231</span>
+            </div>
           </div>
-        </div>
-
-        <div class="roster-four-grid">
-          <article class="roster-cell">
-            <div class="roster-photo-box">
-              <img src="../assets/originals/vanessa-amador-skyline.jpg" alt="Vanessa Amador, Esq. standing in a navy blazer before a city skyline" />
+          <div class="brokerage-partner-cell">
+            <img src="../assets/originals/brenda.jpg" alt="Brenda Chua-Aceves" />
+            <div>
+              <h4>Brenda Chua-Aceves</h4>
+              <span>Real Estate Partner · DRE# 01960655</span>
             </div>
-            <div class="roster-body">
-              <div>
-                <h3>Vanessa Amador, Esq.</h3>
-                <p class="roster-title">Founder · Attorney, Broker &amp; Loan Originator</p>
-                <div class="license-box">
-                  DRE# 1384231 // BAR # 313407<br />NMLS# 2138650
-                </div>
-                <p>
-                  Over 20 years of real estate experience since 2002. Compelled by the 2007 foreclosure crisis to enter law school (Lincoln Law School of Sacramento, J.D. 2015; CA Bar 2016) to protect homeowners in court and preventive transactions.
-                </p>
-              </div>
-              <span class="code-tag">Litigation · Contracts · Brokerage</span>
-            </div>
-          </article>
-
-          <article class="roster-cell">
-            <div class="roster-photo-box">
-              <img src="../assets/originals/robert-anaya.jpg" alt="Robert J. Anaya, Esq. headshot" />
-            </div>
-            <div class="roster-body">
-              <div>
-                <h3>Robert J. Anaya, Esq.</h3>
-                <p class="roster-title">Senior Real Estate &amp; Civil Litigator</p>
-                <div class="license-box">
-                  CA STATE BAR # 153195<br />30+ YRS LAW // 40+ YRS REAL ESTATE
-                </div>
-                <p>
-                  Former Deputy District Attorney (Madera, Merced &amp; Del Norte Counties), retired 40-year licensed real estate broker, and C.A.R. mediator specializing in quiet title, partition, breach of contract, easements, and eminent domain.
-                </p>
-              </div>
-              <span class="code-tag">Trial Practice · Title &amp; Land-Use</span>
-            </div>
-          </article>
-
-          <article class="roster-cell">
-            <div class="roster-photo-box">
-              <img src="../assets/originals/brenda.jpg" alt="Brenda Chua-Aceves headshot" />
-            </div>
-            <div class="roster-body">
-              <div>
-                <h3>Brenda Chua-Aceves</h3>
-                <p class="roster-title">Real Estate Partner · All City Homes</p>
-                <div class="license-box">
-                  CALDRE LICENSE # 01960655<br />GREATER SACRAMENTO BROKERAGE
-                </div>
-                <p>
-                  Partnered with NorCal Attorney Brokers and All City Homes to guide residential, commercial, and investment clients through market analysis, negotiations, and smooth closings.
-                </p>
-              </div>
-              <span class="code-tag">Residential &amp; Commercial Sales</span>
-            </div>
-          </article>
-
-          <article class="roster-cell">
-            <div class="roster-photo-box">
-              <div class="roster-monogram-stage">
-                <strong>AA</strong>
-                <span>ALL CITY HOMES PARTNERSHIP</span>
-              </div>
-            </div>
-            <div class="roster-body">
-              <div>
-                <h3>Aundre Amador</h3>
-                <p class="roster-title">Real Estate Partner · All City Homes</p>
-                <div class="license-box">
-                  CALDRE LICENSE # 02097079<br />GREATER SACRAMENTO BROKERAGE
-                </div>
-                <p>
-                  Provides dedicated representation for buyers, sellers, and property investors across Elk Grove and Greater Sacramento, backed by full in-house real estate legal oversight.
-                </p>
-              </div>
-              <span class="code-tag">Property Acquisitions &amp; Sales</span>
-            </div>
-          </article>
-        </div>
-
-        <div class="oath-and-bio-bar">
-          <div class="bio-deep-cell">
-            <h3>Public Service &amp; Corporate Foundation</h3>
-            <p>
-              Before real estate, Vanessa Amador worked for major corporations and government agencies including the State of California Department of Veterans Affairs, the U.S. Federal Mine Safety and Health Review Commission, Fairfax County Department of Recreation, Teleglobe Communications Corporation, and CGI-AMS Consulting Firm—building deep regulatory, finance, and legal foundations.
-            </p>
           </div>
-          <div class="oath-cell">
-            <h3>California Attorneys Oath</h3>
-            <blockquote>
-              “I, solemnly swear that I will support the Constitution of the United States and the Constitution of the State of California, and that I will faithfully discharge the duties of any attorney and counselor at law to the best of my knowledge and ability. As an officer of the court, I will strive to conduct myself at all times with dignity, courtesy and integrity.”
-            </blockquote>
+          <div class="brokerage-partner-cell">
+            <div class="partner-emblem-box">
+              <img src="../assets/originals/all-city-homes-partner.jpg" alt="All City Homes emblem" />
+            </div>
+            <div>
+              <h4>Aundre Amador</h4>
+              <span>Real Estate Partner · DRE# 02097079</span>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- VERIFIED CASE VERDICTS / CLIENT TESTIMONIALS -->
+      <!-- SECTION 04: VERIFIED CLIENT TESTIMONIALS -->
       <section id="case-verdicts" aria-label="Verified Client Testimonials">
         <div class="section-header-cell">
           <div>
-            <h2>Verified Client Representation Logs</h2>
+            <span class="section-index-tag">Section 04 · Client Reviews</span>
+            <h2>Verified Client Outcomes Across Sacramento County</h2>
             <p>
-              Direct excerpts from clients represented by Vanessa Amador, Esq. and NorCal Attorney Brokers across Sacramento County.
+              Direct reviews from clients represented by Vanessa Amador, Esq. and NorCal Attorney Brokers.
             </p>
           </div>
         </div>
@@ -1538,7 +1655,7 @@
                 “Attorney Vanessa Amador exceeded my expectation as a ‘qualified and experienced’ Attorney... Vanessa was able to repeatedly get my case vacated in an Unlawful Detainer complaint that should had never been filed. She was able to take on my case in a short time frame, filed an Ex-parte to have case vacated and succeeded. I am forever grateful for all her hard work.”
               </p>
             </div>
-            <div class="verdict-stamp">CLIENT: TERRI // DATE: JAN 24, 2024</div>
+            <div class="verdict-stamp">Terri · January 24, 2024 · Unlawful Detainer Defense</div>
           </article>
 
           <article class="verdict-dossier-cell">
@@ -1548,7 +1665,7 @@
                 “Vanessa is amazing!!! She is sharp, knowledgeable and efficient. We hired her to help us to fight an owner finance contract and absolutely proved to be an absolute shark. She knows the ins and outs of real estate law like the back of her hand... We really appreciate how effective and responsive her and her staff have been.”
               </p>
             </div>
-            <div class="verdict-stamp">CLIENT: DAVID &amp; BRANDY // DATE: AUG 30, 2023</div>
+            <div class="verdict-stamp">David &amp; Brandy · August 30, 2023 · Contract Litigation</div>
           </article>
 
           <article class="verdict-dossier-cell">
@@ -1558,42 +1675,43 @@
                 “Vanessa and her team helped me to get refund in dispute over EMD with big home builder. She and her team is very supportive and work with full dedication in matter to get it done right and up to the end with positive outcome. I highly recommend Vanessa as Lawyer for real estate matters.”
               </p>
             </div>
-            <div class="verdict-stamp">VERIFIED CLIENT // DATE: SEP 7, 2023</div>
+            <div class="verdict-stamp">Verified Client · September 7, 2023 · Builder EMD Recovery</div>
           </article>
         </div>
       </section>
 
-      <!-- ELK GROVE SUITE 200 DOSSIER & CONSULTATION INTAKE -->
-      <section id="elk-grove-dossier" class="office-dispatch-grid" aria-label="Elk Grove Office Dossier and Consultation Dispatch">
+      <!-- SECTION 05: ELK GROVE SUITE 200 OFFICE & CONSULTATION INTAKE -->
+      <section id="elk-grove-dossier" class="office-dispatch-grid" aria-label="Elk Grove Office and Consultation Request">
         <div class="office-specs-cell">
-          <h2>Elk Grove Suite 200 Office Dossier</h2>
+          <span class="section-index-tag">Section 05 · Elk Grove Headquarters</span>
+          <h2>Visit Suite 200 on Laguna Boulevard</h2>
           <p>
-            Our headquarters on Laguna Boulevard serves clients across Sacramento, San Joaquin, Placer, El Dorado, Yuba, and Yolo counties, as well as out-of-state referrals.
+            Our office serves clients across Sacramento, San Joaquin, Placer, El Dorado, Yuba, and Yolo counties, as well as out-of-state referrals.
           </p>
 
           <div class="office-photo-grid">
             <figure>
               <img src="../assets/originals/office-1.jpg" alt="NorCal Attorney Brokers conference room" />
-              <figcaption>FIG 01 // SUITE 200 CONFERENCE CHAMBER</figcaption>
+              <figcaption>Suite 200 Conference Room</figcaption>
             </figure>
             <figure>
               <img src="../assets/originals/office-2.jpg" alt="NorCal Attorney Brokers reception lounge" />
-              <figcaption>FIG 02 // CLIENT RECEPTION LOUNGE</figcaption>
+              <figcaption>Suite 200 Client Reception</figcaption>
             </figure>
           </div>
 
-          <table class="telemetry-table" aria-label="Office Coordinates and Hours">
+          <table class="telemetry-table" aria-label="Office Location and Hours">
             <tbody>
               <tr>
-                <th>Office Coordinates</th>
+                <th>Office Address</th>
                 <td>7803 Laguna Boulevard, Suite 200, Elk Grove, CA 95758</td>
               </tr>
               <tr>
-                <th>Telephone Dispatch</th>
+                <th>Direct Phone</th>
                 <td><a href="tel:9163969934" style="color: var(--vermilion); font-weight: 700;">(916) 396-9934</a></td>
               </tr>
               <tr>
-                <th>Electronic Mail</th>
+                <th>Email Address</th>
                 <td><a href="mailto:info@ncabfirm.com" style="color: var(--navy); font-weight: 600;">info@ncabfirm.com</a></td>
               </tr>
               <tr>
@@ -1613,9 +1731,10 @@
         </div>
 
         <div class="full-intake-cell">
-          <h2>Open a Consultation File</h2>
+          <span class="section-index-tag">72-Hour Response Commitment</span>
+          <h2>Schedule a Legal or Real Estate Consultation</h2>
           <p>
-            Send us an Inquiry. A Representative will return your message within 72 Hours.
+            Send us an inquiry below. A representative will return your message within 72 hours.
           </p>
 
           <form class="dossier-form" id="bottom-dossier-form" novalidate>
@@ -1641,11 +1760,11 @@
             </div>
 
             <div class="dossier-field">
-              <label for="full-brief">Non-Confidential Case / Transaction Summary</label>
-              <textarea id="full-brief" name="brief" class="dossier-input" style="min-height: 100px; resize: vertical;" placeholder="Specify county, property type, and whether you require litigation defense, contract/deed review, estate planning, or brokerage representation..."></textarea>
+              <label for="full-brief">Brief Non-Confidential Summary</label>
+              <textarea id="full-brief" name="brief" class="dossier-input" style="min-height: 100px; resize: vertical;" placeholder="Share the county, property type, and whether you need litigation defense, contract/deed review, estate planning, or brokerage representation..."></textarea>
             </div>
 
-            <button type="submit" class="btn-vermilion" style="width: 100%;">[Transmit Consultation Inquiry]</button>
+            <button type="submit" class="btn-vermilion" style="width: 100%;">Submit Consultation Request</button>
             <div class="dossier-status" role="status" aria-live="polite"></div>
             <p class="statutory-footnote">
               Contacting us does not create an attorney-client relationship. Please do not send any confidential information until an attorney-client relationship has been established.
@@ -1659,31 +1778,42 @@
   <footer class="dossier-footer">
     <div class="dossier-footer-inner">
       <div>
-        <h3>NorCal Attorney Brokers // Dual-Licensed Practice</h3>
+        <h3>NorCal Attorney Brokers · Real Estate Law Firm &amp; Brokerage</h3>
         <p>
           Serving clients in Sacramento and Surrounding Counties since 2002. Combining experienced California Real Estate Attorneys and Litigators with our All City Homes Real Estate Partnership.
         </p>
         <p>
-          <strong>Statutory Notice:</strong> Contacting us does not create an attorney-client relationship. Please do not send any confidential information until an attorney-client relationship has been established.
+          <strong>Legal Notice:</strong> Contacting us does not create an attorney-client relationship. Please do not send any confidential information until an attorney-client relationship has been established.
         </p>
       </div>
       <div>
-        <h3>Regulatory Licenses &amp; Dispatch</h3>
+        <h3>Licensure &amp; Elk Grove Headquarters</h3>
         <p style="font-family: var(--font-mono); font-size: 0.8rem;">
-          VANESSA AMADOR, ESQ. — DRE# 1384231 // BAR # 313407 // NMLS# 2138650<br />
-          ROBERT J. ANAYA, ESQ. — BAR # 153195<br />
-          BRENDA CHUA-ACEVES — DRE# 01960655 // AUNDRE AMADOR — DRE# 02097079<br />
-          7803 LAGUNA BOULEVARD #200, ELK GROVE, CA 95758 // (916) 396-9934 // info@ncabfirm.com
+          Vanessa Amador, Esq. · DRE# 1384231 · BAR # 313407 · NMLS# 2138650<br />
+          Robert J. Anaya, Esq. · BAR # 153195<br />
+          Brenda Chua-Aceves · DRE# 01960655 · Aundre Amador · DRE# 02097079<br />
+          7803 Laguna Boulevard, Suite 200, Elk Grove, CA 95758 · (916) 396-9934 · info@ncabfirm.com
         </p>
       </div>
     </div>
     <div class="dossier-footer-meta">
-      <span>COPYRIGHT © 2026 NORCAL ATTORNEY BROKERS — ALL RIGHTS RESERVED.</span>
-      <span>TRUST, COMPETENCE, AND CARE.</span>
+      <span>Copyright © 2026 NorCal Attorney Brokers — All Rights Reserved.</span>
+      <span>Trust, Competence, and Care.</span>
     </div>
   </footer>
 
   <script>
+    // Mobile Menu Toggle
+    const swissToggle = document.querySelector('.swiss-mobile-toggle');
+    const swissNav = document.getElementById('swiss-nav-menu');
+    if (swissToggle && swissNav) {
+      swissToggle.addEventListener('click', () => {
+        const expanded = swissToggle.getAttribute('aria-expanded') === 'true';
+        swissToggle.setAttribute('aria-expanded', String(!expanded));
+        swissNav.classList.toggle('is-open', !expanded);
+      });
+    }
+
     // Hero Matter Triage Selector
     const triageBtns = document.querySelectorAll('.triage-mode-btn');
     const triageReadout = document.getElementById('triage-protocol-readout');
@@ -1695,7 +1825,7 @@
         const protocol = btn.getAttribute('data-protocol');
         triageBtns.forEach((b) => b.setAttribute('aria-selected', String(b === btn)));
         if (triageReadout) {
-          triageReadout.innerHTML = '<strong>Active Scope: ' + matter + '</strong><span>' + protocol + '</span>';
+          triageReadout.innerHTML = '<strong>Selected Scope: ' + matter + '</strong><span>' + protocol + '</span>';
         }
         if (triageMatterInput) {
           triageMatterInput.value = matter;
@@ -1703,21 +1833,20 @@
       });
     });
 
-    // 17-Point Matrix Filter
-    const mFilterBtns = document.querySelectorAll('.matrix-filter-btn');
-    const mCells = document.querySelectorAll('.matrix-cell');
-    mFilterBtns.forEach((btn) => {
+    // Split Specification Explorer
+    const specRowBtns = document.querySelectorAll('.spec-row-btn');
+    const specPanes = document.querySelectorAll('.spec-sheet-pane');
+    specRowBtns.forEach((btn) => {
       btn.addEventListener('click', () => {
-        const cat = btn.getAttribute('data-mfilter');
-        mFilterBtns.forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
-        mCells.forEach((cell) => {
-          const match = cat === 'all' || cell.getAttribute('data-mcat') === cat;
-          cell.classList.toggle('is-hidden', !match);
+        const target = btn.getAttribute('data-spec');
+        specRowBtns.forEach((b) => b.setAttribute('aria-selected', String(b === btn)));
+        specPanes.forEach((pane) => {
+          pane.classList.toggle('is-active', pane.id === 'spec-' + target);
         });
       });
     });
 
-    // Attach to Intake Brief buttons
+    // Select Scope for Consultation buttons
     const fullMatterInput = document.getElementById('full-matter');
     const fullBriefInput = document.getElementById('full-brief');
     document.querySelectorAll('[data-attach]').forEach((btn) => {
@@ -1727,14 +1856,14 @@
           fullMatterInput.value = scope;
         }
         if (fullBriefInput && !fullBriefInput.value) {
-          fullBriefInput.value = 'Requesting consultation regarding ' + scope + '. ';
+          fullBriefInput.value = 'Requesting a consultation regarding ' + scope + '. ';
         }
         document.getElementById('elk-grove-dossier').scrollIntoView({ behavior: 'smooth' });
         setTimeout(() => document.getElementById('full-name').focus(), 450);
       });
     });
 
-    // Dossier Forms
+    // Consultation Forms
     document.querySelectorAll('.dossier-form').forEach((form) => {
       form.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -1743,13 +1872,13 @@
         const emailInput = form.querySelector('input[name="email"]');
         const matterInput = form.querySelector('input[name="matter"]');
         if (!emailInput || !emailInput.value.trim()) {
-          status.textContent = '[ERROR] Please enter your name and email address so our Elk Grove office can return your inquiry within 72 hours.';
+          status.textContent = 'Please enter your name and email address so our Elk Grove office can return your inquiry within 72 hours.';
           status.classList.add('is-visible');
           return;
         }
         const clientName = nameInput && nameInput.value.trim() ? nameInput.value.trim() : 'Client';
-        const scopeName = matterInput && matterInput.value ? matterInput.value : 'Consultation';
-        status.textContent = '[LOGGED] Thank you, ' + clientName + '. Scope (' + scopeName + ') recorded in concept preview. Production SLA: response within 72 hours.';
+        const scopeName = matterInput && matterInput.value ? matterInput.value : 'Legal & Real Estate Consultation';
+        status.textContent = 'Thank you, ' + clientName + '. Your consultation request regarding ' + scopeName + ' has been received. A representative will return your message within 72 hours.';
         status.classList.add('is-visible');
       });
     });
