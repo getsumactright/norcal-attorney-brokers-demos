@@ -1,0 +1,185 @@
+{
+  "name": "projects/12911883184295281537",
+  "title": "NorCal Attorney Brokers \u2014 02 NorCal Civic Modern (Warm Architectural)",
+  "visibility": "PRIVATE",
+  "createTime": "2026-10-19T14:43:25.189695Z",
+  "updateTime": "2026-10-19T14:52:55.710168Z",
+  "projectType": "PROJECT_DESIGN",
+  "thumbnailScreenshot": {
+    "name": "projects/12911883184295281537/files/0044a0ec35b04d48b5fd024e29e45dc2",
+    "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1WY07HyAlfzVreHw7Aq53bQG236tnDjqvDTrHlcj4vs7bWSHFEooTr-TZI9kpiowYo-PWneSOe4FDCxlCPcBUu_8FjV0pXsgNhO6jG935FTHihK4MxFVbewD8DOMCnNmTVjsWJrlokdLU-8477qtTsFTcW7Qbvct0rW3Jeq9l75lfcMG-NSqZaWPL3lZgK24DsO02olu14QrjUI66VVJ5ADHElO9hfHDwbQQoZvAcVd6s4uLI4PA9k3LC8"
+  },
+  "origin": "STITCH",
+  "deviceType": "DESKTOP",
+  "designTheme": {
+    "colorMode": "LIGHT",
+    "font": "PLAYFAIR_DISPLAY",
+    "roundness": "ROUND_EIGHT",
+    "customColor": "#183629",
+    "headlineFont": "PLAYFAIR_DISPLAY",
+    "bodyFont": "PLUS_JAKARTA_SANS",
+    "labelFont": "PLUS_JAKARTA_SANS",
+    "namedColors": {
+      "surface_container_lowest": "#ffffff",
+      "on_secondary_fixed_variant": "#7a2f10",
+      "secondary_container": "#ff956e",
+      "on_tertiary": "#ffffff",
+      "tertiary_fixed_dim": "#b4ccbe",
+      "inverse_surface": "#31302b",
+      "on_primary_fixed": "#022115",
+      "surface_container": "#f1ede5",
+      "on_tertiary_fixed_variant": "#364b41",
+      "on_tertiary_fixed": "#0a1f17",
+      "secondary_fixed_dim": "#ffb59b",
+      "on_surface_variant": "#424844",
+      "outline": "#727974",
+      "on_primary_container": "#7f9f8e",
+      "on_surface": "#1c1c17",
+      "primary_fixed": "#c8ead7",
+      "error_container": "#ffdad6",
+      "on_primary_fixed_variant": "#2f4d3f",
+      "surface_variant": "#e6e2da",
+      "surface_container_highest": "#e6e2da",
+      "primary_container": "#183629",
+      "secondary_fixed": "#ffdbcf",
+      "surface_container_low": "#f7f3eb",
+      "surface_tint": "#466556",
+      "secondary": "#994626",
+      "on_error": "#ffffff",
+      "inverse_primary": "#adcebc",
+      "on_secondary": "#ffffff",
+      "surface_dim": "#dddad2",
+      "primary": "#022115",
+      "surface": "#fdf9f1",
+      "tertiary_container": "#20352b",
+      "tertiary": "#0a2017",
+      "on_background": "#1c1c17",
+      "inverse_on_surface": "#f4f0e8",
+      "tertiary_fixed": "#d0e8da",
+      "on_tertiary_container": "#879e91",
+      "outline_variant": "#c1c8c2",
+      "on_primary": "#ffffff",
+      "on_secondary_container": "#762c0d",
+      "background": "#fdf9f1",
+      "surface_bright": "#fdf9f1",
+      "on_error_container": "#93000a",
+      "error": "#ba1a1a",
+      "on_secondary_fixed": "#380d00",
+      "surface_container_high": "#ece8e0",
+      "primary_fixed_dim": "#adcebc"
+    },
+    "designMd": "---\nname: Civic Modern Architecture & Counsel\ncolors:\n  surface: '#fdf9f1'\n  surface-dim: '#dddad2'\n  surface-bright: '#fdf9f1'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#f7f3eb'\n  surface-container: '#f1ede5'\n  surface-container-high: '#ece8e0'\n  surface-container-highest: '#e6e2da'\n  on-surface: '#1c1c17'\n  on-surface-variant: '#424844'\n  inverse-surface: '#31302b'\n  inverse-on-surface: '#f4f0e8'\n  outline: '#727974'\n  outline-variant: '#c1c8c2'\n  surface-tint: '#466556'\n  primary: '#022115'\n  on-primary: '#ffffff'\n  primary-container: '#183629'\n  on-primary-container: '#7f9f8e'\n  inverse-primary: '#adcebc'\n  secondary: '#994626'\n  on-secondary: '#ffffff'\n  secondary-container: '#ff956e'\n  on-secondary-container: '#762c0d'\n  tertiary: '#0a2017'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#20352b'\n  on-tertiary-container: '#879e91'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#c8ead7'\n  primary-fixed-dim: '#adcebc'\n  on-primary-fixed: '#022115'\n  on-primary-fixed-variant: '#2f4d3f'\n  secondary-fixed: '#ffdbcf'\n  secondary-fixed-dim: '#ffb59b'\n  on-secondary-fixed: '#380d00'\n  on-secondary-fixed-variant: '#7a2f10'\n  tertiary-fixed: '#d0e8da'\n  tertiary-fixed-dim: '#b4ccbe'\n  on-tertiary-fixed: '#0a1f17'\n  on-tertiary-fixed-variant: '#364b41'\n  background: '#fdf9f1'\n  on-background: '#1c1c17'\n  surface-variant: '#e6e2da'\ntypography:\n  display-hero:\n    fontFamily: Playfair Display\n    fontSize: 3.5rem\n    fontWeight: '600'\n    lineHeight: 4rem\n    letterSpacing: -0.02em\n  display-hero-mobile:\n    fontFamily: Playfair Display\n    fontSize: 2.25rem\n    fontWeight: '600'\n    lineHeight: 2.75rem\n    letterSpacing: -0.015em\n  headline-lg:\n    fontFamily: Playfair Display\n    fontSize: 2.5rem\n    fontWeight: '500'\n    lineHeight: 3rem\n    letterSpacing: -0.015em\n  headline-lg-mobile:\n    fontFamily: Playfair Display\n    fontSize: 1.75rem\n    fontWeight: '500'\n    lineHeight: 2.25rem\n    letterSpacing: -0.01em\n  headline-md:\n    fontFamily: Playfair Display\n    fontSize: 1.75rem\n    fontWeight: '500'\n    lineHeight: 2.25rem\n  headline-sm:\n    fontFamily: Playfair Display\n    fontSize: 1.25rem\n    fontWeight: '600'\n    lineHeight: 1.75rem\n  title-editorial:\n    fontFamily: Playfair Display\n    fontSize: 1.125rem\n    fontWeight: '600'\n    lineHeight: 1.5rem\n    letterSpacing: 0.01em\n  body-lg:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 1.125rem\n    fontWeight: '400'\n    lineHeight: 1.875rem\n  body-md:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 1rem\n    fontWeight: '400'\n    lineHeight: 1.625rem\n  body-sm:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 0.875rem\n    fontWeight: '400'\n    lineHeight: 1.375rem\n  label-lg:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 0.875rem\n    fontWeight: '600'\n    lineHeight: 1.25rem\n    letterSpacing: 0.02em\n  label-md:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 0.75rem\n    fontWeight: '600'\n    lineHeight: 1rem\n    letterSpacing: 0.06em\n  label-caption:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 0.6875rem\n    fontWeight: '500'\n    lineHeight: 0.875rem\n    letterSpacing: 0.08em\nrounded:\n  sm: 0.25rem\n  DEFAULT: 0.5rem\n  md: 0.75rem\n  lg: 1rem\n  xl: 1.5rem\n  full: 9999px\nspacing:\n  gutter: 2rem\n  gutter-sm: 1rem\n  margin: 4rem\n  margin-mobile: 1.5rem\n  margin-tablet: 2.5rem\n  space-xs: 0.25rem\n  space-sm: 0.5rem\n  space-md: 1rem\n  space-lg: 1.5rem\n  space-xl: 2.5rem\n---\n\n## Brand & Style\n\nThis design system expresses a refined synthesis of bespoke legal counsel and premium Northern California property brokerage. The visual identity draws from civic modernism and coastal architectural warmth\u2014blending the institutional weight of high-stakes real estate law with the sunlit, organic ease of Northern California travertine, sandstone, and old-growth redwoods.\n\nThe design movement combines **Minimalism** and **Tactile Architectural Editorial**:\n- **Generous Whitespace:** Spacious margins and stately column layouts evoke high-end architectural monographs and legacy legal charters.\n- **Understated Dignity:** Restrained ornamentation replaces loud digital patterns. Interactions rely on measured, graceful transitions, crisp typography, and quiet material layers.\n- **Editorial Cadence:** Large-scale serif headlines pair with disciplined modern grotesque sans-serifs, evoking the tactile authority of signed documents and sunlit drafting tables.\n\n## Colors\n\nThe palette grounds the interface in Northern California\u2019s natural geology and civic institutions:\n- **Primary Canvas (`#F6F2EA`):** Warm Travertine Parchment acts as the primary background, eliminating sterile digital whites in favor of sun-washed stone.\n- **Secondary Surfaces (`#EBE4D6`):** Sandstone Cream establishes card backgrounds, side panels, and elevated inset structures.\n- **Primary Accent (`#183629` & `#11261D`):** Capitol Redwood Green brings authoritative institutional gravitas to primary actions, prominent badges, and navigation anchors, darkening to deep forest on hover and active states.\n- **Warm Accent (`#B85D3B`):** California Terracotta introduces precise editorial inflection\u2014used sparingly for key stat callouts, verification marks, active tabs, and delicate focus highlights.\n- **Ink & Typography:** Deep Espresso Ink (`#1A1917`) provides high-contrast, publication-grade legibility for headlines and body text, while Muted Stone Charcoal (`#4A4741`) handles supporting metadata, subtitles, and captions.\n- **Structural Dividers (`#D8CFC0`):** Warm Natural Border produces soft, tactile framing without harsh digital grid lines.\n\n## Typography\n\nTypography establishes an intentional dialogue between traditional legal authority and contemporary architectural publishing.\n\n- **Headlines & Display:** Playfair Display delivers classical proportion and typographic drama reminiscent of estate prospectuses and civic architecture monographs. Headlines use tight letter-spacing and generous line-heights to avoid crowding.\n- **Body & Controls:** Plus Jakarta Sans provides crisp geometric clarity, ensuring property disclosures, contract terms, technical spec sheets, and dense transaction matrices maintain effortless readability.\n- **Case Formatting:** Small labels and metadata tokens (`label-md`, `label-caption`) frequently employ uppercase tracking (`0.06em` to `0.08em`) to mirror architectural blueprint specifications.\n\n## Layout & Spacing\n\nThe layout is built around an asymmetric 12-column editorial fluid grid bounded by a max container width of `1440px`.\n\n- **Desktop (1024px+):** 12 columns with `2rem` (32px) gutters and `4rem` (64px) canvas margins. Section-level editorial layouts balance wide visual anchor panels (e.g., 7 or 8 columns) with dense listing data or legal stipulations (e.g., 4 or 5 columns).\n- **Tablet (768px \u2013 1023px):** 8 columns with `1.5rem` gutters and `2.5rem` margins. Complex dual-column split spreads fold gracefully into stacked cards.\n- **Mobile (< 768px):** 4 columns with `1rem` gutters and `1.5rem` margins. Secondary metadata collapses into clean accordion stacks.\n- **Vertical Rhythm:** Macro-sections utilize expansive spacing (`space-xl` and higher) to communicate calm confidence and room to breathe, avoiding cramped dashboard visual density.\n\n## Elevation & Depth\n\nVisual hierarchy rejects simulated 3D drop shadows in favor of **Tonal Layers** accented by razor-thin, tactile outlines and low-opacity, warm ambient diffusion:\n\n- **Surface Layering:** Depth is conveyed by placing Sandstone Cream (`#EBE4D6`) cards directly over Travertine Parchment (`#F6F2EA`), framed with hairline `1px` borders in Warm Natural Border (`#D8CFC0`).\n- **Warm Ambient Occlusion:** Floating or active overlay elements (dialogs, flyout dossiers, dropdown menus) use a warm, heavily diffused ambient shadow tinted with Deep Espresso: `0 12px 36px -8px rgba(26, 25, 23, 0.08), 0 4px 12px -2px rgba(26, 25, 23, 0.04)`.\n- **Inlaid Depth:** Recessed sections, interactive inputs, and secondary data wells apply inset hairline borders (`border: 1px solid #D8CFC0`) without internal shadows, maintaining a pristine, drafted blueprint quality.\n\n## Shapes\n\nThe geometric framework balances architectural structure with refined touchpoints:\n- **Containers & Cards:** Uniformly bounded with a deliberate `0.75rem` (12px) radius (`rounded-md` / `rounded-lg` transition), delivering an intentional, crafted feel that feels neither harsh nor overly playful.\n- **Buttons & Control Pills:** Form fields, interactive chips, and action buttons adopt a matching `0.5rem` (8px) to `0.75rem` (12px) contour, keeping interactive elements congruent with card framing.\n- **Badges & Micro-tags:** Compact categorization elements maintain slight curvature (`0.25rem` / 4px) or full circular pills for transaction state indicators.\n\n## Components\n\n### Buttons\n- **Primary CTA:** Capitol Redwood Green (`#183629`) background with Parchment (`#F6F2EA`) text. Subtle transition to Deep Forest (`#11261D`) on hover. Height: 48px, horizontal padding: `space-lg`, border-radius: 8px.\n- **Secondary Action:** Transparent background with a `1px` border in Warm Natural Border (`#D8CFC0`) and Deep Espresso Ink (`#1A1917`) text. On hover: shifts to Sandstone Cream (`#EBE4D6`).\n- **Warm Accent Link:** California Terracotta (`#B85D3B`) text paired with an underline offset by 4px, transitioning to an organic arrow glyph motion on hover.\n\n### Cards & Dossiers\n- **Structure:** Sandstone Cream (`#EBE4D6`) background, `12px` border-radius, bounded by a crisp `1px` border (`#D8CFC0`). Padding: `space-lg` to `space-xl`.\n- **Editorial Card Variant:** Travertine background with an inset photo well, fine hairline divider lines, and Playfair Display title headings.\n\n### Input Fields & Controls\n- **Fields:** Sandstone Cream or Travertine background, `1px` border in `#D8CFC0`, `8px` corner radius, text in Deep Espresso Ink (`#1A1917`). Height: 44px. Placeholder in Muted Stone Charcoal (`#4A4741`) at 60% opacity. Focus state applies a `1.5px` border in Capitol Redwood Green (`#183629`) with zero harsh outer rings.\n- **Checkboxes & Radios:** Handcrafted square (4px radius) and round selectors with a `1.5px` border in `#D8CFC0`. Checked state fills with Capitol Redwood Green (`#183629`) holding a crisp parchment tick.\n\n### Chips & Status Badges\n- **Transaction & Legal Status:** Pill or 4px radius chips. Off-market/Exclusive status utilizes California Terracotta tint (`rgba(184, 93, 59, 0.12)`) with `#B85D3B` text. Verified/Under Contract status utilizes Capitol Redwood tint with `#183629` text.\n\n### Architectural Listing & Provision Lists\n- **Data Tables & Clause Lists:** Clean horizontal rows divided by `1px` `#D8CFC0` rules. Generous padding (`space-md` vertical), featuring `label-caption` uppercase category tags preceding the data values.",
+    "colorVariant": "FIDELITY",
+    "overridePrimaryColor": "#183629",
+    "overrideSecondaryColor": "#b85d3b",
+    "overrideTertiaryColor": "#11261d",
+    "overrideNeutralColor": "#f6f2ea",
+    "spacingScale": 2,
+    "typography": {
+      "headline-md": {
+        "fontFamily": "Playfair Display",
+        "fontSize": "1.75rem",
+        "fontWeight": "500",
+        "lineHeight": "2.25rem"
+      },
+      "body-sm": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "0.875rem",
+        "fontWeight": "400",
+        "lineHeight": "1.375rem"
+      },
+      "headline-lg-mobile": {
+        "fontFamily": "Playfair Display",
+        "fontSize": "1.75rem",
+        "fontWeight": "500",
+        "lineHeight": "2.25rem",
+        "letterSpacing": "-0.01em"
+      },
+      "body-md": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "1rem",
+        "fontWeight": "400",
+        "lineHeight": "1.625rem"
+      },
+      "label-caption": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "0.6875rem",
+        "fontWeight": "500",
+        "lineHeight": "0.875rem",
+        "letterSpacing": "0.08em"
+      },
+      "body-lg": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "1.125rem",
+        "fontWeight": "400",
+        "lineHeight": "1.875rem"
+      },
+      "display-hero": {
+        "fontFamily": "Playfair Display",
+        "fontSize": "3.5rem",
+        "fontWeight": "600",
+        "lineHeight": "4rem",
+        "letterSpacing": "-0.02em"
+      },
+      "display-hero-mobile": {
+        "fontFamily": "Playfair Display",
+        "fontSize": "2.25rem",
+        "fontWeight": "600",
+        "lineHeight": "2.75rem",
+        "letterSpacing": "-0.015em"
+      },
+      "title-editorial": {
+        "fontFamily": "Playfair Display",
+        "fontSize": "1.125rem",
+        "fontWeight": "600",
+        "lineHeight": "1.5rem",
+        "letterSpacing": "0.01em"
+      },
+      "headline-sm": {
+        "fontFamily": "Playfair Display",
+        "fontSize": "1.25rem",
+        "fontWeight": "600",
+        "lineHeight": "1.75rem"
+      },
+      "headline-lg": {
+        "fontFamily": "Playfair Display",
+        "fontSize": "2.5rem",
+        "fontWeight": "500",
+        "lineHeight": "3rem",
+        "letterSpacing": "-0.015em"
+      },
+      "label-lg": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "0.875rem",
+        "fontWeight": "600",
+        "lineHeight": "1.25rem",
+        "letterSpacing": "0.02em"
+      },
+      "label-md": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "0.75rem",
+        "fontWeight": "600",
+        "lineHeight": "1rem",
+        "letterSpacing": "0.06em"
+      }
+    },
+    "spacing": {
+      "margin-mobile": "1.5rem",
+      "space-lg": "1.5rem",
+      "space-sm": "0.5rem",
+      "space-xs": "0.25rem",
+      "space-xl": "2.5rem",
+      "gutter": "2rem",
+      "gutter-sm": "1rem",
+      "margin-tablet": "2.5rem",
+      "margin": "4rem",
+      "space-md": "1rem"
+    },
+    "headlineFontFamily": "Playfair Display",
+    "bodyFontFamily": "Plus Jakarta Sans",
+    "labelFontFamily": "Plus Jakarta Sans"
+  },
+  "metadata": {
+    "userRole": "OWNER"
+  }
+}

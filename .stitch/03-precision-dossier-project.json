@@ -1,0 +1,163 @@
+{
+  "name": "projects/10021131436364808810",
+  "title": "NorCal Attorney Brokers \u2014 03 Precision Deal & Litigation Desk (Swiss Grid)",
+  "visibility": "PRIVATE",
+  "createTime": "2026-10-19T14:43:27.474967Z",
+  "updateTime": "2026-10-19T14:55:48.018545Z",
+  "projectType": "PROJECT_DESIGN",
+  "thumbnailScreenshot": {
+    "name": "projects/10021131436364808810/files/6618ef411a4a48098dd8b4cf670df6d6",
+    "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1VKCLsvT-JFdO12qMEx_6egj_QGW20yVY009o5y5t7V5rJRK0I6yQlwphM0J_cecNihuML7_siqyOmSwHy04zwx-La9e5-mKA77HtILKbu4bEZFCVJdfTUQ-yF4SOj60muGclOsRVtDlp3U5ZM5CJCKQ8XSsOCZR0XbESS4kPl9SdIPpYHR20PfLaiDIVpyDxmnPqP51vGDJ0nLt43h7ZepSUEBghJzqa5bpks41P_bfvMYMwao2fw95NCX"
+  },
+  "origin": "STITCH",
+  "deviceType": "DESKTOP",
+  "designTheme": {
+    "colorMode": "LIGHT",
+    "font": "SYNE",
+    "customColor": "#0e2a47",
+    "headlineFont": "SYNE",
+    "bodyFont": "INTER",
+    "labelFont": "JETBRAINS_MONO",
+    "namedColors": {
+      "on_primary_fixed": "#001c38",
+      "tertiary_container": "#1e293a",
+      "secondary_fixed_dim": "#ffb4a6",
+      "error_container": "#ffdad6",
+      "primary": "#00152c",
+      "on_tertiary_fixed": "#111c2c",
+      "primary_fixed": "#d2e4ff",
+      "on_secondary_container": "#fffbff",
+      "inverse_on_surface": "#eff1f4",
+      "on_error_container": "#93000a",
+      "surface_container_lowest": "#ffffff",
+      "on_tertiary": "#ffffff",
+      "tertiary": "#091525",
+      "tertiary_fixed_dim": "#bcc7dd",
+      "on_primary_fixed_variant": "#2f4867",
+      "on_primary": "#ffffff",
+      "secondary_fixed": "#ffdad3",
+      "surface_bright": "#f7f9fc",
+      "surface_container_high": "#e6e8eb",
+      "on_primary_container": "#7992b4",
+      "on_surface": "#191c1e",
+      "surface_tint": "#476080",
+      "inverse_surface": "#2d3133",
+      "surface_variant": "#e0e3e6",
+      "on_background": "#191c1e",
+      "primary_container": "#0e2a47",
+      "surface_dim": "#d8dadd",
+      "on_tertiary_fixed_variant": "#3c475a",
+      "tertiary_fixed": "#d8e3fa",
+      "inverse_primary": "#afc8ed",
+      "on_error": "#ffffff",
+      "outline_variant": "#c4c6ce",
+      "primary_fixed_dim": "#afc8ed",
+      "on_surface_variant": "#43474d",
+      "surface_container_low": "#f2f4f7",
+      "secondary": "#b51d04",
+      "outline": "#74777e",
+      "surface": "#f7f9fc",
+      "on_secondary_fixed_variant": "#8f1100",
+      "secondary_container": "#d9381e",
+      "on_secondary_fixed": "#3f0300",
+      "background": "#f7f9fc",
+      "error": "#ba1a1a",
+      "on_tertiary_container": "#8590a5",
+      "surface_container_highest": "#e0e3e6",
+      "surface_container": "#eceef1",
+      "on_secondary": "#ffffff"
+    },
+    "designMd": "---\nname: NorCal Legal Brokerage Dossier\ncolors:\n  surface: '#f7f9fc'\n  surface-dim: '#d8dadd'\n  surface-bright: '#f7f9fc'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#f2f4f7'\n  surface-container: '#eceef1'\n  surface-container-high: '#e6e8eb'\n  surface-container-highest: '#e0e3e6'\n  on-surface: '#191c1e'\n  on-surface-variant: '#43474d'\n  inverse-surface: '#2d3133'\n  inverse-on-surface: '#eff1f4'\n  outline: '#74777e'\n  outline-variant: '#c4c6ce'\n  surface-tint: '#476080'\n  primary: '#00152c'\n  on-primary: '#ffffff'\n  primary-container: '#0e2a47'\n  on-primary-container: '#7992b4'\n  inverse-primary: '#afc8ed'\n  secondary: '#b51d04'\n  on-secondary: '#ffffff'\n  secondary-container: '#d9381e'\n  on-secondary-container: '#fffbff'\n  tertiary: '#091525'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#1e293a'\n  on-tertiary-container: '#8590a5'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#d2e4ff'\n  primary-fixed-dim: '#afc8ed'\n  on-primary-fixed: '#001c38'\n  on-primary-fixed-variant: '#2f4867'\n  secondary-fixed: '#ffdad3'\n  secondary-fixed-dim: '#ffb4a6'\n  on-secondary-fixed: '#3f0300'\n  on-secondary-fixed-variant: '#8f1100'\n  tertiary-fixed: '#d8e3fa'\n  tertiary-fixed-dim: '#bcc7dd'\n  on-tertiary-fixed: '#111c2c'\n  on-tertiary-fixed-variant: '#3c475a'\n  background: '#f7f9fc'\n  on-background: '#191c1e'\n  surface-variant: '#e0e3e6'\ntypography:\n  headline-xl:\n    fontFamily: Syne\n    fontSize: 48px\n    fontWeight: '700'\n    lineHeight: 52px\n  headline-xl-mobile:\n    fontFamily: Syne\n    fontSize: 32px\n    fontWeight: '700'\n    lineHeight: 38px\n  headline-lg:\n    fontFamily: Syne\n    fontSize: 36px\n    fontWeight: '700'\n    lineHeight: 42px\n  headline-lg-mobile:\n    fontFamily: Syne\n    fontSize: 26px\n    fontWeight: '700'\n    lineHeight: 32px\n  headline-md:\n    fontFamily: Syne\n    fontSize: 24px\n    fontWeight: '600'\n    lineHeight: 30px\n  headline-sm:\n    fontFamily: Syne\n    fontSize: 18px\n    fontWeight: '600'\n    lineHeight: 24px\n  body-lg:\n    fontFamily: Inter\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: 24px\n  body-md:\n    fontFamily: Inter\n    fontSize: 14px\n    fontWeight: '400'\n    lineHeight: 20px\n  body-sm:\n    fontFamily: Inter\n    fontSize: 12px\n    fontWeight: '400'\n    lineHeight: 16px\n  label-code:\n    fontFamily: JetBrains Mono\n    fontSize: 13px\n    fontWeight: '500'\n    lineHeight: 16px\n  label-telemetry:\n    fontFamily: JetBrains Mono\n    fontSize: 11px\n    fontWeight: '400'\n    lineHeight: 14px\nspacing:\n  gutter: 0px\n  gutter-desktop: 0px\n  margin: 2rem\n  margin-mobile: 1rem\n  space-xs: 0.25rem\n  space-sm: 0.5rem\n  space-md: 1rem\n  space-lg: 1.5rem\n  space-xl: 2.5rem\n---\n\n## Brand & Style\nThis design system embodies the calculated precision of Northern California dual-licensed attorney-broker practice across Sacramento and Elk Grove. The visual voice fuses the rigorous discipline of Swiss architectural drafting with the uncompromising authority of judicial briefs and transactional escrow dossiers.\n\nThe aesthetic avoids decorative ornamentation in favor of structural clarity, high information density, exposed construction grids, and clinical typographic order. Visual authority stems from meticulous alignment, deliberate tabular formatting, and razor-sharp contrast between drafting paper surfaces, judicial cobalt anchors, and signal vermilion functional interventions. The interface evokes unassailable legal competence, institutional credibility, and transaction confidence.\n\n## Colors\nThe palette operates with strict functional hierarchy derived from technical blueprints and legal proceedings:\n\n- **Judicial Cobalt Navy (`#0E2A47`)**: Primary authority color. Applied to critical mastheads, section headers, active primary controls, and institutional anchoring blocks.\n- **Signal Vermilion (`#D9381E`)**: High-contrast action color. Reserved strictly for vital statutory alerts, urgent dossier triage toggles, closing deadline timestamps, and active conversion buttons.\n- **Slate Ink (`#4A5568`)**: Functional tertiary neutral. Designated for body prose, explanatory legal footnotes, and secondary telemetry metadata.\n- **Crisp Architectural Paper (`#F4F6F9`)**: Canvas base neutral. Provides a cool, tinted drafting surface that prevents screen glare while grounding layout modules.\n- **Pure White (`#FFFFFF`)**: Dossier cell fills, document cards, and focused input canvas backgrounds.\n- **Hairline Rule (`#CFD6E0`)**: Structural frame line color used uniformly for all 1px architectural grid divisions and data cells.\n\n## Typography\nTypography is structured around three distinct type roles:\n\n1. **Display & Section Anchors (Syne)**: Structural, geometric, and unapologetic. Syne brings sculptural weight to judicial hero statements and architectural sector headings, emphasizing modern NorCal development and firm prestige.\n2. **Body & Case Text (Inter)**: Utilitarian and legible. Optimized for reading transactional agreements, statutory summaries, property conveyance notes, and client intake guidance.\n3. **Statutory & Telemetry Notation (JetBrains Mono)**: Mechanical, monospaced accuracy. Used for CalDRE license IDs, State Bar member serials, APN coordinates, escrow file markers, micro indices, and timestamped intake logs. Always rendered with crisp kerning and optical alignment.\n\n## Layout & Spacing\nThe layout follows a modular Swiss grid model utilizing collapsing borders. Rather than conventional floating cards separated by gutters, components lock flush against one another sharing a unified `1px solid #CFD6E0` frame line.\n\n- **Grid Architecture**: 12-column desktop framework anchored inside a max-width bounds of 1440px. Grid cells touch with `0px` gutter gaps, defining separation purely via internal padding and hairline borders.\n- **Density**: High-density dossier composition. Information is arranged in contiguous rows, ledger tables, and tabular matrix units.\n- **Responsive Adaptations**:\n  - **Desktop (>=1024px)**: Full multi-column matrix with split matter-triage views, side-by-side attorney-broker credential ledgers, and property conveyance indices.\n  - **Tablet (768px - 1023px)**: Reflow to 6 columns; side dossiers stack below primary case overviews while retaining identical hairline containment borders.\n  - **Mobile (<768px)**: Single-column linear dossiers; tabular indices gain horizontal overflow scrolling with fixed identifier labels.\n\n## Elevation & Depth\nThis design system rejects dropshadows, diffused blurs, and pseudo-skeuomorphic layering. Depth is communicated strictly through planar borders, tonal contrast, and optical nesting:\n\n- **Surface Tiers**:\n  - `Base`: Architectural Paper (`#F4F6F9`) forms the canvas substrate.\n  - `Cell / Panel`: Pure White (`#FFFFFF`) surfaces rise through flat contrast against the substrate.\n  - `Anchor`: Judicial Cobalt Navy (`#0E2A47`) solid blocks produce visual gravity for index headers and primary terminal points.\n- **Separation Technique**: All structural division is established by `1px solid #CFD6E0` hairlines. When elements receive focus or an active selection state, the border transforms to `1px solid #0E2A47` or `1px solid #D9381E` without shifting dimensions.\n- **No Cast Shadows**: No `box-shadow` styles are permitted, maintaining the flat integrity of an architectural schematic or official legal pleading.\n\n## Shapes\nThe shape language is strictly architectural and squared (`roundedness: 0`). Elements operate with right angles, flush edge alignments, and crisp planar containment.\n\n- Standard buttons, input envelopes, data badges, and content blocks possess `0px` border-radius to reinforce the blueprint and legal dossier motif.\n- Sub-elements requiring tactile distinction (e.g., interactive chips or specialized micro-pills) must not exceed `2px` corner softening, preserving structural geometry throughout.\n\n## Components\n\n### Buttons & Action Controls\n- **Primary CTA**: Solid Judicial Cobalt Navy (`#0E2A47`) background, Pure White text, `0px` radius, uppercase tracking, monospaced prefix indicators (e.g., `[EXECUTE]`). Hover swaps background to Signal Vermilion (`#D9381E`).\n- **Urgent / Matter Filing CTA**: Signal Vermilion (`#D9381E`) background, Pure White text, `0px` radius, JetBrains Mono typography for high-stakes filings and urgent consultation requests.\n- **Secondary Grid Button**: Pure White background, `1px solid #CFD6E0` border, Judicial Cobalt Navy text. Hover applies `#F4F6F9` fill with an interior `1px solid #0E2A47` border lock.\n\n### Dossier Data Tables & Index Lists\n- Hairline-separated cells with no gaps.\n- Table headers use Judicial Cobalt Navy (`#0E2A47`) or Paper (`#F4F6F9`) with monospaced metadata identifiers in `label-telemetry`.\n- Numerical values, APN identifiers, case reference codes, and legal statues align strictly right in JetBrains Mono.\n\n### Interactive Matter Triage Desk\n- Segmented matrix panels allowing clients to categorize their case between Brokerage Acquisition, Escrow Dispute, Probate Real Estate, or Zoning Advocacy.\n- Unselected states use Pure White cards with `#CFD6E0` outer borders; selected states trigger a solid `2px solid #0E2A47` inner outline and a Signal Vermilion corner notch.\n\n### Input Fields & Legal Forms\n- Pure White background framed in `1px solid #CFD6E0`.\n- Top-aligned micro-labels in JetBrains Mono (`label-telemetry`) styled with Slate Ink (`#4A5568`).\n- Active focus state: border shifts to `1px solid #0E2A47` with zero halo or glow effects.\n\n### Status Indicators & Credential Badges\n- Squared tags with `1px solid #CFD6E0` border, white or paper background, containing monospaced state tags (e.g., `CALDRE #02194821 // CA BAR #312984`).\n- Critical urgency badges feature a Signal Vermilion dot indicator with no blur.",
+    "colorVariant": "FIDELITY",
+    "overridePrimaryColor": "#0e2a47",
+    "overrideSecondaryColor": "#d9381e",
+    "overrideTertiaryColor": "#4a5568",
+    "overrideNeutralColor": "#f4f6f9",
+    "spacingScale": 2,
+    "typography": {
+      "headline-sm": {
+        "fontFamily": "Syne",
+        "fontSize": "18px",
+        "fontWeight": "600",
+        "lineHeight": "24px"
+      },
+      "label-code": {
+        "fontFamily": "JetBrains Mono",
+        "fontSize": "13px",
+        "fontWeight": "500",
+        "lineHeight": "16px"
+      },
+      "headline-lg": {
+        "fontFamily": "Syne",
+        "fontSize": "36px",
+        "fontWeight": "700",
+        "lineHeight": "42px"
+      },
+      "body-lg": {
+        "fontFamily": "Inter",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px"
+      },
+      "headline-lg-mobile": {
+        "fontFamily": "Syne",
+        "fontSize": "26px",
+        "fontWeight": "700",
+        "lineHeight": "32px"
+      },
+      "headline-xl-mobile": {
+        "fontFamily": "Syne",
+        "fontSize": "32px",
+        "fontWeight": "700",
+        "lineHeight": "38px"
+      },
+      "label-telemetry": {
+        "fontFamily": "JetBrains Mono",
+        "fontSize": "11px",
+        "fontWeight": "400",
+        "lineHeight": "14px"
+      },
+      "body-sm": {
+        "fontFamily": "Inter",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "lineHeight": "16px"
+      },
+      "body-md": {
+        "fontFamily": "Inter",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "20px"
+      },
+      "headline-xl": {
+        "fontFamily": "Syne",
+        "fontSize": "48px",
+        "fontWeight": "700",
+        "lineHeight": "52px"
+      },
+      "headline-md": {
+        "fontFamily": "Syne",
+        "fontSize": "24px",
+        "fontWeight": "600",
+        "lineHeight": "30px"
+      }
+    },
+    "spacing": {
+      "margin-mobile": "1rem",
+      "space-xs": "0.25rem",
+      "gutter-desktop": "0px",
+      "space-xl": "2.5rem",
+      "gutter": "0px",
+      "margin": "2rem",
+      "space-lg": "1.5rem",
+      "space-md": "1rem",
+      "space-sm": "0.5rem"
+    },
+    "headlineFontFamily": "Syne",
+    "bodyFontFamily": "Inter",
+    "labelFontFamily": "JetBrains Mono"
+  },
+  "metadata": {
+    "userRole": "OWNER"
+  }
+}

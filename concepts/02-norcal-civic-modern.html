@@ -1,0 +1,1704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NorCal Attorney Brokers — NorCal Civic Modern (Demo 02)</title>
+  <meta name="description" content="NorCal Attorney Brokers combines experienced California real estate attorneys, courtroom litigators, and All City Homes real estate brokers in Elk Grove and Greater Sacramento." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-travertine: #f6f2ea;
+      --bg-sandstone: #ebe4d6;
+      --bg-alabaster: #fdfbf7;
+      --redwood: #183629;
+      --redwood-deep: #0f241b;
+      --redwood-tint: #dce8e1;
+      --terracotta: #9c411f;
+      --terracotta-tint: #f5e2da;
+      --ink-espresso: #1a1917;
+      --ink-stone: #46423b;
+      --ink-muted: #5c564d;
+      --border-stone: #d5cbb8;
+      --border-subtle: #e2dacb;
+      --font-serif: 'Libre Caslon Text', Georgia, 'Times New Roman', serif;
+      --font-sans: 'Figtree', -apple-system, BlinkMacSystemFont, sans-serif;
+      --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--bg-travertine);
+      color: var(--ink-espresso);
+      font-family: var(--font-sans);
+      font-size: 16px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      margin: 0;
+      background-color: var(--bg-travertine);
+      color: var(--ink-espresso);
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s var(--ease-out), background-color 0.2s var(--ease-out), border-color 0.2s var(--ease-out);
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible {
+      outline: 2px solid var(--redwood);
+      outline-offset: 3px;
+    }
+
+    /* Concept Studio Switcher Bar */
+    .studio-bar {
+      background: var(--redwood-deep);
+      color: var(--bg-travertine);
+      padding: 0 2rem;
+      font-size: 0.8125rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    }
+    .studio-bar-inner {
+      max-width: 1380px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      min-height: 46px;
+    }
+    .studio-links {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .studio-link {
+      display: inline-flex;
+      align-items: center;
+      min-height: 36px;
+      padding: 0.25rem 0.75rem;
+      border-radius: 6px;
+      border: 1px solid transparent;
+      color: #e2ece6;
+      font-weight: 500;
+    }
+    .studio-link:hover {
+      background: rgba(255, 255, 255, 0.08);
+      color: #ffffff;
+    }
+    .studio-link.is-active {
+      background: var(--bg-travertine);
+      color: var(--redwood-deep);
+      font-weight: 600;
+    }
+
+    /* Civic Top Bar */
+    .civic-topbar {
+      background: var(--bg-sandstone);
+      border-bottom: 1px solid var(--border-stone);
+      padding: 0 2rem;
+      font-size: 0.8125rem;
+      color: var(--ink-stone);
+    }
+    .civic-topbar-inner {
+      max-width: 1380px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      min-height: 44px;
+      font-variant-numeric: tabular-nums;
+    }
+    .civic-meta {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .civic-badge {
+      font-weight: 600;
+      color: var(--redwood);
+    }
+
+    /* Sticky Masthead */
+    .masthead {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(246, 242, 234, 0.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-stone);
+      padding: 0 2rem;
+    }
+    .masthead-inner {
+      max-width: 1380px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 86px;
+      gap: 1.5rem;
+    }
+    .brand-identity {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      min-height: 48px;
+    }
+    .brand-seal {
+      width: 56px;
+      height: 56px;
+      border-radius: 10px;
+      background: var(--bg-alabaster);
+      border: 1px solid var(--border-stone);
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .brand-seal img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .brand-name {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--redwood-deep);
+      line-height: 1.15;
+    }
+    .brand-tagline {
+      display: block;
+      font-size: 0.78rem;
+      color: var(--terracotta);
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      margin-top: 2px;
+    }
+
+    .masthead-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .masthead-link {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 0 0.95rem;
+      border-radius: 8px;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: var(--ink-stone);
+    }
+    .masthead-link:hover {
+      background: var(--bg-sandstone);
+      color: var(--redwood-deep);
+    }
+
+    .masthead-cta {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      min-height: 46px;
+      padding: 0.65rem 1.35rem;
+      border-radius: 8px;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: background-color 0.2s var(--ease-out), color 0.2s var(--ease-out), border-color 0.2s var(--ease-out), transform 0.2s var(--ease-out);
+      font-variant-numeric: tabular-nums;
+    }
+    .btn-redwood {
+      background: var(--redwood);
+      color: var(--bg-alabaster);
+      border-color: var(--redwood);
+    }
+    .btn-redwood:hover {
+      background: var(--redwood-deep);
+      border-color: var(--redwood-deep);
+      transform: translateY(-1px);
+    }
+    .btn-sandstone {
+      background: var(--bg-alabaster);
+      color: var(--ink-espresso);
+      border-color: var(--border-stone);
+    }
+    .btn-sandstone:hover {
+      background: var(--bg-sandstone);
+      border-color: var(--redwood);
+    }
+
+    .container {
+      max-width: 1380px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .section {
+      padding: 5.5rem 0;
+      border-bottom: 1px solid var(--border-stone);
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      color: var(--ink-espresso);
+      margin-top: 0;
+      text-wrap: balance;
+    }
+
+    /* Editorial Monograph Hero */
+    .hero-monograph {
+      padding: 4rem 0 5rem;
+      border-bottom: 1px solid var(--border-stone);
+    }
+    .hero-spread {
+      display: grid;
+      grid-template-columns: 6fr 6fr;
+      gap: 3rem;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+    .hero-editorial h1 {
+      font-size: clamp(2.35rem, 4vw, 3.65rem);
+      line-height: 1.12;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.35rem;
+      color: var(--redwood-deep);
+    }
+    .hero-editorial p {
+      font-size: 1.125rem;
+      color: var(--ink-stone);
+      max-width: 62ch;
+      margin: 0 0 1.5rem;
+    }
+    .hero-promise-pill {
+      display: inline-block;
+      padding: 0.65rem 1.15rem;
+      background: var(--bg-sandstone);
+      border: 1px solid var(--border-stone);
+      border-radius: 8px;
+      font-family: var(--font-serif);
+      font-style: italic;
+      color: var(--redwood-deep);
+      margin-bottom: 1.75rem;
+      font-size: 1.05rem;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+    }
+
+    /* Panoramic Collage Frame */
+    .hero-panorama {
+      display: grid;
+      grid-template-columns: 7fr 5fr;
+      gap: 1rem;
+      background: var(--bg-sandstone);
+      border: 1px solid var(--border-stone);
+      border-radius: 12px;
+      padding: 1rem;
+    }
+    .capitol-card {
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--border-stone);
+      background: var(--bg-alabaster);
+      display: flex;
+      flex-direction: column;
+    }
+    .capitol-card img {
+      width: 100%;
+      height: 270px;
+      object-fit: cover;
+    }
+    .capitol-card figcaption,
+    .founder-card figcaption {
+      padding: 0.85rem 1rem;
+      font-size: 0.8125rem;
+      color: var(--ink-stone);
+      border-top: 1px solid var(--border-subtle);
+      background: var(--bg-alabaster);
+      flex: 1;
+    }
+    .founder-card {
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--border-stone);
+      background: var(--bg-alabaster);
+      display: flex;
+      flex-direction: column;
+    }
+    .founder-card img {
+      width: 100%;
+      height: 270px;
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    /* Guided Client Pathway Selector */
+    .pathway-architect {
+      background: var(--bg-alabaster);
+      border: 1px solid var(--border-stone);
+      border-radius: 12px;
+      padding: 2.25rem;
+    }
+    .pathway-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .pathway-head h2 {
+      font-size: 1.65rem;
+      margin-bottom: 0;
+    }
+    .pathway-head p {
+      margin: 0;
+      color: var(--ink-stone);
+      font-size: 0.95rem;
+    }
+    .pathway-buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.85rem;
+      margin-bottom: 1.75rem;
+    }
+    .pathway-btn {
+      min-height: 60px;
+      padding: 0.9rem 1rem;
+      border-radius: 8px;
+      background: var(--bg-travertine);
+      border: 1px solid var(--border-stone);
+      color: var(--ink-espresso);
+      font-family: var(--font-sans);
+      font-size: 0.9375rem;
+      font-weight: 600;
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.2s var(--ease-out);
+    }
+    .pathway-btn:hover {
+      background: var(--bg-sandstone);
+      border-color: var(--redwood);
+    }
+    .pathway-btn[aria-selected="true"] {
+      background: var(--redwood);
+      color: var(--bg-alabaster);
+      border-color: var(--redwood);
+    }
+    .pathway-recommendation {
+      background: var(--bg-sandstone);
+      border: 1px solid var(--border-stone);
+      border-radius: 10px;
+      padding: 1.75rem;
+      display: none;
+      grid-template-columns: 8fr 4fr;
+      gap: 2rem;
+      align-items: center;
+    }
+    .pathway-recommendation.is-active {
+      display: grid;
+    }
+    .pathway-recommendation h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+      color: var(--redwood-deep);
+    }
+    .pathway-recommendation p {
+      margin: 0 0 1rem;
+      color: var(--ink-stone);
+      max-width: 65ch;
+    }
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .civic-chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.3rem 0.7rem;
+      border-radius: 6px;
+      background: var(--bg-alabaster);
+      border: 1px solid var(--border-stone);
+      color: var(--redwood-deep);
+      font-size: 0.8125rem;
+      font-weight: 600;
+    }
+    .terracotta-chip {
+      background: var(--terracotta-tint);
+      border-color: rgba(156, 65, 31, 0.3);
+      color: var(--terracotta);
+    }
+
+    /* Section Header */
+    .section-intro {
+      display: grid;
+      grid-template-columns: 7fr 5fr;
+      gap: 2.5rem;
+      align-items: end;
+      margin-bottom: 3rem;
+    }
+    .section-intro h2 {
+      font-size: clamp(1.95rem, 3vw, 2.75rem);
+      line-height: 1.16;
+      letter-spacing: -0.015em;
+      margin-bottom: 0;
+      color: var(--redwood-deep);
+    }
+    .section-intro p {
+      margin: 0;
+      color: var(--ink-stone);
+      font-size: 1.05rem;
+    }
+
+    /* Two-Wing Architectural Spread */
+    .wings-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    .wing-folio {
+      background: var(--bg-alabaster);
+      border: 1px solid var(--border-stone);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .wing-banner {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      border-bottom: 1px solid var(--border-stone);
+      background: var(--bg-sandstone);
+    }
+    .wing-banner img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+    }
+    .wing-banner-copy {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-left: 1px solid var(--border-stone);
+    }
+    .wing-banner-copy h3 {
+      font-size: 1.55rem;
+      margin-bottom: 0.4rem;
+      color: var(--redwood-deep);
+    }
+    .wing-banner-copy p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--ink-stone);
+    }
+    .wing-content {
+      padding: 2rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .wing-content > p {
+      color: var(--ink-stone);
+      margin: 0 0 1.5rem;
+    }
+    .provision-list {
+      border-top: 1px solid var(--border-stone);
+      margin-bottom: 1.5rem;
+    }
+    .provision-row {
+      padding: 0.9rem 0;
+      border-bottom: 1px solid var(--border-subtle);
+      display: grid;
+      grid-template-columns: 40% 60%;
+      gap: 1rem;
+      font-size: 0.9375rem;
+    }
+    .provision-row strong {
+      color: var(--redwood-deep);
+      font-weight: 600;
+    }
+    .provision-row span {
+      color: var(--ink-stone);
+    }
+
+    /* 5 Duties Table */
+    .duties-ledger {
+      margin-top: 2.5rem;
+      background: var(--bg-sandstone);
+      border: 1px solid var(--border-stone);
+      border-radius: 12px;
+      padding: 2rem;
+    }
+    .duties-ledger h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1.25rem;
+      color: var(--redwood-deep);
+    }
+    .duties-columns {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1.25rem;
+    }
+    .duty-item {
+      background: var(--bg-alabaster);
+      border: 1px solid var(--border-stone);
+      border-radius: 8px;
+      padding: 1.25rem;
+    }
+    .duty-item h4 {
+      font-size: 1.1rem;
+      margin-bottom: 0.45rem;
+      color: var(--redwood-deep);
+    }
+    .duty-item p {
+      margin: 0;
+      font-size: 0.875rem;
+      color: var(--ink-stone);
+      line-height: 1.55;
+    }
+
+    /* Counsel & Origin Story */
+    .origin-spread {
+      display: grid;
+      grid-template-columns: 7fr 5fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .origin-story-box {
+      background: var(--bg-alabaster);
+      border: 1px solid var(--border-stone);
+      border-radius: 12px;
+      padding: 2.5rem;
+    }
+    .origin-story-box h3 {
+      font-size: 1.85rem;
+      margin-bottom: 1rem;
+      color: var(--redwood-deep);
+    }
+    .origin-story-box p {
+      color: var(--ink-stone);
+      margin: 0 0 1.15rem;
+      max-width: 68ch;
+    }
+    .milestone-timeline {
+      margin-top: 1.75rem;
+      border-top: 1px solid var(--border-stone);
+      padding-top: 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+    .milestone-node strong {
+      display: block;
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      color: var(--terracotta);
+      margin-bottom: 0.25rem;
+    }
+    .milestone-node span {
+      font-size: 0.85rem;
+      color: var(--ink-stone);
+      line-height: 1.45;
+      display: block;
+    }
+
+    .anaya-profile-box {
+      background: var(--bg-sandstone);
+      border: 1px solid var(--border-stone);
+      border-radius: 12px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .anaya-top {
+      display: flex;
+      gap: 1.25rem;
+      align-items: center;
+      margin-bottom: 1.25rem;
+    }
+    .anaya-top img {
+      width: 96px;
+      height: 96px;
+      border-radius: 10px;
+      object-fit: cover;
+      border: 1px solid var(--border-stone);
+      flex-shrink: 0;
+    }
+    .anaya-top h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.25rem;
+    }
+    .anaya-top p {
+      margin: 0 0 0.5rem;
+      font-size: 0.9rem;
+      color: var(--ink-stone);
+    }
+    .anaya-profile-box > p {
+      color: var(--ink-stone);
+      font-size: 0.95rem;
+      margin: 0 0 1rem;
+    }
+
+    /* Brokerage Team Strip */
+    .team-roster-bar {
+      background: var(--bg-alabaster);
+      border: 1px solid var(--border-stone);
+      border-radius: 12px;
+      padding: 1.75rem 2rem;
+      display: grid;
+      grid-template-columns: 4fr 8fr;
+      gap: 2rem;
+      align-items: center;
+    }
+    .team-roster-bar h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.35rem;
+    }
+    .team-roster-bar p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--ink-stone);
+    }
+    .partner-cards-inline {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+    .partner-mini {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      padding: 0.75rem;
+      background: var(--bg-travertine);
+      border: 1px solid var(--border-stone);
+      border-radius: 8px;
+    }
+    .partner-mini img {
+      width: 52px;
+      height: 52px;
+      border-radius: 8px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .partner-mini-initials {
+      width: 52px;
+      height: 52px;
+      border-radius: 8px;
+      background: var(--redwood);
+      color: var(--bg-alabaster);
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .partner-mini h4 {
+      font-size: 1rem;
+      margin-bottom: 0.15rem;
+    }
+    .partner-mini span {
+      display: block;
+      font-size: 0.75rem;
+      color: var(--terracotta);
+      font-weight: 600;
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* Filterable Testimonials */
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 2rem;
+    }
+    .filter-pill {
+      min-height: 44px;
+      padding: 0.5rem 1.1rem;
+      border-radius: 8px;
+      border: 1px solid var(--border-stone);
+      background: var(--bg-alabaster);
+      color: var(--ink-stone);
+      font-family: var(--font-sans);
+      font-size: 0.875rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .filter-pill[aria-pressed="true"] {
+      background: var(--redwood);
+      color: var(--bg-alabaster);
+      border-color: var(--redwood);
+    }
+    .stories-masonry {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+    .story-folio {
+      background: var(--bg-alabaster);
+      border: 1px solid var(--border-stone);
+      border-radius: 12px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .story-folio.is-hidden {
+      display: none;
+    }
+    .story-folio h3 {
+      font-size: 1.35rem;
+      margin-bottom: 0.85rem;
+      color: var(--redwood-deep);
+    }
+    .story-folio blockquote {
+      margin: 0 0 1.25rem;
+      color: var(--ink-stone);
+      font-size: 0.98rem;
+      line-height: 1.68;
+    }
+    .story-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-subtle);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--terracotta);
+    }
+
+    /* Elk Grove Office & Consultation Booking */
+    .civic-contact-grid {
+      display: grid;
+      grid-template-columns: 6fr 6fr;
+      gap: 2.5rem;
+      align-items: start;
+    }
+    .office-showcase {
+      background: var(--bg-alabaster);
+      border: 1px solid var(--border-stone);
+      border-radius: 12px;
+      padding: 2rem;
+    }
+    .office-showcase h3 {
+      font-size: 1.65rem;
+      margin-bottom: 0.5rem;
+      color: var(--redwood-deep);
+    }
+    .office-showcase > p {
+      color: var(--ink-stone);
+      margin: 0 0 1.5rem;
+    }
+    .office-photos-pair {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .office-photos-pair figure {
+      margin: 0;
+      border: 1px solid var(--border-stone);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--bg-travertine);
+    }
+    .office-photos-pair img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .office-photos-pair figcaption {
+      padding: 0.65rem 0.85rem;
+      font-size: 0.8125rem;
+      color: var(--ink-stone);
+    }
+    .hours-list {
+      border-top: 1px solid var(--border-stone);
+      padding-top: 1rem;
+    }
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.55rem 0;
+      border-bottom: 1px solid var(--border-subtle);
+      font-size: 0.9375rem;
+    }
+    .hours-row strong {
+      color: var(--redwood-deep);
+    }
+
+    .booking-folio {
+      background: var(--bg-sandstone);
+      border: 1px solid var(--border-stone);
+      border-radius: 12px;
+      padding: 2.5rem;
+    }
+    .booking-folio h3 {
+      font-size: 1.85rem;
+      margin-bottom: 0.5rem;
+      color: var(--redwood-deep);
+    }
+    .booking-folio > p {
+      color: var(--ink-stone);
+      margin: 0 0 1.5rem;
+    }
+    .civic-form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .civic-field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      margin-bottom: 1rem;
+    }
+    .civic-field label {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--ink-espresso);
+    }
+    .civic-input {
+      min-height: 46px;
+      padding: 0.65rem 0.9rem;
+      border-radius: 8px;
+      border: 1px solid var(--border-stone);
+      background: var(--bg-alabaster);
+      color: var(--ink-espresso);
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      width: 100%;
+    }
+    .civic-input::placeholder {
+      color: var(--ink-muted);
+    }
+    textarea.civic-input {
+      min-height: 96px;
+      resize: vertical;
+    }
+    .civic-status {
+      display: none;
+      margin-top: 1rem;
+      padding: 0.9rem 1rem;
+      border-radius: 8px;
+      background: var(--redwood-tint);
+      border: 1px solid var(--redwood);
+      color: var(--redwood-deep);
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+    .civic-status.is-visible {
+      display: block;
+    }
+    .disclaimer-text {
+      font-size: 0.78rem;
+      color: var(--ink-stone);
+      margin-top: 0.9rem;
+      line-height: 1.5;
+    }
+
+    /* Footer */
+    .civic-footer {
+      background: var(--redwood-deep);
+      color: var(--bg-travertine);
+      padding: 4rem 2rem;
+      font-size: 0.9rem;
+    }
+    .civic-footer-inner {
+      max-width: 1380px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 5fr 4fr 3fr;
+      gap: 2.5rem;
+    }
+    .civic-footer h3 {
+      color: var(--bg-alabaster);
+      font-size: 1.35rem;
+      margin-bottom: 0.75rem;
+    }
+    .civic-footer p {
+      color: #d5e2db;
+      margin: 0 0 0.85rem;
+    }
+    .civic-footer-bottom {
+      max-width: 1380px;
+      margin: 2.5rem auto 0;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.16);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.8125rem;
+      color: #bdd0c5;
+    }
+
+    @media (max-width: 1080px) {
+      .hero-spread,
+      .section-intro,
+      .wings-grid,
+      .origin-spread,
+      .team-roster-bar,
+      .civic-contact-grid,
+      .civic-footer-inner,
+      .pathway-recommendation.is-active {
+        grid-template-columns: 1fr;
+      }
+      .pathway-buttons {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .duties-columns {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .milestone-timeline {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 680px) {
+      .container, .masthead, .civic-topbar, .studio-bar {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+      }
+      .masthead-nav {
+        display: none;
+      }
+      .hero-panorama,
+      .pathway-buttons,
+      .wing-banner,
+      .duties-columns,
+      .partner-cards-inline,
+      .stories-masonry,
+      .office-photos-pair,
+      .civic-form-row,
+      .milestone-timeline {
+        grid-template-columns: 1fr;
+      }
+      .wing-banner-copy {
+        border-left: 0;
+        border-top: 1px solid var(--border-stone);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!--
+  THESIS: Sunlit Northern California civic monograph that unites Sacramento real estate legal stewardship with community-rooted property brokerage.
+  OWN-WORLD: Warm Travertine Parchment (#F6F2EA), Sandstone Cream (#EBE4D6), Capitol Redwood Green (#183629), California Terracotta (#9C411F), and Libre Caslon Text + Figtree typography.
+  STORY: Visitors experience an approachable, deeply rooted Greater Sacramento legal and real estate partner led by Vanessa Amador, Esq. and Robert J. Anaya, Esq., select their exact property situation, and schedule a consultation.
+  FIRST VIEWPORT: Magazine-style spread pairing the California State Capitol and Vanessa Amador's portrait with the Interactive Client Pathway Selector Bar.
+  FORM: Candidate 2 (Warm NorCal Architectural & Civic); seed key 602466ad.
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+  -->
+
+  <aside class="studio-bar" aria-label="Concept Studio Switcher">
+    <div class="studio-bar-inner">
+      <span><strong>NorCal Attorney Brokers</strong> · UI/UX Concept Studio</span>
+      <nav class="studio-links" aria-label="Demo Concepts">
+        <a class="studio-link" href="../index.html">All 3 Concepts</a>
+        <a class="studio-link" href="01-architectural-authority.html">01 · Architectural Authority</a>
+        <a class="studio-link is-active" href="02-norcal-civic-modern.html">02 · NorCal Civic Modern</a>
+        <a class="studio-link" href="03-precision-dossier.html">03 · Precision Deal Dossier</a>
+      </nav>
+    </div>
+  </aside>
+
+  <div class="civic-topbar">
+    <div class="civic-topbar-inner">
+      <div class="civic-meta">
+        <span class="civic-badge">Serving Sacramento &amp; Surrounding Counties Since 2002</span>
+        <span>7803 Laguna Blvd, Suite 200, Elk Grove, CA 95758</span>
+      </div>
+      <div class="civic-meta">
+        <span>DRE# 1384231 · BAR # 313407 · NMLS# 2138650 · BAR # 153195</span>
+        <a href="mailto:info@ncabfirm.com" class="civic-badge">info@ncabfirm.com</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a href="#top" class="brand-identity">
+        <span class="brand-seal">
+          <img src="../assets/originals/logo-transparent.png" alt="NorCal Attorney Brokers emblem" />
+        </span>
+        <span>
+          <span class="brand-name">NorCal Attorney Brokers</span>
+          <span class="brand-tagline">Trust, Competence, and Care · Law Firm &amp; Brokerage</span>
+        </span>
+      </a>
+
+      <nav class="masthead-nav" aria-label="Primary Navigation">
+        <a class="masthead-link" href="#dual-wings">Law &amp; Brokerage</a>
+        <a class="masthead-link" href="#counsel-story">Our Counsel</a>
+        <a class="masthead-link" href="#client-stories">Client Stories</a>
+        <a class="masthead-link" href="#elk-grove-sanctuary">Elk Grove Office</a>
+      </nav>
+
+      <div class="masthead-cta">
+        <a class="btn btn-sandstone" href="tel:9163969934">(916) 396-9934</a>
+        <a class="btn btn-redwood" href="#schedule-consultation">Schedule Consultation</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO MONOGRAPH SPREAD -->
+    <section class="hero-monograph">
+      <div class="container">
+        <div class="hero-spread">
+          <div class="hero-editorial">
+            <h1>Protecting California’s Largest Investments—From the Closing Table to the Courtroom.</h1>
+            <div class="hero-promise-pill">“Trust, competence, and care.” — Greater Sacramento Real Estate Attorneys &amp; Brokers</div>
+            <p>
+              Whether you are looking to protect your property and investments through Estate Planning, need attorney-guided representation in a Commercial, Residential, or Investment sale, or are facing a complex dispute with a builder, co-owner, landlord, or tenant, NorCal Attorney Brokers brings over two decades of local dedication to your side.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-redwood" href="#schedule-consultation">Schedule a Consultation</a>
+              <a class="btn btn-sandstone" href="tel:9163969934">Call Our Elk Grove Office: (916) 396-9934</a>
+            </div>
+          </div>
+
+          <div class="hero-panorama">
+            <figure class="capitol-card" style="margin: 0;">
+              <img src="../assets/originals/hero-banner.png" alt="California State Capitol in Sacramento framed by redwood trees" />
+              <figcaption>
+                <strong>Greater Sacramento &amp; Northern California</strong><br />
+                Serving Sacramento, San Joaquin, Placer, El Dorado, Yuba &amp; Yolo Counties since 2002.
+              </figcaption>
+            </figure>
+            <figure class="founder-card" style="margin: 0;">
+              <img src="../assets/originals/vanessa-amador.jpg" alt="Vanessa Amador, Esq. smiling in royal blue blazer" />
+              <figcaption>
+                <strong>Vanessa Amador, Esq.</strong><br />
+                Licensed Attorney, Broker &amp; Loan Originator (DRE# 1384231 · BAR # 313407 · NMLS# 2138650).
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- INTERACTIVE CLIENT PATHWAY SELECTOR -->
+        <div class="pathway-architect" aria-label="Interactive Legal and Real Estate Pathway Selector">
+          <div class="pathway-head">
+            <h2>How Can Our Attorneys &amp; Brokers Assist You Today?</h2>
+            <p>Select your situation below to view our tailored legal and transactional approach.</p>
+          </div>
+
+          <div class="pathway-buttons" role="tablist" aria-label="Client Situations">
+            <button type="button" class="pathway-btn" role="tab" aria-selected="true" data-path="dispute">Resolve a Property or Contract Dispute</button>
+            <button type="button" class="pathway-btn" role="tab" aria-selected="false" data-path="rental">Navigate a Landlord or Tenant Issue</button>
+            <button type="button" class="pathway-btn" role="tab" aria-selected="false" data-path="estate">Protect Property via Trusts &amp; Deeds</button>
+            <button type="button" class="pathway-btn" role="tab" aria-selected="false" data-path="brokerage">Buy or Sell with an Attorney-Broker</button>
+          </div>
+
+          <div class="pathway-recommendation is-active" id="path-dispute" role="tabpanel">
+            <div>
+              <h3>Real Estate Litigation, Quiet Title &amp; Contract Dispute Resolution</h3>
+              <p>
+                Our attorneys work closely with you to understand your unique circumstances and tailor a customized legal strategy. From Earnest Money Deposit (EMD) disputes with home builders and owner-finance contract defense to Quiet Title, Partition actions, and Boundary/Easement litigation, we advocate for your property rights in negotiations, mediation, and court.
+              </p>
+              <div class="chip-row">
+                <span class="civic-chip">Quiet Title &amp; Partition Actions</span>
+                <span class="civic-chip">Breach of Contract &amp; Fiduciary Duty</span>
+                <span class="civic-chip">Boundary &amp; Easement Disputes</span>
+                <span class="civic-chip terracotta-chip">Courtroom &amp; Mediation</span>
+              </div>
+            </div>
+            <div>
+              <button type="button" class="btn btn-redwood pathway-book-btn" style="width: 100%;" data-matter="Litigation &amp; Dispute Resolution">Book a Dispute Evaluation →</button>
+            </div>
+          </div>
+
+          <div class="pathway-recommendation" id="path-rental" role="tabpanel">
+            <div>
+              <h3>Landlord-Tenant Law &amp; Unlawful Detainer Representation</h3>
+              <p>
+                California rental laws require strict procedural accuracy. We help ensure laws are followed for both landlords and tenants—from 3-day notices and eviction options to rapid Ex-Parte motions vacating improper Unlawful Detainer filings and drafting enforceable rental agreements.
+              </p>
+              <div class="chip-row">
+                <span class="civic-chip">Unlawful Detainer &amp; Ex-Parte Motions</span>
+                <span class="civic-chip">3-Day Notice &amp; Eviction Strategy</span>
+                <span class="civic-chip">Residential &amp; Commercial Leases</span>
+                <span class="civic-chip terracotta-chip">Sacramento County Representation</span>
+              </div>
+            </div>
+            <div>
+              <button type="button" class="btn btn-redwood pathway-book-btn" style="width: 100%;" data-matter="Landlord-Tenant Law">Book a Rental Law Consultation →</button>
+            </div>
+          </div>
+
+          <div class="pathway-recommendation" id="path-estate" role="tabpanel">
+            <div>
+              <h3>Estate Planning, Living Trusts &amp; Title Transfers</h3>
+              <p>
+                Lead your family away from probate and future title disputes. We draft Living Trusts, Wills, Property Ownership Agreements, and Deeds—and cure preliminary title report exceptions—so your real estate investments remain protected across generations.
+              </p>
+              <div class="chip-row">
+                <span class="civic-chip">Revocable Living Trusts</span>
+                <span class="civic-chip">Grant &amp; Trust Transfer Deeds</span>
+                <span class="civic-chip">Preliminary Title Report Exceptions</span>
+                <span class="civic-chip terracotta-chip">Preventive Counsel</span>
+              </div>
+            </div>
+            <div>
+              <button type="button" class="btn btn-redwood pathway-book-btn" style="width: 100%;" data-matter="Estate Planning &amp; Title Transfers">Book an Estate &amp; Title Review →</button>
+            </div>
+          </div>
+
+          <div class="pathway-recommendation" id="path-brokerage" role="tabpanel">
+            <div>
+              <h3>All City Homes Partnership — Commercial, Residential &amp; Investment Sales</h3>
+              <p>
+                Unlock your real estate potential by partnering with our All City Homes real estate agents and an experienced Real Estate Attorney and Loan Originator. We handle market analysis, transaction structuring, disclosure compliance, contract preparation, and closing.
+              </p>
+              <div class="chip-row">
+                <span class="civic-chip">Commercial Real Estate Sales</span>
+                <span class="civic-chip">Residential Buying &amp; Selling</span>
+                <span class="civic-chip">Investment Portfolio Sales</span>
+                <span class="civic-chip terracotta-chip">Attorney + Broker Protection</span>
+              </div>
+            </div>
+            <div>
+              <button type="button" class="btn btn-redwood pathway-book-btn" style="width: 100%;" data-matter="All City Homes Real Estate Sales">Book a Brokerage Consultation →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TWO-WING ARCHITECTURAL SPREAD -->
+    <section id="dual-wings" class="section">
+      <div class="container">
+        <div class="section-intro">
+          <h2>Two Integrated Wings Under One Northern California Roof.</h2>
+          <p>
+            Approaching our combined service as community advocates and participants of the neighborhoods we serve builds a level of integrity that separates us from ordinary law firms and standalone brokerages.
+          </p>
+        </div>
+
+        <div class="wings-grid">
+          <!-- WING I: THE LAW FIRM -->
+          <article class="wing-folio">
+            <div class="wing-banner">
+              <img src="../assets/originals/blob-secondary.png" alt="Antique brass scales of justice in a courtroom" />
+              <div class="wing-banner-copy">
+                <h3>The Real Estate Law Firm</h3>
+                <p>Customized legal strategy, preventive contract &amp; estate counsel, and courtroom litigation.</p>
+              </div>
+            </div>
+            <div class="wing-content">
+              <p>
+                At NorCal Attorney Brokers Law Firm, our Real Estate Attorneys work closely with you to understand your unique circumstances and tailor a customized legal strategy that meets your goals and objectives. We have the expertise and resources to handle complex legal matters and always strive to achieve the best possible outcome.
+              </p>
+              <div class="provision-list">
+                <div class="provision-row">
+                  <strong>Real Estate &amp; Property Law</strong>
+                  <span>Property ownership agreements, boundary/easement disputes, rights-of-way, and broker risk management.</span>
+                </div>
+                <div class="provision-row">
+                  <strong>Litigation &amp; Dispute Resolution</strong>
+                  <span>Quiet Title actions, Partition actions, breach of contract, breach of fiduciary duty, and eminent domain.</span>
+                </div>
+                <div class="provision-row">
+                  <strong>Landlord-Tenant Law</strong>
+                  <span>Unlawful detainers, Ex-Parte motions, eviction guidance, and enforceable rental agreements.</span>
+                </div>
+                <div class="provision-row">
+                  <strong>Contract Law &amp; Title Transfers</strong>
+                  <span>Purchase agreement review, contract settlements, deed transfers, and preliminary title report exceptions.</span>
+                </div>
+                <div class="provision-row">
+                  <strong>Estate Planning</strong>
+                  <span>Living Trusts, Wills, and property succession structures to avoid the courtroom altogether.</span>
+                </div>
+              </div>
+              <a class="btn btn-redwood" href="#schedule-consultation">Consult With Our Law Firm</a>
+            </div>
+          </article>
+
+          <!-- WING II: THE BROKERAGE PARTNERSHIP -->
+          <article class="wing-folio">
+            <div class="wing-banner">
+              <img src="../assets/originals/all-city-homes-partner.jpg" alt="All City Homes partnership logo" style="object-fit: contain; padding: 1.5rem; background: #ffffff;" />
+              <div class="wing-banner-copy">
+                <h3>All City Homes Partnership</h3>
+                <p>Top-producing Greater Sacramento sales agents paired with an experienced Real Estate Attorney.</p>
+              </div>
+            </div>
+            <div class="wing-content">
+              <p>
+                Our expanded collaboration with the boutique brokerage All City Homes offers a team of top-producing local professionals in the Greater Sacramento area. With years of experience in contract negotiations, title searches, and closings, every transaction is backed by rigorous legal insight.
+              </p>
+              <div class="provision-list">
+                <div class="provision-row">
+                  <strong>Commercial Real Estate Sales</strong>
+                  <span>Transaction Structuring, Contract Preparation, Comprehensive Due Diligence, and Closing Assistance.</span>
+                </div>
+                <div class="provision-row">
+                  <strong>Residential Real Estate Sales</strong>
+                  <span>Market Analysis, Sale Agreements, Statutory Disclosure Compliance, and Negotiation Support.</span>
+                </div>
+                <div class="provision-row">
+                  <strong>Investment Real Estate Sales</strong>
+                  <span>Portfolio Review, Strategic Planning to maximize returns, Tax Considerations, and Legal Documentation.</span>
+                </div>
+                <div class="provision-row">
+                  <strong>Integrated Financing &amp; Title</strong>
+                  <span>Licensed loan origination (NMLS# 2138650) and attorney title review for seamless closings.</span>
+                </div>
+              </div>
+              <a class="btn btn-sandstone" href="#schedule-consultation">Partner With Our Brokerage Team</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="duties-ledger">
+          <h3>What Do Our Real Estate Attorneys Do for Every Client?</h3>
+          <div class="duties-columns">
+            <div class="duty-item">
+              <h4>Document Review</h4>
+              <p>Reviews all documents for accuracy and ensures you fully understand the legal basis of every clause.</p>
+            </div>
+            <div class="duty-item">
+              <h4>Property Ownership</h4>
+              <p>Explains individual and joint ownership structures so your ownership rights are clearly defined and protected.</p>
+            </div>
+            <div class="duty-item">
+              <h4>Property Disputes</h4>
+              <p>Resolves disagreements between buyers, sellers, and builders to protect your interests and keep deals moving.</p>
+            </div>
+            <div class="duty-item">
+              <h4>Rental Properties</h4>
+              <p>Ensures California laws are followed for landlords and tenants, supporting fair, enforceable rental agreements.</p>
+            </div>
+            <div class="duty-item">
+              <h4>Advocacy</h4>
+              <p>Represents your interests in disputes and, when necessary, advocates for you in court to ensure fair treatment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COUNSEL STORY & ROSTER -->
+    <section id="counsel-story" class="section">
+      <div class="container">
+        <div class="section-intro">
+          <h2>Rooted in Sacramento. Forged in Real Estate &amp; the Courtroom.</h2>
+          <p>
+            Meet the attorneys and real estate partners who stand behind every client matter at NorCal Attorney Brokers.
+          </p>
+        </div>
+
+        <div class="origin-spread">
+          <article class="origin-story-box">
+            <h3>Vanessa Amador, Esq. — From the 2007 Foreclosure Crisis to Homeowner Advocate</h3>
+            <p>
+              Vanessa Amador is a Licensed Attorney, Broker, and Loan Originator (`DRE# 1384231 | BAR # 313407 | NMLS# 2138650`) with over 20 years of Real Estate experience. She began her Real Estate career in 2002 with the understanding that the purchase of a home is often one's largest and most important investment. In 2007, Vanessa found herself in the foreclosure crisis where she quickly realized there was little help for homeowners. This realization compelled her to enter Law School, where she excelled and focused on those areas that protect the Homeowner.
+            </p>
+            <p>
+              Because Vanessa came to the legal profession from Real Estate Sales, she brings a rare appreciation of both contracts and customer service—ensuring clients always know the status of their case and what to reasonably expect every step of the way. Having grown up in the Sacramento region (attending Del Campo High School in Fair Oaks, Kennedy High School in Greenhaven/Pocket, and graduating from Elk Grove High School) before attending George Mason University and graduating from Lincoln Law School of Sacramento in 2015, she serves clients locally, in surrounding counties, and by referral out of State.
+            </p>
+
+            <div class="milestone-timeline" aria-label="Vanessa Amador Career Milestones">
+              <div class="milestone-node">
+                <strong>2002</strong>
+                <span>Began Northern California real estate career focused on protecting home buyers and sellers.</span>
+              </div>
+              <div class="milestone-node">
+                <strong>2007</strong>
+                <span>Navigated the foreclosure crisis, inspiring her mission to become a homeowner defense attorney.</span>
+              </div>
+              <div class="milestone-node">
+                <strong>2015–2016</strong>
+                <span>Graduated Lincoln Law School of Sacramento and admitted to the State Bar of California.</span>
+              </div>
+              <div class="milestone-node">
+                <strong>Today</strong>
+                <span>Leads NorCal Attorney Brokers across litigation, estate planning, brokerage, and lending.</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="anaya-profile-box">
+            <div>
+              <div class="anaya-top">
+                <img src="../assets/originals/robert-anaya.jpg" alt="Robert J. Anaya, Esq." />
+                <div>
+                  <h3>Robert J. Anaya, Esq.</h3>
+                  <p>Senior Litigator &amp; Real Estate Counsel</p>
+                  <span class="civic-chip">CALIFORNIA BAR # 153195</span>
+                </div>
+              </div>
+              <p>
+                With more than 30 years of legal experience and over 40 years in the real estate industry, Attorney Robert J. Anaya brings unmatched depth and precision. Before private practice, Robert served as a Deputy District Attorney in Madera, Merced, and Del Norte Counties, laying the foundation for his formidable civil trial skills.
+              </p>
+              <p>
+                After four decades as a licensed real estate broker—now retired—and service as a mediator for the California Association of REALTORS®, he litigates complex disputes involving preliminary title report exceptions, quiet title, breach of contract, partition, specific performance, eminent domain, easements, and county recorder maps, alongside personal injury, bankruptcy, and foreclosure protection.
+              </p>
+            </div>
+            <div class="hero-promise-pill" style="margin-bottom: 0; font-size: 0.9rem;">
+              “As an officer of the court, I will strive to conduct myself at all times with dignity, courtesy and integrity.” — California Attorneys Oath
+            </div>
+          </article>
+        </div>
+
+        <div class="team-roster-bar">
+          <div>
+            <h3>Our All City Homes Real Estate Partners</h3>
+            <p>Working hand-in-hand with our legal team to deliver seamless residential, commercial, and investment transactions.</p>
+          </div>
+          <div class="partner-cards-inline">
+            <div class="partner-mini">
+              <img src="../assets/originals/vanessa-amador-skyline.jpg" alt="Vanessa Amador, Esq." />
+              <div>
+                <h4>Vanessa Amador, Esq.</h4>
+                <span>DRE# 1384231 · BAR # 313407</span>
+              </div>
+            </div>
+            <div class="partner-mini">
+              <img src="../assets/originals/brenda.jpg" alt="Brenda Chua-Aceves" />
+              <div>
+                <h4>Brenda Chua-Aceves</h4>
+                <span>Partner · DRE# 01960655</span>
+              </div>
+            </div>
+            <div class="partner-mini">
+              <div class="partner-mini-initials" aria-hidden="true">AA</div>
+              <div>
+                <h4>Aundre Amador</h4>
+                <span>Partner · DRE# 02097079</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENT STORIES WITH INTERACTIVE FILTER -->
+    <section id="client-stories" class="section">
+      <div class="container">
+        <div class="section-intro">
+          <h2>See What Our Clients Are Saying Across Sacramento County.</h2>
+          <p>
+            Filter verified client experiences by matter type—from emergency Ex-Parte Unlawful Detainer defense to Earnest Money Deposit recovery and owner-finance contract disputes.
+          </p>
+        </div>
+
+        <div class="filter-bar" role="toolbar" aria-label="Filter Client Stories">
+          <button type="button" class="filter-pill" aria-pressed="true" data-filter="all">All Client Stories (5)</button>
+          <button type="button" class="filter-pill" aria-pressed="false" data-filter="landlord-tenant">Landlord-Tenant &amp; Evictions</button>
+          <button type="button" class="filter-pill" aria-pressed="false" data-filter="contracts">Contracts &amp; Builder Disputes</button>
+          <button type="button" class="filter-pill" aria-pressed="false" data-filter="counsel">General Counsel &amp; Empathy</button>
+        </div>
+
+        <div class="stories-masonry">
+          <article class="story-folio" data-category="landlord-tenant">
+            <div>
+              <h3>“Filed an Ex-Parte to Have My Case Vacated and Succeeded”</h3>
+              <blockquote>
+                “Attorney Vanessa Amador exceeded my expectation as a ‘qualified and experienced’ Attorney. She worked extremely hard on my case and was able to resolve my issue that was favorable to me. I would highly recommend her and her team for any Real Estate, Landlord, Tenant issue or Estate planning. Vanessa really knows her stuff. She is a tough professional in a small frame. Vanessa was able to repeatedly get my case vacated in an Unlawful Detainer complaint that should had never been filed. She was able to take on my case in a short time frame, filed an Ex-parte to have case vacated and succeeded.”
+              </blockquote>
+            </div>
+            <div class="story-meta">
+              <span>Terri · January 24, 2024</span>
+              <span>Unlawful Detainer Defense</span>
+            </div>
+          </article>
+
+          <article class="story-folio" data-category="contracts">
+            <div>
+              <h3>“Hired Her to Fight an Owner-Finance Contract—An Absolute Shark”</h3>
+              <blockquote>
+                “Vanessa is amazing!!! She is sharp, knowledgeable and efficient. We hired her to help us to fight an owner finance contract and absolutely proved to be an absolute shark. She knows the ins and outs of real estate law like the back of her hand. It is very evident that Vanessa loves her work! We really appreciate how effective and responsive her and her staff have been. In short… She’s awesome!!”
+              </blockquote>
+            </div>
+            <div class="story-meta">
+              <span>David &amp; Brandy · August 30, 2023</span>
+              <span>Owner-Finance Contract Dispute</span>
+            </div>
+          </article>
+
+          <article class="story-folio" data-category="contracts">
+            <div>
+              <h3>“Refund in Dispute Over EMD with a Big Home Builder”</h3>
+              <blockquote>
+                “Vanessa and her team helped me to get refund in dispute over EMD with big home builder. She and her team is very supportive and work with full dedication in matter to get it done right and up to the end with positive outcome. I highly recommend Vanessa as Lawyer for real estate matters.”
+              </blockquote>
+            </div>
+            <div class="story-meta">
+              <span>Verified Client · September 7, 2023</span>
+              <span>Earnest Money Deposit Recovery</span>
+            </div>
+          </article>
+
+          <article class="story-folio" data-category="counsel">
+            <div>
+              <h3>“A Rare Combination of Knowledge, Skill, Empathy, and Dedication”</h3>
+              <blockquote>
+                “Attorney Vanessa Amador is a brilliant lawyer who brings a rare combination of knowledge, skill, empathy, and dedication to her profession. I would highly recommend her to anyone in need of legal assistance. Her commitment to her clients and her craft is truly commendable.”
+              </blockquote>
+            </div>
+            <div class="story-meta">
+              <span>Randall · March 22, 2024</span>
+              <span>Excellent Representation</span>
+            </div>
+          </article>
+
+          <article class="story-folio" data-category="landlord-tenant">
+            <div>
+              <h3>“Clear Options When Navigating Difficult Rental &amp; Eviction Situations”</h3>
+              <blockquote>
+                “My consultation with Vanessa was very helpful. During our call she informed me of some options I had when filing for eviction. I will definitely be back to hire her if I continue to have issues with my rentals.”
+              </blockquote>
+            </div>
+            <div class="story-meta">
+              <span>Verified Landlord Client · June 10, 2024</span>
+              <span>Landlord-Tenant Consultation</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ELK GROVE SANCTUARY & CONSULTATION FORM -->
+    <section id="elk-grove-sanctuary" class="section">
+      <div class="container">
+        <div class="section-intro">
+          <h2>Connect With Our Elk Grove Office in Suite 200.</h2>
+          <p>
+            At NorCal Attorney Brokers, we believe in treating our clients with respect, compassion, and understanding. Visit us on Laguna Boulevard or request your consultation below.
+          </p>
+        </div>
+
+        <div class="civic-contact-grid">
+          <div class="office-showcase">
+            <h3>7803 Laguna Boulevard, Suite 200</h3>
+            <p>Elk Grove, California 95758 · Direct Phone: <a href="tel:9163969934" style="color: var(--terracotta); font-weight: 700;">(916) 396-9934</a> · Email: <a href="mailto:info@ncabfirm.com" style="color: var(--redwood); font-weight: 600;">info@ncabfirm.com</a></p>
+
+            <div class="office-photos-pair">
+              <figure>
+                <img src="../assets/originals/office-2.jpg" alt="NorCal Attorney Brokers Suite 200 reception lounge" />
+                <figcaption>Welcoming Client Reception Lounge (Suite 200)</figcaption>
+              </figure>
+              <figure>
+                <img src="../assets/originals/office-1.jpg" alt="NorCal Attorney Brokers conference room" />
+                <figcaption>Private Legal &amp; Real Estate Conference Room</figcaption>
+              </figure>
+            </div>
+
+            <div class="hours-list" aria-label="Office Hours">
+              <div class="hours-row">
+                <strong>Monday – Thursday</strong>
+                <span>09:00 am – 04:00 pm</span>
+              </div>
+              <div class="hours-row">
+                <strong>Friday</strong>
+                <span>By Appointment</span>
+              </div>
+              <div class="hours-row">
+                <strong>Saturday – Sunday</strong>
+                <span>Closed</span>
+              </div>
+            </div>
+          </div>
+
+          <div id="schedule-consultation" class="booking-folio">
+            <h3>Schedule a Consultation</h3>
+            <p>Send us an inquiry. A representative will return your message within 72 hours.</p>
+
+            <form class="civic-intake-form" novalidate>
+              <div class="civic-form-row">
+                <div class="civic-field">
+                  <label for="civic-name">Full Name *</label>
+                  <input id="civic-name" name="name" type="text" class="civic-input" placeholder="Your full name" required />
+                </div>
+                <div class="civic-field">
+                  <label for="civic-phone">Phone Number *</label>
+                  <input id="civic-phone" name="phone" type="tel" class="civic-input" placeholder="(916) 555-0199" required />
+                </div>
+              </div>
+
+              <div class="civic-field">
+                <label for="civic-email">Email Address *</label>
+                <input id="civic-email" name="email" type="email" class="civic-input" placeholder="you@example.com" required />
+              </div>
+
+              <div class="civic-field">
+                <label for="civic-matter">How Can We Help You?</label>
+                <select id="civic-matter" name="matter" class="civic-input">
+                  <option value="Litigation &amp; Dispute Resolution">Litigation &amp; Dispute Resolution (Quiet Title, Partition, Contract, EMD)</option>
+                  <option value="Landlord-Tenant Law">Landlord-Tenant Law &amp; Unlawful Detainers</option>
+                  <option value="Estate Planning &amp; Title Transfers">Estate Planning, Living Trusts &amp; Deed Transfers</option>
+                  <option value="Contract Law &amp; Document Review">Contract Law &amp; Document Review</option>
+                  <option value="All City Homes Real Estate Sales">All City Homes Real Estate Sales (Commercial, Residential, Investment)</option>
+                </select>
+              </div>
+
+              <div class="civic-field">
+                <label for="civic-message">Non-Confidential Summary of Your Property or Legal Goal</label>
+                <textarea id="civic-message" name="message" class="civic-input" placeholder="Share the county, property type, and timeline..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-redwood" style="width: 100%;">Send Consultation Inquiry</button>
+              <div class="civic-status" role="status" aria-live="polite"></div>
+              <p class="disclaimer-text">
+                Contacting us does not create an attorney-client relationship. Please do not send any confidential information until an attorney-client relationship has been established. (Concept demo preview: form submission is simulated.)
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="civic-footer">
+    <div class="civic-footer-inner">
+      <div>
+        <h3>NorCal Attorney Brokers</h3>
+        <p>
+          Serving clients in Sacramento and Surrounding Counties since 2002 with high-quality Real Estate Legal Services and Boutique Real Estate Brokerage.
+        </p>
+        <p style="font-variant-numeric: tabular-nums;">
+          DRE# 1384231 · BAR # 313407 · NMLS# 2138650 · BAR # 153195
+        </p>
+      </div>
+      <div>
+        <h3>Legal &amp; Real Estate Services</h3>
+        <p>
+          Real Estate Law · Litigation &amp; Dispute Resolution · Landlord-Tenant Law · Contract Law · Title Transfers · Estate Planning &amp; Living Trusts · Commercial, Residential &amp; Investment Sales
+        </p>
+      </div>
+      <div>
+        <h3>Elk Grove Office</h3>
+        <p>
+          7803 Laguna Boulevard #200<br />
+          Elk Grove, California 95758<br />
+          Phone: <a href="tel:9163969934" style="color: #ffffff; font-weight: 600;">(916) 396-9934</a><br />
+          Email: <a href="mailto:info@ncabfirm.com" style="color: #ffffff;">info@ncabfirm.com</a>
+        </p>
+      </div>
+    </div>
+    <div class="civic-footer-bottom">
+      <span>Copyright © 2026 NorCal Attorney Brokers — All Rights Reserved.</span>
+      <span>Contacting us does not create an attorney-client relationship.</span>
+    </div>
+  </footer>
+
+  <script>
+    // Pathway Selector Bar
+    const pathwayBtns = document.querySelectorAll('.pathway-btn');
+    const pathwayRecs = document.querySelectorAll('.pathway-recommendation');
+    pathwayBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const path = btn.getAttribute('data-path');
+        pathwayBtns.forEach((b) => b.setAttribute('aria-selected', String(b === btn)));
+        pathwayRecs.forEach((rec) => {
+          rec.classList.toggle('is-active', rec.id === 'path-' + path);
+        });
+      });
+    });
+
+    // Pathway Book Buttons -> Scroll & Prefill Form
+    const civicMatter = document.getElementById('civic-matter');
+    const civicMessage = document.getElementById('civic-message');
+    document.querySelectorAll('.pathway-book-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const matter = btn.getAttribute('data-matter');
+        if (civicMatter) {
+          for (const opt of civicMatter.options) {
+            if (opt.value.includes(matter) || matter.includes(opt.value)) {
+              civicMatter.value = opt.value;
+              break;
+            }
+          }
+        }
+        if (civicMessage && !civicMessage.value) {
+          civicMessage.value = 'Requesting a consultation regarding ' + matter + '. ';
+        }
+        document.getElementById('schedule-consultation').scrollIntoView({ behavior: 'smooth' });
+        setTimeout(() => document.getElementById('civic-name').focus(), 450);
+      });
+    });
+
+    // Filterable Client Stories
+    const filterPills = document.querySelectorAll('.filter-pill');
+    const storyFolios = document.querySelectorAll('.story-folio');
+    filterPills.forEach((pill) => {
+      pill.addEventListener('click', () => {
+        const cat = pill.getAttribute('data-filter');
+        filterPills.forEach((p) => p.setAttribute('aria-pressed', String(p === pill)));
+        storyFolios.forEach((story) => {
+          const match = cat === 'all' || story.getAttribute('data-category') === cat;
+          story.classList.toggle('is-hidden', !match);
+        });
+      });
+    });
+
+    // Consultation Form Submit
+    document.querySelectorAll('.civic-intake-form').forEach((form) => {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const status = form.querySelector('.civic-status');
+        const nameInput = form.querySelector('input[name="name"]');
+        const emailInput = form.querySelector('input[name="email"]');
+        const matterSelect = form.querySelector('select[name="matter"]');
+        if (!emailInput || !emailInput.value.trim()) {
+          status.textContent = 'Please enter your name and email address so our Elk Grove team can return your message within 72 hours.';
+          status.classList.add('is-visible');
+          return;
+        }
+        const clientName = nameInput && nameInput.value.trim() ? nameInput.value.trim() : 'Client';
+        status.textContent = 'Thank you, ' + clientName + '. Your inquiry for ' + (matterSelect ? matterSelect.value : 'Legal & Real Estate Counsel') + ' has been recorded in this concept preview (72-hour response SLA).';
+        status.classList.add('is-visible');
+      });
+    });
+  </script>
+</body>
+</html>

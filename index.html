@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NorCal Attorney Brokers — Three Website Concept Directions</title>
+  <meta name="description" content="UI/UX Concept Studio for NorCal Attorney Brokers (norcalattorneybrokers.com). Compare three distinct visual, typographic, and interactive website directions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=EB+Garamond:ital,wght@0,500;1,400&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Libre+Caslon+Text:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f3f1ec;
+      --surface: #ffffff;
+      --surface-warm: #e9e4da;
+      --ink: #15181c;
+      --ink-secondary: #454c56;
+      --border: #d2ccc0;
+      --accent-green: #183629;
+      --accent-brass: #b89146;
+      --accent-navy: #0e2a47;
+      --accent-vermilion: #c82d14;
+      --font-sans: 'Figtree', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-serif: 'Libre Caslon Text', Georgia, serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background-color: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-sans);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 2px solid var(--accent-navy);
+      outline-offset: 3px;
+    }
+
+    .studio-shell {
+      max-width: 1420px;
+      margin: 0 auto;
+      padding: 3.5rem 2.25rem 5rem;
+    }
+
+    /* Header */
+    .studio-header {
+      display: grid;
+      grid-template-columns: 8fr 4fr;
+      gap: 2.5rem;
+      align-items: end;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 3rem;
+    }
+    .studio-header h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(2.25rem, 4vw, 3.5rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin: 0 0 1rem;
+    }
+    .studio-header p {
+      margin: 0;
+      color: var(--ink-secondary);
+      font-size: 1.0625rem;
+      max-width: 68ch;
+    }
+    .client-summary-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.35rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .client-summary-box img {
+      width: 58px;
+      height: 58px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+    .client-summary-box strong {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 0.2rem;
+    }
+    .client-summary-box span {
+      display: block;
+      font-size: 0.8125rem;
+      color: var(--ink-secondary);
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* 3 Concept Cards Grid */
+    .concepts-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.75rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .concept-folio {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* Live Scaled Viewport Window */
+    .viewport-window {
+      position: relative;
+      width: 100%;
+      height: 270px;
+      overflow: hidden;
+      border-bottom: 1px solid var(--border);
+      background: #0b0f17;
+    }
+    .viewport-window iframe {
+      width: 1440px;
+      height: 960px;
+      border: 0;
+      transform: scale(0.31);
+      transform-origin: top left;
+      pointer-events: none;
+    }
+    .viewport-overlay-link {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      padding: 0.85rem;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.38) 0%, rgba(0, 0, 0, 0) 45%);
+    }
+    .viewport-pill {
+      padding: 0.35rem 0.75rem;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      background: rgba(15, 23, 42, 0.88);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+    }
+
+    .concept-body {
+      padding: 1.75rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .concept-body h2 {
+      font-family: var(--font-serif);
+      font-size: 1.55rem;
+      margin: 0 0 0.65rem;
+      line-height: 1.2;
+    }
+    .concept-body p {
+      margin: 0 0 1rem;
+      color: var(--ink-secondary);
+      font-size: 0.95rem;
+    }
+
+    /* Swatch & Font Strip */
+    .swatch-strip {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      margin: 1rem 0 1.25rem;
+      padding: 0.65rem 0.85rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 0.8rem;
+      color: var(--ink-secondary);
+    }
+    .swatch-dot {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      border: 1px solid rgba(0, 0, 0, 0.18);
+      flex-shrink: 0;
+    }
+    .swatch-label {
+      margin-left: 0.35rem;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .concept-actions {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 0.65rem;
+      margin-top: 1.25rem;
+    }
+    .btn-launch {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0.65rem 1.15rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #ffffff;
+      background: var(--accent-green);
+      transition: opacity 0.2s ease;
+    }
+    .btn-launch:hover {
+      opacity: 0.92;
+    }
+    .btn-launch.theme-01 {
+      background: #131a26;
+      color: #e6c687;
+      border: 1px solid #d4b06a;
+    }
+    .btn-launch.theme-02 {
+      background: #183629;
+      color: #fdfbf7;
+    }
+    .btn-launch.theme-03 {
+      background: #0e2a47;
+      color: #ffffff;
+      border-radius: 2px;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+    }
+    .btn-inspect {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0.65rem 0.95rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      background: var(--bg);
+      color: var(--ink);
+      border: 1px solid var(--border);
+      cursor: pointer;
+    }
+    .btn-inspect:hover {
+      background: var(--surface-warm);
+    }
+
+    /* Interactive Viewport Inspector Stage */
+    .inspector-stage {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 3.5rem;
+    }
+    .inspector-toolbar {
+      padding: 1.1rem 1.5rem;
+      background: var(--surface-warm);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .inspector-toolbar h2 {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      margin: 0;
+    }
+    .inspector-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .ctrl-btn {
+      min-height: 40px;
+      padding: 0.4rem 0.9rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--ink);
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .ctrl-btn[aria-pressed="true"] {
+      background: var(--accent-navy);
+      color: #ffffff;
+      border-color: var(--accent-navy);
+    }
+    .inspector-canvas-wrap {
+      background: #1e2229;
+      padding: 1.5rem;
+      display: flex;
+      justify-content: center;
+    }
+    .inspector-iframe {
+      width: 100%;
+      max-width: 1380px;
+      height: 760px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 6px;
+      background: #ffffff;
+    }
+
+    /* Architectural & Provenance Comparison Table */
+    .comparison-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2.25rem;
+      margin-bottom: 3rem;
+    }
+    .comparison-box h2 {
+      font-family: var(--font-serif);
+      font-size: 1.75rem;
+      margin: 0 0 1.25rem;
+    }
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.925rem;
+    }
+    .comparison-table th,
+    .comparison-table td {
+      padding: 1rem;
+      border-top: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+    }
+    .comparison-table th {
+      font-weight: 700;
+      color: var(--ink);
+      background: var(--bg);
+    }
+    .comparison-table td {
+      color: var(--ink-secondary);
+    }
+
+    .studio-footer {
+      border-top: 1px solid var(--border);
+      padding-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.875rem;
+      color: var(--ink-secondary);
+    }
+    .studio-footer a {
+      text-decoration: underline;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    @media (max-width: 1080px) {
+      .studio-header,
+      .concepts-grid {
+        grid-template-columns: 1fr;
+      }
+      .viewport-window iframe {
+        transform: scale(0.45);
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="studio-shell">
+    <header class="studio-header">
+      <div>
+        <h1>NorCal Attorney Brokers — Three Distinct Website Directions.</h1>
+        <p>
+          Prepared for <strong>NorCal Attorney Brokers</strong> (<code>norcalattorneybrokers.com</code>), led by Founder <strong>Vanessa Amador, Esq.</strong> (<code>DRE# 1384231 · BAR # 313407 · NMLS# 2138650</code>) and Senior Litigator <strong>Robert J. Anaya, Esq.</strong> (<code>BAR # 153195</code>). Each concept uses 100% authentic client photography, verified credentials, practice areas, client reviews, and the All City Homes brokerage partnership—interpreted through three completely different color systems, font pairings, and interactive UX architectures generated with Google Stitch.
+        </p>
+      </div>
+
+      <div class="client-summary-box">
+        <img src="assets/originals/logo-transparent.png" alt="NorCal Attorney Brokers emblem" />
+        <div>
+          <strong>NorCal Attorney Brokers</strong>
+          <span>7803 Laguna Blvd #200, Elk Grove, CA 95758</span>
+          <span>(916) 396-9934 · info@ncabfirm.com</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="concepts-grid" aria-label="Three Demo Website Concepts">
+      <!-- DEMO 01 -->
+      <article class="concept-folio">
+        <div>
+          <div class="viewport-window">
+            <iframe src="concepts/01-architectural-authority.html" title="Demo 01 Architectural Authority live preview" loading="lazy" tabindex="-1"></iframe>
+            <a class="viewport-overlay-link" href="concepts/01-architectural-authority.html" aria-label="Open Demo 01 Architectural Authority">
+              <span class="viewport-pill">Open Full Demo 01 →</span>
+            </a>
+          </div>
+
+          <div class="concept-body">
+            <div>
+              <h2>01 · Architectural Authority (Dark Editorial Luxury)</h2>
+              <p>
+                <strong>The Sovereign Counsel.</strong> Deep obsidian slate, elevated charcoal folios, and burnished brass 1px ruled ledger hairlines. Positions NorCal Attorney Brokers as an unassailable courtroom litigation and private wealth real estate powerhouse.
+              </p>
+              <p>
+                <strong>Signature UX:</strong> Interactive <em>Legal vs. Brokerage Mandate Switcher</em> in the hero, a 6-pillar interactive legal clause ledger that pre-fills the consultation form, and a brass-framed California Attorneys Oath chamber.
+              </p>
+            </div>
+
+            <div>
+              <div class="swatch-strip" aria-label="Demo 01 Color Palette and Fonts">
+                <span class="swatch-dot" style="background: #0b0f17;" title="Obsidian Slate #0B0F17"></span>
+                <span class="swatch-dot" style="background: #131a26;" title="Elevated Charcoal #131A26"></span>
+                <span class="swatch-dot" style="background: #d4b06a;" title="Burnished Brass #D4B06A"></span>
+                <span class="swatch-dot" style="background: #f6f4ee;" title="Ivory Cream #F6F4EE"></span>
+                <span class="swatch-label">EB Garamond + Hanken Grotesk</span>
+              </div>
+
+              <div class="concept-actions">
+                <a class="btn-launch theme-01" href="concepts/01-architectural-authority.html">Explore Demo 01 →</a>
+                <button type="button" class="btn-inspect" data-load-demo="concepts/01-architectural-authority.html">Live Stage</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- DEMO 02 -->
+      <article class="concept-folio">
+        <div>
+          <div class="viewport-window" style="background: #f6f2ea;">
+            <iframe src="concepts/02-norcal-civic-modern.html" title="Demo 02 NorCal Civic Modern live preview" loading="lazy" tabindex="-1"></iframe>
+            <a class="viewport-overlay-link" href="concepts/02-norcal-civic-modern.html" aria-label="Open Demo 02 NorCal Civic Modern">
+              <span class="viewport-pill">Open Full Demo 02 →</span>
+            </a>
+          </div>
+
+          <div class="concept-body">
+            <div>
+              <h2>02 · NorCal Civic Modern (Warm Architectural)</h2>
+              <p>
+                <strong>The Capitol &amp; Homestead Standard.</strong> Sun-washed travertine parchment, sandstone cream, Capitol redwood green, and California terracotta. Warm, welcoming, and deeply rooted in Greater Sacramento real estate and homeowner protection.
+              </p>
+              <p>
+                <strong>Signature UX:</strong> Panoramic Sacramento Capitol &amp; Founder spread, an interactive 4-option <em>"How Can Our Counsel Assist You?"</em> pathway selector, a Two-Wing Law &amp; Brokerage comparison, and category-filterable client stories.
+              </p>
+            </div>
+
+            <div>
+              <div class="swatch-strip" aria-label="Demo 02 Color Palette and Fonts">
+                <span class="swatch-dot" style="background: #f6f2ea;" title="Travertine Parchment #F6F2EA"></span>
+                <span class="swatch-dot" style="background: #ebe4d6;" title="Sandstone Cream #EBE4D6"></span>
+                <span class="swatch-dot" style="background: #183629;" title="Capitol Redwood Green #183629"></span>
+                <span class="swatch-dot" style="background: #9c411f;" title="California Terracotta #9C411F"></span>
+                <span class="swatch-label">Libre Caslon + Figtree</span>
+              </div>
+
+              <div class="concept-actions">
+                <a class="btn-launch theme-02" href="concepts/02-norcal-civic-modern.html">Explore Demo 02 →</a>
+                <button type="button" class="btn-inspect" data-load-demo="concepts/02-norcal-civic-modern.html">Live Stage</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- DEMO 03 -->
+      <article class="concept-folio">
+        <div>
+          <div class="viewport-window" style="background: #f4f6f9;">
+            <iframe src="concepts/03-precision-dossier.html" title="Demo 03 Precision Deal Dossier live preview" loading="lazy" tabindex="-1"></iframe>
+            <a class="viewport-overlay-link" href="concepts/03-precision-dossier.html" aria-label="Open Demo 03 Precision Deal Dossier">
+              <span class="viewport-pill">Open Full Demo 03 →</span>
+            </a>
+          </div>
+
+          <div class="concept-body">
+            <div>
+              <h2>03 · Precision Deal &amp; Litigation Desk (Swiss Grid)</h2>
+              <p>
+                <strong>The Dual-License Dossier.</strong> Crisp architectural drafting paper, pure white cells, judicial cobalt navy, signal vermilion action triggers, and exposed 1px structural hairlines inspired by Swiss legal briefs and escrow dossiers.
+              </p>
+              <p>
+                <strong>Signature UX:</strong> First-viewport <em>Interactive Matter Triage Desk</em>, filterable 12-cell Practice Matrix where visitors click <code>[+ Attach to Intake]</code> to pre-populate their case file, and a 4-column licensed principals roster.
+              </p>
+            </div>
+
+            <div>
+              <div class="swatch-strip" aria-label="Demo 03 Color Palette and Fonts">
+                <span class="swatch-dot" style="background: #f4f6f9;" title="Architectural Paper #F4F6F9"></span>
+                <span class="swatch-dot" style="background: #ffffff;" title="Pure White #FFFFFF"></span>
+                <span class="swatch-dot" style="background: #0e2a47;" title="Judicial Cobalt Navy #0E2A47"></span>
+                <span class="swatch-dot" style="background: #c82d14;" title="Signal Vermilion #C82D14"></span>
+                <span class="swatch-label">Bricolage + Public Sans + Mono</span>
+              </div>
+
+              <div class="concept-actions">
+                <a class="btn-launch theme-03" href="concepts/03-precision-dossier.html">[Explore Demo 03 →]</a>
+                <button type="button" class="btn-inspect" data-load-demo="concepts/03-precision-dossier.html">Live Stage</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- INTERACTIVE LIVE STAGE INSPECTOR -->
+    <section class="inspector-stage" id="live-inspector" aria-label="Interactive Multi-Device Demo Inspector">
+      <div class="inspector-toolbar">
+        <h2>Interactive Live Demo Stage — Test Desktop, Tablet &amp; Mobile Viewports</h2>
+        <div class="inspector-controls" role="group" aria-label="Select Demo and Viewport Width">
+          <button type="button" class="ctrl-btn demo-select-btn" aria-pressed="true" data-target-src="concepts/01-architectural-authority.html">Demo 01 · Dark Editorial</button>
+          <button type="button" class="ctrl-btn demo-select-btn" aria-pressed="false" data-target-src="concepts/02-norcal-civic-modern.html">Demo 02 · NorCal Civic</button>
+          <button type="button" class="ctrl-btn demo-select-btn" aria-pressed="false" data-target-src="concepts/03-precision-dossier.html">Demo 03 · Swiss Dossier</button>
+          <span style="margin: 0 0.25rem; color: var(--border);">|</span>
+          <button type="button" class="ctrl-btn width-select-btn" aria-pressed="true" data-width="1380px">Desktop (1380px)</button>
+          <button type="button" class="ctrl-btn width-select-btn" aria-pressed="false" data-width="768px">Tablet (768px)</button>
+          <button type="button" class="ctrl-btn width-select-btn" aria-pressed="false" data-width="390px">Mobile (390px)</button>
+        </div>
+      </div>
+      <div class="inspector-canvas-wrap">
+        <iframe id="stage-iframe" class="inspector-iframe" src="concepts/01-architectural-authority.html" title="Interactive Live Demo Viewport"></iframe>
+      </div>
+    </section>
+
+    <!-- COMPARISON TABLE -->
+    <section class="comparison-box" aria-label="Side-by-Side Architectural Comparison">
+      <h2>Side-by-Side Direction Comparison</h2>
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Dimension</th>
+            <th>01 · Architectural Authority</th>
+            <th>02 · NorCal Civic Modern</th>
+            <th>03 · Precision Deal Dossier</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Atmosphere &amp; Positioning</th>
+            <td>High-stakes dark luxury folio; commands immediate courtroom respect and private-client gravitas.</td>
+            <td>Sunlit Northern California civic warmth; approachable, community-rooted, and editorial.</td>
+            <td>Ultra-crisp Swiss architectural grid; clinical clarity, rapid legal triage, and institutional precision.</td>
+          </tr>
+          <tr>
+            <th>Color System</th>
+            <td>Obsidian Slate (<code>#0B0F17</code>), Elevated Charcoal (<code>#131A26</code>), Burnished Brass (<code>#D4B06A</code>), Ivory Cream (<code>#F6F4EE</code>).</td>
+            <td>Travertine Parchment (<code>#F6F2EA</code>), Sandstone Cream (<code>#EBE4D6</code>), Capitol Redwood Green (<code>#183629</code>), California Terracotta (<code>#9C411F</code>).</td>
+            <td>Architectural Paper (<code>#F4F6F9</code>), Pure White (<code>#FFFFFF</code>), Judicial Cobalt Navy (<code>#0E2A47</code>), Signal Vermilion (<code>#C82D14</code>).</td>
+          </tr>
+          <tr>
+            <th>Typography Pairing</th>
+            <td><code>EB Garamond</code> (classical literary display) + <code>Hanken Grotesk</code> (precision geometric body).</td>
+            <td><code>Libre Caslon Text</code> (civic monograph serif) + <code>Figtree</code> (warm humanist sans).</td>
+            <td><code>Bricolage Grotesque</code> (sculptural display) + <code>Public Sans</code> + <code>JetBrains Mono</code> (statutory telemetry).</td>
+          </tr>
+          <tr>
+            <th>Signature Interactive UX</th>
+            <td>Hero Mandate Switcher + 6-Pillar Interactive Practice Clause Ledger that pre-fills the consultation intake form.</td>
+            <td>4-Pathway Client Situation Selector + Two-Wing Law/Brokerage Spread + Filterable Client Stories.</td>
+            <td>First-Viewport Matter Triage Desk + Filterable 12-Cell Practice Matrix with one-click <code>[+ Attach to Intake]</code>.</td>
+          </tr>
+          <tr>
+            <th>Google Stitch Project</th>
+            <td>Project <code>10155096222003642632</code> · <a href=".stitch/01-architectural-authority-DESIGN.md">View Stitch DESIGN.md</a></td>
+            <td>Project <code>12911883184295281537</code> · <a href=".stitch/02-norcal-civic-modern-DESIGN.md">View Stitch DESIGN.md</a></td>
+            <td>Project <code>10021131436364808810</code> · <a href=".stitch/03-precision-dossier-DESIGN.md">View Stitch DESIGN.md</a> · <a href=".stitch/designs/03-precision-dossier-thumb.png">Stitch Render</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer class="studio-footer">
+      <span>Saved locally for <strong>NorCal Attorney Brokers</strong> · All original client photographs and extracted source copy preserved in <a href="research/REVIEW.md">research/REVIEW.md</a> and <a href="PRODUCT.md">PRODUCT.md</a>.</span>
+      <span><a href="concepts/DIRECTIONS.md">Read Full Design Rationale →</a></span>
+    </footer>
+  </main>
+
+  <script>
+    const stageIframe = document.getElementById('stage-iframe');
+    const demoBtns = document.querySelectorAll('.demo-select-btn');
+    const widthBtns = document.querySelectorAll('.width-select-btn');
+
+    function setActiveDemo(src) {
+      stageIframe.src = src;
+      demoBtns.forEach((btn) => {
+        btn.setAttribute('aria-pressed', String(btn.getAttribute('data-target-src') === src));
+      });
+    }
+
+    demoBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        setActiveDemo(btn.getAttribute('data-target-src'));
+      });
+    });
+
+    document.querySelectorAll('[data-load-demo]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        setActiveDemo(btn.getAttribute('data-load-demo'));
+        document.getElementById('live-inspector').scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    widthBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const w = btn.getAttribute('data-width');
+        stageIframe.style.maxWidth = w;
+        widthBtns.forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+      });
+    });
+  </script>
+</body>
+</html>

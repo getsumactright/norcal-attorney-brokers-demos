@@ -1,0 +1,190 @@
+{
+  "name": "projects/10155096222003642632",
+  "title": "NorCal Attorney Brokers \u2014 01 Architectural Authority (Dark Editorial Luxury)",
+  "visibility": "PRIVATE",
+  "createTime": "2026-10-19T14:43:23.734673Z",
+  "updateTime": "2026-10-19T14:49:56.852869Z",
+  "projectType": "PROJECT_DESIGN",
+  "thumbnailScreenshot": {
+    "name": "projects/10155096222003642632/files/9c134e9c39a64f808402f98c546f52f9",
+    "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1U5Jq9dONRmKhEm7iztHVYs_3kJG6UoeWO8wNtaTZsIxqSm3LbsxtCxvUWNattUT6lgtO8EovPkuA9mpMTjPQu-xbbvGJufqH-QD4JZrMS1f32Utxa6BGiPELX0fv7kOsR8LHj-kI-khtEFqmUuAtKrfZdiTz7H1mqLgi004_Jr96j--GWE9-OVA7VmCir8f11c1TsdXoi0ubebXgtuNV9fH19Kf47qET5aPazINdHCYeZBM1KOm1ZJ8cET"
+  },
+  "origin": "STITCH",
+  "deviceType": "DESKTOP",
+  "designTheme": {
+    "colorMode": "DARK",
+    "font": "EB_GARAMOND",
+    "roundness": "ROUND_FOUR",
+    "customColor": "#c8a464",
+    "headlineFont": "EB_GARAMOND",
+    "bodyFont": "PLUS_JAKARTA_SANS",
+    "labelFont": "PLUS_JAKARTA_SANS",
+    "namedColors": {
+      "primary_container": "#c8a464",
+      "surface_container_low": "#181c24",
+      "on_background": "#dfe2ee",
+      "outline": "#9a8f80",
+      "on_secondary_container": "#342800",
+      "tertiary_fixed_dim": "#bdc6dd",
+      "primary": "#e7c17e",
+      "on_surface": "#dfe2ee",
+      "tertiary": "#bdc6dd",
+      "surface_dim": "#0f131c",
+      "on_secondary_fixed_variant": "#574500",
+      "outline_variant": "#4e4639",
+      "surface_container_lowest": "#0a0e16",
+      "primary_fixed": "#ffdea8",
+      "inverse_on_surface": "#2c3039",
+      "surface_bright": "#353942",
+      "on_surface_variant": "#d1c5b5",
+      "on_secondary_fixed": "#241a00",
+      "inverse_primary": "#765a21",
+      "primary_fixed_dim": "#e7c17e",
+      "secondary_fixed_dim": "#e9c349",
+      "surface": "#0f131c",
+      "surface_variant": "#31353e",
+      "on_primary_container": "#523a02",
+      "on_primary_fixed_variant": "#5c420a",
+      "background": "#0f131c",
+      "on_primary": "#412d00",
+      "surface_container_highest": "#31353e",
+      "on_primary_fixed": "#271900",
+      "surface_container_high": "#262a33",
+      "error_container": "#93000a",
+      "tertiary_fixed": "#dae2fa",
+      "inverse_surface": "#dfe2ee",
+      "on_secondary": "#3c2f00",
+      "on_tertiary": "#283042",
+      "secondary_fixed": "#ffe088",
+      "on_error": "#690005",
+      "on_error_container": "#ffdad6",
+      "on_tertiary_fixed": "#121c2c",
+      "on_tertiary_container": "#353e50",
+      "error": "#ffb4ab",
+      "secondary": "#e9c349",
+      "tertiary_container": "#a0a9bf",
+      "surface_tint": "#e7c17e",
+      "secondary_container": "#af8d11",
+      "on_tertiary_fixed_variant": "#3e4759",
+      "surface_container": "#1c2028"
+    },
+    "designMd": "---\nname: Obsidian & Brass Editorial\ncolors:\n  surface: '#0f131c'\n  surface-dim: '#0f131c'\n  surface-bright: '#353942'\n  surface-container-lowest: '#0a0e16'\n  surface-container-low: '#181c24'\n  surface-container: '#1c2028'\n  surface-container-high: '#262a33'\n  surface-container-highest: '#31353e'\n  on-surface: '#dfe2ee'\n  on-surface-variant: '#d1c5b5'\n  inverse-surface: '#dfe2ee'\n  inverse-on-surface: '#2c3039'\n  outline: '#9a8f80'\n  outline-variant: '#4e4639'\n  surface-tint: '#e7c17e'\n  primary: '#e7c17e'\n  on-primary: '#412d00'\n  primary-container: '#c8a464'\n  on-primary-container: '#523a02'\n  inverse-primary: '#765a21'\n  secondary: '#e9c349'\n  on-secondary: '#3c2f00'\n  secondary-container: '#af8d11'\n  on-secondary-container: '#342800'\n  tertiary: '#bdc6dd'\n  on-tertiary: '#283042'\n  tertiary-container: '#a0a9bf'\n  on-tertiary-container: '#353e50'\n  error: '#ffb4ab'\n  on-error: '#690005'\n  error-container: '#93000a'\n  on-error-container: '#ffdad6'\n  primary-fixed: '#ffdea8'\n  primary-fixed-dim: '#e7c17e'\n  on-primary-fixed: '#271900'\n  on-primary-fixed-variant: '#5c420a'\n  secondary-fixed: '#ffe088'\n  secondary-fixed-dim: '#e9c349'\n  on-secondary-fixed: '#241a00'\n  on-secondary-fixed-variant: '#574500'\n  tertiary-fixed: '#dae2fa'\n  tertiary-fixed-dim: '#bdc6dd'\n  on-tertiary-fixed: '#121c2c'\n  on-tertiary-fixed-variant: '#3e4759'\n  background: '#0f131c'\n  on-background: '#dfe2ee'\n  surface-variant: '#31353e'\ntypography:\n  display-lg:\n    fontFamily: EB Garamond\n    fontSize: 56px\n    fontWeight: '400'\n    lineHeight: 64px\n    letterSpacing: -0.02em\n  display-lg-mobile:\n    fontFamily: EB Garamond\n    fontSize: 38px\n    fontWeight: '400'\n    lineHeight: 44px\n    letterSpacing: -0.01em\n  headline-xl:\n    fontFamily: EB Garamond\n    fontSize: 42px\n    fontWeight: '400'\n    lineHeight: 50px\n    letterSpacing: -0.015em\n  headline-xl-mobile:\n    fontFamily: EB Garamond\n    fontSize: 30px\n    fontWeight: '400'\n    lineHeight: 36px\n    letterSpacing: -0.01em\n  headline-lg:\n    fontFamily: EB Garamond\n    fontSize: 32px\n    fontWeight: '500'\n    lineHeight: 40px\n    letterSpacing: -0.01em\n  headline-md:\n    fontFamily: EB Garamond\n    fontSize: 26px\n    fontWeight: '500'\n    lineHeight: 34px\n    letterSpacing: 0em\n  headline-sm:\n    fontFamily: EB Garamond\n    fontSize: 20px\n    fontWeight: '600'\n    lineHeight: 28px\n    letterSpacing: 0.01em\n  body-lg:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: 28px\n    letterSpacing: -0.005em\n  body-md:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 15px\n    fontWeight: '400'\n    lineHeight: 24px\n    letterSpacing: 0em\n  body-sm:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 13px\n    fontWeight: '400'\n    lineHeight: 20px\n    letterSpacing: 0.005em\n  label-lg:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 14px\n    fontWeight: '600'\n    lineHeight: 20px\n    letterSpacing: 0.08em\n  label-md:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 12px\n    fontWeight: '600'\n    lineHeight: 16px\n    letterSpacing: 0.1em\n  label-sm:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 10px\n    fontWeight: '700'\n    lineHeight: 14px\n    letterSpacing: 0.14em\nrounded:\n  sm: 0.125rem\n  DEFAULT: 0.25rem\n  md: 0.375rem\n  lg: 0.5rem\n  xl: 0.75rem\n  full: 9999px\nspacing:\n  gutter: 1.5rem\n  gutter-lg: 2.5rem\n  margin: 1.25rem\n  margin-md: 2.5rem\n  margin-lg: 5rem\n  space-xs: 0.25rem\n  space-sm: 0.5rem\n  space-md: 1rem\n  space-lg: 1.75rem\n  space-xl: 3rem\n---\n\n## Brand & Style\n\nThis design system embodies high-stakes fiduciary precision, quiet wealth, and bespoke NorCal real estate advocacy. It bridges the gap between white-shoe private legal counsel and high-end boutique property brokerage for high-net-worth clients in Sacramento and Elk Grove.\n\n### Visual Philosophy\n- **Editorial Architectural Minimalism:** The visual language rejects SaaS tech trends in favor of bespoke architectural ledgers, fine-press legal journals, and private wealth folios.\n- **Deep Obsidian Immersion:** Dark canvas environments create high-contrast gravity, focusing client attention on high-value contract terms, architectural assets, and legal credentials.\n- **Burnished Tactility:** Metallic accents mimic foil stamping, warm brushed brass fixtures, and wax-seal signatures through low-opacity border trims, subtle sheen gradients, and hairline precision.\n- **Restrained Authority:** Interactions are deliberate, weighted, and fluid, avoiding bouncy or overly casual animations in favor of calibrated ease transitions.\n\n## Colors\n\nThe palette relies on deep low-reflection slate tones enriched by warm antique metallics and cool parchment typography.\n\n### Color Tiers & Intent\n- **Canvas / Base (`#0B0F17`):** Obsidian Slate. Serves as the primary dark field across viewports, establishing atmospheric depth.\n- **Surfaces (`#131A26`):** Elevated Charcoal. Used for cards, dossier panels, dialogs, and structural columns.\n- **Surface Highlight / Tonal (`#1E2738`):** Deep Navy-Slate. Used for inner card wells, interactive hover states, and input field backgrounds.\n- **Primary Accent (`#C8A464`):** Burnished Brass. Core brand color for primary action surfaces, refined focus states, credential highlights, and key figures.\n- **Secondary Accent (`#D4AF37`):** Antique Gold. Reserved for subtle metallic gradients, active states, active tab markers, and illuminated badges.\n- **Hairline Borders (`rgba(200, 164, 100, 0.22)`):** Structural hairline dividers and card outlines reminiscent of hand-ruled ledger margins.\n- **Text & Foreground:**\n  - Headings & Primary Readout: Ivory Cream (`#F6F4EE`) at 100% opacity.\n  - Body & Longform Text: Muted Parchment (`#C5CCD6`) at 88% opacity.\n  - Captions, Meta, & Footnotes: Deep Fiduciary Stone (`#7A8699`) at 65% opacity.\n\n## Typography\n\nThe typography pairs classical literary gravitas with modern legibility:\n\n- **Headlines (EB Garamond):** Used exclusively for structural narrative anchors, page titles, deed-tier headers, and editorial quotations. Rendered with tight negative letter tracking on large sizes to preserve classical proportions without feeling archaic.\n- **Body & Controls (Plus Jakarta Sans):** Brings clean geometrical balance to legal disclosures, analytical real estate metrics, property specifications, and transactional flows.\n- **Legal Indices & Ledger Meta:** Uppercase labels (`label-md` and `label-sm`) utilize generous letter spacing (`0.1em` to `0.14em`) to reference catalog numbering, bar admission credentials, and title record identifiers.\n\n## Layout & Spacing\n\nThe layout is rooted in a structured 12-column editorial grid that references print folios and legal broadsheets.\n\n### Grid & Composition\n- **Desktop (1280px+):** 12 columns with `gutter-lg` (2.5rem) and `margin-lg` (5rem). High use of asymmetrical layouts (e.g., 5-column editorial sticky dossier paired with 7-column property inventory or legal briefs).\n- **Tablet (768px \u2013 1279px):** 8 columns with `gutter` (1.5rem) and `margin-md` (2.5rem). Secondary meta sidebars reflow to full-width horizontal accordions.\n- **Mobile (Below 768px):** 4 columns with `gutter` (1rem) and `margin` (1.25rem). Strict linear stacking with edge-to-edge card divisions utilizing 1px brass dividers instead of full margin nesting.\n\n### Rhythm\n- Component interior padding relies on `space-md` (inputs, list items) to `space-lg` (cards, modal panels).\n- Page sections maintain generous breathing room (`space-xl` or larger) to reflect luxury pacing and deliberative legal consultation.\n\n## Elevation & Depth\n\nVisual hierarchy uses physical sheet layering over deep space rather than stark dropshadows:\n\n- **Base Layer (Level 0):** `#0B0F17` canvas punctuated by localized subtle radial glows (`radial-gradient(ellipse at top, rgba(30, 39, 56, 0.4) 0%, rgba(11, 15, 23, 0) 70%)`).\n- **Elevated Ledger Panels (Level 1):** `#131A26` cards bounded by crisp 1px borders in `rgba(200, 164, 100, 0.22)`. No heavy dropshadow is used; depth is established strictly by border luminosity against the darker canvas.\n- **Overlays, Popovers, & Modals (Level 2):** Elevated `#131A26` surfaces flanked by a multi-tier ambient shadow: `0 24px 48px -12px rgba(0, 0, 0, 0.65), 0 0 1px 1px rgba(200, 164, 100, 0.35)`.\n- **Foil Sheen Accent:** Critical highlights (e.g., attorney seal emblems, primary callout badges) employ an angled linear gradient: `linear-gradient(135deg, #D4AF37 0%, #C8A464 50%, #9B783E 100%)`.\n\n## Shapes\n\nThe design system enforces architectural sharpness. Standard components use an intentional `2px` to `4px` corner radius (`roundedness: 1`), avoiding soft, bubbly UI tropes in favor of stone-masonry cuts and trimmed paper edges:\n\n- **Base Cards & Modules:** 4px radius (`rounded-lg` token clamped to `0.25rem`\u2013`0.375rem`).\n- **Inputs, Buttons, & Badges:** 2px radius for razor-sharp edge precision.\n- **Circular Elements:** Reserved exclusively for attorney portrait apertures, notary seal stamps, and status micro-dots.\n\n## Components\n\n### Buttons & Actions\n- **Primary CTA:** Background in Burnished Brass (`#C8A464`), text in obsidian `#0B0F17` with bold label typography (`label-md`). Hover state transitions to Antique Gold (`#D4AF37`) with a subtle brass outer halo (`0 0 16px rgba(200, 164, 100, 0.25)`).\n- **Secondary / Fiduciary Outlined:** Transparent surface with 1px border `rgba(200, 164, 100, 0.45)`, text in `#F6F4EE`. Hover shifts background to `rgba(200, 164, 100, 0.08)` and border to `#C8A464`.\n- **Ghost Action:** Text in `#C8A464` with an underline positioned 4px below baseline; underline animates width from 40% to 100% on hover.\n\n### Badges & Credential Seals\n- Compact rectangular forms with 2px radius. Background: `rgba(200, 164, 100, 0.08)`. Border: 1px solid `rgba(200, 164, 100, 0.28)`. Text: `label-sm` in `#D4AF37` with uppercase tracking.\n- Used for California State Bar numbers, DRE license status, MLS verified badges, and escrow transaction tiers.\n\n### Cards & Property Folios\n- Solid Elevated Charcoal (`#131A26`) background framed with 1px `rgba(200, 164, 100, 0.22)`.\n- Header areas feature EB Garamond titles above a hairline separator (`border-bottom: 1px solid rgba(200, 164, 100, 0.12)`).\n- Card footers for metrics (e.g., Acreage, Cap Rate, Retainer Schedule) utilize a tabular ledger grid with subtle vertical dividers.\n\n### Form Inputs & Selectors\n- Background: `#0E141F`. Border: 1px solid `rgba(200, 164, 100, 0.2)`. \n- Padding: 0.75rem 1rem. Text: `#F6F4EE`. Placeholder: `#7A8699`.\n- Focus State: Border shifts to `#C8A464` with no thick rings; accompanied by a discrete 1px brass glow (`box-shadow: 0 0 0 1px #C8A464`).\n- Label: Rendered in `label-sm`, uppercase, positioned above the field with a muted tone (`#C5CCD6`).\n\n### Checkboxes & Radio Controls\n- Custom square markers (2px radius for checkboxes; circular for radios) measuring 16px x 16px.\n- Border: 1px solid `rgba(200, 164, 100, 0.4)`. Unchecked background: transparent.\n- Checked State: Solid `#C8A464` fill with `#0B0F17` checkmark icon or center pip.\n\n### Ledger Lists & Transaction Schedules\n- Alternating or bordered list rows with 1px horizontal dividers (`rgba(200, 164, 100, 0.1)`).\n- Key-value pairs align metadata to the right in tabular numeric formatting (`font-feature-settings: \"tnum\"`).",
+    "colorVariant": "FIDELITY",
+    "overridePrimaryColor": "#c8a464",
+    "overrideSecondaryColor": "#d4af37",
+    "overrideTertiaryColor": "#1e2738",
+    "overrideNeutralColor": "#0b0f17",
+    "spacingScale": 2,
+    "typography": {
+      "label-sm": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "10px",
+        "fontWeight": "700",
+        "lineHeight": "14px",
+        "letterSpacing": "0.14em"
+      },
+      "headline-sm": {
+        "fontFamily": "EB Garamond",
+        "fontSize": "20px",
+        "fontWeight": "600",
+        "lineHeight": "28px",
+        "letterSpacing": "0.01em"
+      },
+      "headline-lg": {
+        "fontFamily": "EB Garamond",
+        "fontSize": "32px",
+        "fontWeight": "500",
+        "lineHeight": "40px",
+        "letterSpacing": "-0.01em"
+      },
+      "display-lg": {
+        "fontFamily": "EB Garamond",
+        "fontSize": "56px",
+        "fontWeight": "400",
+        "lineHeight": "64px",
+        "letterSpacing": "-0.02em"
+      },
+      "label-md": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "12px",
+        "fontWeight": "600",
+        "lineHeight": "16px",
+        "letterSpacing": "0.1em"
+      },
+      "headline-md": {
+        "fontFamily": "EB Garamond",
+        "fontSize": "26px",
+        "fontWeight": "500",
+        "lineHeight": "34px",
+        "letterSpacing": "0em"
+      },
+      "headline-xl": {
+        "fontFamily": "EB Garamond",
+        "fontSize": "42px",
+        "fontWeight": "400",
+        "lineHeight": "50px",
+        "letterSpacing": "-0.015em"
+      },
+      "body-sm": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "13px",
+        "fontWeight": "400",
+        "lineHeight": "20px",
+        "letterSpacing": "0.005em"
+      },
+      "body-md": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0em"
+      },
+      "body-lg": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "lineHeight": "28px",
+        "letterSpacing": "-0.005em"
+      },
+      "headline-xl-mobile": {
+        "fontFamily": "EB Garamond",
+        "fontSize": "30px",
+        "fontWeight": "400",
+        "lineHeight": "36px",
+        "letterSpacing": "-0.01em"
+      },
+      "display-lg-mobile": {
+        "fontFamily": "EB Garamond",
+        "fontSize": "38px",
+        "fontWeight": "400",
+        "lineHeight": "44px",
+        "letterSpacing": "-0.01em"
+      },
+      "label-lg": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "lineHeight": "20px",
+        "letterSpacing": "0.08em"
+      }
+    },
+    "spacing": {
+      "gutter": "1.5rem",
+      "margin-lg": "5rem",
+      "space-sm": "0.5rem",
+      "space-md": "1rem",
+      "gutter-lg": "2.5rem",
+      "space-xl": "3rem",
+      "margin": "1.25rem",
+      "margin-md": "2.5rem",
+      "space-lg": "1.75rem",
+      "space-xs": "0.25rem"
+    },
+    "headlineFontFamily": "EB Garamond",
+    "bodyFontFamily": "Plus Jakarta Sans",
+    "labelFontFamily": "Plus Jakarta Sans"
+  },
+  "metadata": {
+    "userRole": "OWNER"
+  }
+}
